@@ -1,0 +1,233 @@
+﻿@*@model LBL_Solutions.Models.ContactMsgModel
+@{
+    ViewData["Title"] = "Contact Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<script type="text/javascript">
+    const startingMinutes =0.05;   
+    let time=startingMinutes*60;   
+    const countdownEl=document.getElementById('countdown');   
+    setInterval(updateCountdown, 1000);
+   
+    function updateCountdown(){      
+        const minutes=Math.floor(time/60);      
+        let seconds= time % 60;      
+        seconds=seconds < 10 ? '0' + seconds : seconds;      
+        countdownEl.innerHTML=minutes+":"+seconds;      
+        time--;  
+    }
+</script>
+<br />
+<br />
+<br />
+<br />
+
+<div class="row">  
+    <div class="column">
+        <div class="col-md-6">        
+            <div>            
+                @if (ViewBag.Message == null)            
+                {                
+                    <div>                    
+                        <form method="post">    
+                            <div class="form-group">                            
+                                <label asp-for="Name">Name</label>                            
+                                <input asp-for="Name" class="form-control" />                            
+                                <span asp-validation-for="Name"                             
+                                class="text-muted"></span>                        
+                            </div>                        
+                            <div class="form-group">                            
+                                <label asp-for="Email">Email</label>                            
+                                <input asp-for="Email" class="form-control" />                            
+                                <span asp-validation-for="Email"                          
+                                class="text-muted"></span>                        
+                            </div>                        
+                            <div class="form-group">                            
+                                <label asp-for="Subject">Subject</label>                            
+                                <input asp-for="Subject" class="form-control" />                            
+                                <span asp-validation-for="Subject"
+                                class="text-muted"></span>                        
+                            </div>                        
+                            <div class="form-group">                            
+                                <label asp-for="Message">Message</label>                            
+                                <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>                               
+                                <span asp-validation-for="Message" class="text-muted"></span>              
+                            </div>                        
+                                
+                            <div>    
+                                <br />
+                                <button type="submit" class="btn btn-success">Send </button>
+                                        
+                                @if (ViewBag.Message != null)        
+                                {                
+                                    <meta http-equiv="refresh" content="3; url='http://localhost:9963'" />                
+                                    <div>@ViewBag.Message <p>You are being redirected in</p></div>        
+                                    <div id="countdown-container">     
+                                        <div id="countdown">
+                                            <span id="seconds">3s</span>        
+                                        </div>                
+                                    </div> 
+                                }
+                            </div>  
+                        </form>   
+                    </div>   
+                }   
+            </div>
+        </div>        
+    </div>
+            
+    <div class="column">            
+        <a href="/Contact/Index"><img class="w3-image" src="/Images/Contact_Banner.png" alt="Architecture" width="1500" height="800"></a>
+        <div class="w3-content w3-padding" style="max-width:1564px">  
+            <div class="w3-container w3-padding-32" id="Services">    
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 h3">Alternative Contact Detials</h3>    
+                <p>
+                    Call/WhatsApp/SMS Branden : +27 565 0206 <br />
+                    Email Address : <a>info@linebylinesolutions.com</a>
+                </p>
+        
+    
+                
+            </div>
+        </div>            
+    </div>
+    
+</div></body></html>*@
+@model LBL_Solutions.Models.ContactMsgModel
+@{
+    ViewData["Title"] = "Contact Page";
+    Layout = "_LayoutContact";
+}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/contact.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+        <a href="/Contact/Index"><img class="w3-image" src="/Images/Contact_Banner.png" alt="Architecture" width="1500" height="800"></a>
+
+<div class="row">
+  <div class="column"> 
+            @if (ViewBag.Message == null)
+            {
+                <div>
+                <form method="post">    
+                    <div class="form-group">                            
+                                <label asp-for="Name">Name</label>                            
+                                <input asp-for="Name" class="form-control" placeholder="Your Full Name"/>                            
+                                <span asp-validation-for="Name"                             
+                                class="text-muted"></span>                        
+                            </div>                        
+                            <div class="form-group">                            
+                                <label asp-for="Email">Email</label>                            
+                                <input asp-for="Email" class="form-control" placeholder="Your Email Adderess" />                            
+                                <span asp-validation-for="Email"                          
+                                class="text-muted"></span>                        
+                            </div>                        
+                            <div class="form-group">                            
+                                <label asp-for="Subject">Subject</label>                            
+                                <input asp-for="Subject" class="form-control" placeholder="Message Subject" />                            
+                                <span asp-validation-for="Subject"
+                                class="text-muted"></span>                        
+                            </div>                        
+                            <div class="form-group">                            
+                                <label asp-for="Message">Your Message</label>                            
+                                <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>                               
+                                <span asp-validation-for="Message" class="text-muted"></span>              
+                            </div>
+                            
+                            <div> 
+                                <br />
+                                <button type="submit" class="btn btn-success">Send </button>                            
+                            </div>                           
+                        </form>           
+                    </div>    
+                }  
+  </div>
+      
+  <br />    
+  <br />
+  <br />
+  <br />
+  <div class="column">            
+        <div class="w3-content w3-padding" style="max-width:1564px">  
+            <div class="w3-container w3-padding-32" id="Services">    
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 h3">Alternative Contact Detials</h3>    
+                <p>
+                    Call/WhatsApp/SMS Branden : +27 565 0206 <br />
+                    Email Address : <a>info@linebylinesolutions.com</a>
+                </p>               
+            </div>
+        </div> 
+  </div>
+  
+</div>
+
+                                      
+@if (ViewBag.Message != null)                               
+{                  
+          <div class="row">
+              <div class="column">
+                  Please Wait....
+              </div>
+              <div class="column">
+                  Loading....
+              </div>
+          </div>                           
+    <div class="popup">                                    
+        <h2>Sent! Be in Touch Soon!</h2>                                          
+        <a href="http://localhost:9963">Please wait while we redirect you</a>                                                      
+        <div id="countdown-container">                                       
+            <div id="countdown">                                   
+                <b><span id="time">12s</span></b>                                          
+            </div></div>                                     
+        </div>                                     
+        <meta http-equiv="refresh" content="12; url='http://localhost:9963'" />
+    <script type="text/javascript">
+    const startingMinutes =0.2;   
+    let time=startingMinutes*60;   
+    const countdownEl=document.getElementById('countdown');   
+    setInterval(updateCountdown, 1000);
+   
+    function updateCountdown(){      
+        const minutes=Math.floor(time/60);      
+        let seconds= time % 60;      
+        seconds=seconds < 10 ? '0' + seconds : seconds;      
+        countdownEl.innerHTML=minutes+":"+seconds;      
+        time--;  
+    }
+    window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+</script>
+                                }
+
+</body>
+</html>
+
+   
