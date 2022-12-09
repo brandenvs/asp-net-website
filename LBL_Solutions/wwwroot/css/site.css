@@ -1,6 +1,7 @@
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
+
 }
 
 *, *:before, *:after {
@@ -13,9 +14,43 @@ html {
 }
 
 body {
-    margin: 0
+    font-family: 'Arial Rounded MT';
+    font-size: 18px;
+    line-height: 1.5;
+
 }
 
+body {
+
+    background: linear-gradient(-45deg, #23d5abb4, #ee70a1d4, #23a6d5d1, #c0c0c0ce);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+img.framed1 {
+    box-shadow: -50px -50px 0 -40px var(--yellow), 50px 50px 0 -40px var(--yellow);
+}
+img.framed2 {
+    box-shadow: -50px -50px 0 -40px var(--green), 50px 50px 0 -40px var(--green);
+}
+img.framed3 {
+    box-shadow: -50px -50px 0 -40px var(--blue), 50px 50px 0 -40px var(--blue);
+}
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
     display: block;
 
@@ -180,12 +215,6 @@ textarea {
     -webkit-appearance: button;
     font: inherit
 }
-/* End extract */
-html, body {
-    font-family: Verdana,sans-serif;
-    font-size: 15px;
-    line-height: 1.5
-}
 
 html {
     overflow-x: hidden
@@ -205,7 +234,9 @@ h3 {
 }
 
 h4 {
-    font-size: 20px
+    font-size: 20px;
+    font-weight:700;
+    color:ghostwhite;
 }
 
 h5 {
@@ -218,11 +249,6 @@ h6 {
 * {
     box-sizing: border-box;
 }
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 
 .w3-serif {
     font-family: serif
@@ -241,14 +267,14 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Segoe UI",Arial,sans-serif;
+    font-family: 'Arial Rounded MT';
     font-weight: 800;
     margin: 10px 0
 
 }
 
 h4, h5, h6 {
-    font-family: "Segoe UI",Arial,sans-serif;
+    font-family: Arial;
     font-weight: 600;
     margin: 10px 0
 }
@@ -402,7 +428,6 @@ a {
 
 .w3-tooltip, .w3-display-container {
     position: relative;
-    margin: auto
 }
 
     .w3-tooltip .w3-text {
@@ -765,7 +790,7 @@ a {
 }
 
 .w3-content {
-    max-width: 980px;
+    max-width:auto;
 }
 
 .w3-auto {
@@ -845,7 +870,7 @@ a {
 
 @media (max-width:768px) {
     .w3-modal-content {
-        width: 500px
+        width: fit-content
     }
 
     .w3-modal {
@@ -855,7 +880,7 @@ a {
 
 @media (min-width:993px) {
     .w3-modal-content {
-        width: 900px
+        width: fit-content
     }
 
     .w3-hide-large {
@@ -898,11 +923,6 @@ a {
     top: 0
 }
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-/*html {
-    height: 100%;
-    background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
-}*/
 
 nav {
     max-width: 960px;
@@ -1065,7 +1085,7 @@ nav {
 }
 
 .w3-container, .w3-panel {
-    padding: 0.01em 16px
+   /* padding: 0.01em 16px*/
 }
 
 .w3-panel {
@@ -1239,7 +1259,9 @@ nav {
     }
 
 .w3-opacity, .w3-hover-opacity:hover {
-    opacity: 0.60
+    opacity: 0.90;
+    font-weight: 600;
+    color: black;
 }
 
 .w3-opacity-off, .w3-hover-opacity-off:hover {
@@ -1397,11 +1419,12 @@ nav {
 }
 
 .w3-padding {
-    padding: 8px 16px !important
+    padding: 8px 16px !important;    
 }
 
 .w3-padding-large {
-    padding: 12px 24px !important
+    padding: 12px 24px !important;
+    
 }
 
 .w3-padding-16 {
@@ -1840,3 +1863,59 @@ nav {
     border-color: #e7ffff !important
 }
 
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.sfimg {
+    width: 20%;
+    float: left;
+}
+
+    .sfigure {
+        position: relative;
+        width: 500%;
+        margin: auto;
+        left: auto;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
+    }

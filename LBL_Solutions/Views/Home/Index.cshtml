@@ -1,23 +1,114 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@*<!doctype html>
+<html lang="en">
 
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- slider area -->
+
+   
+
+  <!-- About Modal -->
+  <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nasir Khan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h3>NASIR KHAN</h3>
+              <h5>FULL STACK WEB DEVELOPER.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact modal -->
+
+  <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SEND EMAIL <small>
+              <p class="text-info">nasirkhan.webdev@gmail.com</p>
+            </small></h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" name="name" class="form-control rounded-0 mb-2" placeholder="Name">
+            <input type="email" name="email" class="form-control rounded-0 mb-2" placeholder="Email">
+            <textarea name="message" id="" cols="30" rows="4" class="form-control rounded-0 mb-2">Message</textarea>
+            <input type="submit" name="submit" class="form-control rounded-0 mb-2 bg-info text-light" value="SEND">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a target="_blank" href="http://www.nasirkhan.me" class="btn btn-info rounded-0">Visit My Website</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>*@
+
+@*</html>*@
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/site.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="/css/site.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
-<!-- Header -->   
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">  
-    <a href="/Contact/Index"><img class="w3-image" src="/Images/Line_by_Line Solutions.png" alt="Architecture" width="1500" height="800">  </a>
-</header>
-
-  <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+    <!-- Header -->  
     
+@*<header class="w3-display-container w3-content w3-wide" id="home">*@
+
+@*</header>*@
+  <!-- Page content -->
+
+<div class="w3-content w3-padding">
+
   <!-- Services Section -->    
   <div class="w3-container w3-padding-32" id="Services">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 h3">What we have to Offer</h3>
@@ -30,10 +121,14 @@
   <div class="w3-row-padding w3-grayscale" style="position:relative"> 
     <div class="w3-col l3 m6 w3-margin-bottom" style="position:relative">   
         <div>
-        <img src="/Images/Website_build.gif" alt="Everybody loves animated Gifs!" loading="lazy" class="c-transformed-asset" width="400" height="350">      
+        <img class="framed3" src="/Images/Website_build.gif" alt="Everybody loves animated Gifs!" loading="lazy">
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
         <h4>Website Development</h4>      
         <p class="w3-opacity">
-            We understand that websites play a vital role for the success of any business in today’s world. "A successful brand almost always has a website".<b>Line_by_Line</b> developers go the extra distance to ensure High Quality and Secure Websites.      
+            We understand that websites play a vital role for the success of any business in today’s world. "A successful brand almost always has a website". <b>Line_by_Line</b> developers go the extra distance to ensure High Quality and Secure Websites.      
             Contact Us Now and Let’s Discuss the Best Website Possible for Your Brand.
             Why Not Give The Attention and Love Your Brand Deserves?  
         </p>  
@@ -42,7 +137,11 @@
 *@      </div>              
     <div class="w3-col l3 m6 w3-margin-bottom" style="position:relative"> 
         <div>
-          <img src="/Images/Android_App.gif" alt="Everybody loves animated Gifs!" loading="lazy" class="c-transformed-asset" width="400" height="350">
+          <img class="framed3" src="/Images/Android_App.gif" alt="Everybody loves animated Gifs!" loading="lazy" >
+                  <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
           <h4>Android Application Development</h4>                                   
           <p class="w3-opacity">
                A primary benefit of mobile apps for business is their capacity to build brand awareness in tandem with your other marketing initiatives. 
@@ -53,9 +152,13 @@
 *@    </div>            
     <div class="w3-col l3 m6 w3-margin-bottom" style="position:relative">   
         <div>
-        <img src="/Images/Windows_Application.gif" alt="Everybody loves animated Gifs!" loading="lazy" class="c-transformed-asset" width="400" height="350">
+        <img class="framed3" src="/Images/Windows_Application.gif" alt="Everybody loves animated Gifs!" loading="lazy" >
+                <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
       <h4>Windows Application Developmet</h4>                
-      <p>Windows Applications are becoming niche. Line_by_Line will meet demands of a client whether it be a Point of Sales System, Accounting Software or Custom Software for Your Clients. 
+      <p class="w3-opacity">Windows Applications are becoming niche. Line_by_Line will meet demands of a client whether it be a Point of Sales System, Accounting Software or Custom Software for Your Clients. 
           Using modern design and secure code, your user experience will be unmatchable
           </p> 
           </div><br /><br /><br />
@@ -63,7 +166,11 @@
 *@    </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="position-relative">
-        <img src="/Images/Idea.gif" alt="Everybody loves animated Gifs!" loading="lazy" class="c-transformed-asset" width="400" height="350">
+        <img src="/Images/Idea.gif" alt="Everybody loves animated Gifs!" loading="lazy" class="c-transformed-asset framed3">
+                <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
       <h4>Got an Idea?</h4>              
       <p class="w3-opacity">
           Got an Idea or Brand that hasn't been listed? Lets see what we can do!
@@ -88,21 +195,23 @@
     <div class="w3-row-padding">    
         <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-green w3-padding">NuMaps</div>            
-        <a style="text-decoration:none" href="https://github.com/BrandenSysoutHelloWorld/NuMap_Demo" target="_blank" rel="noopener noreferrer"><img src="/Images/NuMap_Logo.png" alt="Numaps" style="width:100%">              
-        <p>Built for Android mobile devices, <b>NuMaps</b> offers a light weight and effective way to get directions to a destination.</p></a>
+        <div class="w3-display-topleft w3-green w3-padding" style="font-size:13px">NuMaps</div>            
+        <a style="text-decoration:none" href="https://github.com/BrandenSysoutHelloWorld/NuMap_Demo" target="_blank" rel="noopener noreferrer"><img class="framed2" src="/Images/NuMap_Logo.png" alt="Numaps" style="width:100%" /></a>              
+        <br /><br /><br />
+        <p>Built for Android mobile devices, <b>NuMaps</b> offers a light weight and effective way to get directions to a destination.</p>
 @*      <p><button onClick="location.href='Documentation/NuMaps'" class="w3-button w3-light-grey w3-block">View Documentation</button></p>    
 *@      </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
     
-                        <div class="w3-display-topleft w3-amber w3-padding">
+                        <div class="w3-display-topleft w3-amber w3-padding" style="font-size:13px">
                 InProgress - Super Admin
             </div>  
 
-        <a style="text-decoration:none" href="https://github.com/BrandenSysoutHelloWorld?tab=repositories" target="_blank" rel="noopener noreferrer"><img src="/Images/Super_Admin.png" alt="House" style="width:100%">                
-        <p><b>Super Admin</b> allows Website owners to update and manage data quickly, utilizing in a user friendly enviroment.</p></a>
+        <a style="text-decoration:none" href="https://github.com/BrandenSysoutHelloWorld?tab=repositories" target="_blank" rel="noopener noreferrer"><img  class="framed1" src="/Images/Super_Admin.png" alt="House" style="width:100%" /></a>               
+        <br /><br /><br />
+        <p><b>Super Admin</b> allows Website owners to update and manage data quickly, utilizing in a user friendly enviroment.</p>
 @*      <p><button class="w3-button w3-light-grey w3-block">GitHub</button></p>
 *@      <p>
 @*          <button onClick="location.href='Documentation/SuperAdmin'" class="w3-button w3-light-grey w3-block">View Documentation</button></p>
@@ -111,20 +220,22 @@
     </div>        
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-green w3-padding">The Secret Love Project</div>              
-             <a style="text-decoration:none" href="https://github.com/BrandenSysoutHelloWorld/BlackBoxSolution_Website_Official" target="_blank" rel="noopener noreferrer"><img src="/Images/TSLP_Logo.png" alt="Numaps" style="width:100%">            
-   <p>Website for the Non-profit Organization - <b>The Secret Love Project</b>. Helping solve the homeless crisis in South Africa.</p></a>
+        <div class="w3-display-topleft w3-green w3-padding" style="font-size:13px">The Secret Love Project</div>              
+             <a style="text-decoration:none" href="https://github.com/BrandenSysoutHelloWorld/BlackBoxSolution_Website_Official" target="_blank" rel="noopener noreferrer"><img class="framed2" src="/Images/TSLP_Logo.png" alt="Numaps" style="width:100%" /></a>        
+             <br /><br /><br />
+             <p>Website for the Non-profit Organization - <b>The Secret Love Project</b>. Helping solve the homeless crisis in South Africa.</p>
 @*      <p><button class="w3-button w3-light-grey w3-block">Website</button></p>
 *@@*      <p><button onClick="location.href='Documentation/TheSecretLoveProject'" class="w3-button w3-light-grey w3-block">View Documentation</button></p>
 *@      </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">      
         <div class="w3-display-container">        
-            <div class="w3-display-topleft w3-amber w3-padding">
+            <div class="w3-display-topleft w3-amber w3-padding" style="font-size:13px">
                 InProgress - City Market
             </div>       
-            <a style="text-decoration:none" href="https://github.com/BrandenSysoutHelloWorld?tab=repositories" target="_blank" rel="noopener noreferrer"><img src="/Images/City_Market_Logo.png" alt="Numaps" style="width:100%">                    
-            <p><b>City Market</b> provides South African's a safe market place to purchase gadgets and applicances at affordable prices</p></a>      
+            <a style="text-decoration:none" href="https://github.com/BrandenSysoutHelloWorld?tab=repositories" target="_blank" rel="noopener noreferrer"><img class="framed1" src="/Images/City_Market_Logo.png" alt="Numaps" style="width:100%"></a>                    
+            <br /><br /><br />
+            <p><b>City Market</b> provides South African's a safe market place to purchase gadgets and applicances at affordable prices</p>      
 @*            <p><button class="w3-button w3-light-grey w3-block">Website</button></p>      
 *@@*            <p><button onClick="location.href='Documentation/CityMarket'" class="w3-button w3-light-grey w3-block">View Documentation</button></p>    
 *@        </div>  
@@ -141,15 +252,17 @@
     </p>
     </div>
 
-  <div class="w3-row-padding w3-grayscale">
+  <div class="w3-row-padding w3-grayscale w3-c">
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <a style="text-decoration:none" href="Team/Branden"><img src="/Images/Branden_vs_profile.png" alt="Branden" style="width:100%">
+      <a style="text-decoration:none" href="Team/Branden"><img class="framed3" src="/Images/Branden_vs_profile.png" alt="Branden" style="width:100%"></a>
+      <br />
+      <br />
       <h3>Branden van Staden</h3>
       <p class="w3-opacity"></p>
       <p>CEO & Founder of Line by Line</p>
       <p class="w3-opacity">Computer Application and Software Developer<br />
-          JAVA - C# - Web - Cloud - API </p>       </a>    
-      <p><button onClick="location.href='Team/Branden'"class="w3-button w3-light-grey w3-block">View Profile</button></p>
+          JAVA - C# - Web - Cloud - API </p>     
+      <p><button onClick="location.href='Team/Branden'" class="w3-button w3-hover-border-blue-grey w3-block">View Profile</button></p>
     </div>
   </div>
 <!-- End page content -->

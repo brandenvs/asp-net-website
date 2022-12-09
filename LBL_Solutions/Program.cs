@@ -1,3 +1,4 @@
+using HT.Components;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddComponents();
 //builder.Services.AddDbContext<>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("conn")));
 var app = builder.Build();
 
