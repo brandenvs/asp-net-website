@@ -4,27 +4,47 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="icon" type="image/x-icon" href="/Images/Line-by-Line_Logo.png">
  
 </head>
-<body>    
-        <div class="w3-top"> 
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">    
-            <a href="http://localhost:9963" class="w3-bar-item w3-button">Home</a>           
-            <div class="w3-right w3-hide-small">                  
-                <a href="Documentation/NuMaps" class="w3-bar-item w3-button">NuMaps</a>                         
-                <a href="Documentation/SuperAdmin" class="w3-bar-item w3-button">Super Admin</a>           
-                <a href="Documentation/TheSecretLoveProject"  class="w3-bar-item w3-button">The Secret Love Project</a>               
-                <a href="Documentation/CityMarket" class="w3-bar-item w3-button">City Market</a>           
+    <div class="div-desktop">
+        <div class="w3-top">            
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">  
+            <a onclick="href='https://linebylinesolution.azurewebsites.net/Home/Index'" class="w3-bar-item w3-button"><img src="/Images/Line-by-Line_Logo.png" style="max-height:25px; max-width:25px"/><b>Line_by_Line</b> Solutions</a> 
+            <div class="w3-right w3-hide-small">                            
+                <a onclick="href='/Contact/Index'" class="w3-bar-item w3-button">Contact</a>           
             </div>
-        </div>       
-</div> 
-<br />
-<br />
-<div class="container">        
+        </div> 
+        </div> 
+</div>
+
+    <div class="div-mobile">
+        <div class="w3-top"> 
+          <section class="top-nav w3-bar w3-white w3-wide w3-padding w3-card">
+    <div>           
+            <a onclick="href='https://linebylinesolution.azurewebsites.net/Home/Index' class="w3-bar-item w3-button"><img src="/Images/Line-by-Line_Logo.png" style="max-height:25px; max-width:25px"/> <b>Line_by_Line</b> Solutions</a> 
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a onclick="href='/Contact/Index'" class="w3-bar-item w3-button">Contact</a></li>
+    </ul>
+
+  </section>
+  </div>
+  </div>
+<body>
+       
     <main role="main" class="pb-3">            
         @RenderBody()       
     </main>        
-</div>
-
+    <!-- Footer -->
+<footer class="footer">
+  <p title="LBL_Solutions" target="_blank" class="w3-hover-text-green">&copy; 2022 - Line_by_Line_Solutions</p>
+</footer>
 </body>
+
+
 </html>

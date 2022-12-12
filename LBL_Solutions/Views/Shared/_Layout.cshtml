@@ -1,24 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">       
+    <link rel="stylesheet" href="/css/customSite.css">
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="icon" type="image/x-icon" href="/Images/Line-by-Line_Logo.png">
 
 </head>
-<header>
 
-</header>
 <div class="div-desktop">
-        <div class="w3-top"> 
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">    
-            <a onclick="https://linebylinesolution.azurewebsites.net" class="w3-bar-item w3-button"><b>Line_by_Line</b> Solutions</a>           
+        <div class="w3-top">            
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">  
+            <a href="https://linebylinesolution.azurewebsites.net/Home/Index'" class="w3-bar-item w3-button"><img src="/Images/Line-by-Line_Logo.png" style="max-height:25px; max-width:25px"/><b>Line_by_Line</b> Solutions</a> 
             <div class="w3-right w3-hide-small">             
-                <a onclick="window.location.href='#Services'" class="w3-bar-item w3-button">Our Services</a>                         
-                <a onclick="window.location.href='#Projects'"  class="w3-bar-item w3-button">Public Portfolio</a>           
-                <a onclick="window.location.href='#Team'"  class="w3-bar-item w3-button">Developer Team</a>                
-                <a onclick="/Contact/Index" class="w3-bar-item w3-button">Make Contact</a>           
+                <a onclick="href='/Team/Branden'"  class="w3-bar-item w3-button">View Developer Profile</a>                
+                <a onclick="href='/Contact/Index'" class="w3-bar-item w3-button">Contact</a>           
             </div>
         </div> 
 </div> 
@@ -28,38 +27,36 @@
         <div class="w3-top"> 
           <section class="top-nav w3-bar w3-white w3-wide w3-padding w3-card">
     <div>           
-        <a onclick="https://linebylinesolution.azurewebsites.net" class="w3-bar-item w3-button"><b>Line_by_Line</b> Solutions</a>           
+            <a href="https://linebylinesolution.azurewebsites.net/Home/Index'" class="w3-bar-item w3-button"><img src="/Images/Line-by-Line_Logo.png" style="max-height:25px; max-width:25px"/><b>Line_by_Line</b> Solutions</a> 
     </div>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
     <div class='menu-button'></div>
   </label>
     <ul class="menu">
-      <li><a onclick="href='https://linebylinesolution.azurewebsites.net/#Services'" class="w3-bar-item w3-button">Our Services</a></li>
-      <li><a onclick="href='https://linebylinesolution.azurewebsites.net/#Projects'"  class="w3-bar-item w3-button">Public Portfolio</a> </li>
-      <li><a onclick="href='https://linebylinesolution.azurewebsites.net/#Team'"  class="w3-bar-item w3-button">Developer Team</a>  </li>
-      <li><a onclick="/Contact/Index" class="w3-bar-item w3-button">Make Contact</a></li>
+      <li><a onclick="href='/Team/Branden'"  class="w3-bar-item w3-button">View Developer Profile</a></li>
+      <li><a onclick="href='/Contact/Index'" class="w3-bar-item w3-button">Contact</a></li>
     </ul>
 
   </section>
   </div>
   </div>
+  
+  <body>
+
+  
 
 
-
-<body> 
     
-<div class="container">
-    
-            <div class="div-desktop">
+@*            <div class="div-desktop">
     <div class="w3-content w3-padding-32" style="margin-top:50px">
         <div id="slider" class="slider">
 <figure class="sfigure">    
-<div class="framed3"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide1.png" alt="slideImg#1" style="height:600px" /></div>
-<div class="framed4"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide2.png" alt="slideImg#2" style="height:600px" /></div>
-<div class="framed4"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide3.png" alt="slideImg#3" style="height:600px" /></div>
-<div class="framed4"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide4.png" alt="slideImg#4" style="height:600px" /></div>
-<div class="framed4"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide2.png" alt="slideImg#2" style="height:600px" /></div>
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide1.png" alt="slideImg#1" style="height:450px" />
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide2.png" alt="slideImg#2" style="height:450px" />
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide3.png" alt="slideImg#3" style="height:450px" />
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide4.png" alt="slideImg#4" style="height:450px" />
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide2.png" alt="slideImg#2" style="height:450px" />
 </figure>
 </div>
 </div>
@@ -67,22 +64,22 @@
  <div class="div-mobile">
          <div class="w3-content w3-padding-32" style="margin-top:15px">
         <div id="slider" class="slider">
-<figure class="sfigure">    
-<div class="framed3"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide1.png" alt="slideImg#1" style="height:300px" /></div>
-<div class="framed4"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide2.png" alt="slideImg#2" style="height:300px" /></div>
-<div class="framed4"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide3.png" alt="slideImg#3" style="height:300px" /></div>
-<div class="framed4"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide4.png" alt="slideImg#4" style="height:300px" /></div>
-<div class="framed4"><img class="sfimg" src="/Images/Line_by_Line Solutions_slide2.png" alt="slideImg#2" style="height:300px" /></div>
+<figure class="sfigure">
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide1.png" alt="slideImg#1" style="height:230px" />
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide2.png" alt="slideImg#2" style="height:230px" />
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide3.png" alt="slideImg#3" style="height:230px" />
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide4.png" alt="slideImg#4" style="height:230px" />
+<img class="sfimg" src="/Images/Line_by_Line Solutions_slide2.png" alt="slideImg#2" style="height:230px" />
 </figure>
 </div>
 </div>
-     </div>
+     </div>*@
 
 
     <main role="main" class="pb-3">            
         @RenderBody()       
     </main>        
-</div>
+
     <!-- Footer -->
 <footer class="footer">
   <p title="LBL_Solutions" target="_blank" class="w3-hover-text-green">&copy; 2022 - Line_by_Line_Solutions</p>

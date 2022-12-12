@@ -171,10 +171,11 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    background: linear-gradient(-45deg, #23d5abb4, #ee70a1d4, #23a6d5d1, #c0c0c0ce);
+    background: linear-gradient(-45deg, #4facfb, #379693, #a476ef);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 @keyframes gradient {
@@ -192,7 +193,7 @@ html {
 }
 
 .framed1 {
-    box-shadow: -50px -50px 0 -40px var(--yellow), 50px 50px 0 -40px var(--yellow);
+    box-shadow: -50px -50px 0 -40px var(--yellow), 50px 50px 0 -40px var(--yellow);    
 }
 .framed2 {
     box-shadow: -50px -50px 0 -40px var(--green), 50px 50px 0 -40px var(--green);
@@ -231,7 +232,8 @@ audio:not([controls]) {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
+    text-decoration:none;
 }
 
     a:active, a:hover {
@@ -282,9 +284,9 @@ figure {
 
 img {
     border-style: none;
-    width:100%;
-    padding:0.5px
-
+    width: 100%;
+    padding: 0.5px;
+    vertical-align: middle
 }
 
 code, kbd, pre, samp {
@@ -377,22 +379,23 @@ h1 {
 }
 
 h2 {
-    font-size: 30px
+    font-size: 30px;
+
 }
 
 h3 {
     font-size: 24px;
- 
+    color: mintcream;
 }
 
 h4 {
     font-size: 20px;
-    font-weight:700;
-    color:ghostwhite;
+    color:mintcream;
 }
 
 h5 {
-    font-size: 18px
+    font-size: 18px;
+
 }
 
 h6 {
@@ -581,6 +584,7 @@ a {
             border-bottom: none
         }
 
+        
 .w3-tooltip, .w3-display-container {
     position: relative;
 }
@@ -596,7 +600,9 @@ a {
 .w3-ripple:active {
     opacity: 0.5
 }
-
+.container {
+    
+}
 .w3-ripple {
     transition: opacity 0s
 }
@@ -733,6 +739,7 @@ a {
 
 .w3-bar .w3-button {
     white-space: normal;
+ 
 }
 
 .w3-bar-block .w3-bar-item {
@@ -890,11 +897,11 @@ a {
     }
 
     .w3-col.l3 {
-        width: 24.99999%
+        width: 24.99999%; margin:20px;
     }
 
     .w3-col.l4 {
-        width: 33.33333%
+        width: 33.33333%; margin:20px
     }
 
     .w3-col.l5 {
@@ -902,7 +909,8 @@ a {
     }
 
     .w3-col.l6 {
-        width: 49.99999%
+        width: 49.99999%;
+        margin:20px;
     }
 
     .w3-col.l7 {
@@ -945,7 +953,8 @@ a {
 }
 
 .w3-content {
-    max-width:auto;
+    max-width: auto;
+
 }
 
 .w3-auto {
@@ -1241,7 +1250,8 @@ nav {
 }
 
 .w3-container, .w3-panel {
-   /* padding: 0.01em 16px*/
+    padding: 0.01em 16px;
+
 }
 
 .w3-panel {
@@ -1415,8 +1425,8 @@ nav {
     }
 
 .w3-opacity, .w3-hover-opacity:hover {
-    opacity: 0.90;
-    font-weight: 600;
+    opacity: 0.70;
+    font-weight: 500;
     color: black;
 }
 
@@ -1559,15 +1569,14 @@ nav {
 
 .w3-margin-bottom {
     margin-bottom: 16px !important;
-
 }
 
 .w3-margin-left {
-    margin-left: 16px !important
+    margin-left: 10px !important
 }
 
 .w3-margin-right {
-    margin-right: 16px !important
+    margin-right: 10px !important
 }
 
 .w3-padding-small {
@@ -1576,6 +1585,7 @@ nav {
 
 .w3-padding {
     padding: 8px 16px !important;    
+
 }
 
 .w3-padding-large {
@@ -2064,6 +2074,7 @@ nav {
 .sfimg {
     width: 20%;
     float: left;
+
 }
 
     .sfigure {
