@@ -20,8 +20,6 @@
     -webkit-animation: slide 30s infinite;
     -moz-animation: slide 30s infinite;
     animation: slide 30s infinite;
-  
-
 }
 
 .slider {
@@ -32,8 +30,6 @@
     z-index: 1;
     overflow: hidden;
     border-radius: 20px;
-
-
 }
 
 .slide img {
@@ -55,91 +51,92 @@
         width: 100%;
         height: 100%;
     }
-    /* Legend */
-    .legend {
-        border: 500px solid transparent;
-        border-left: 800px solid rgb(0, 255, 255, 0.49);
-        border-bottom: 0;
-        position: absolute;
-        bottom: 0;
+/* Legend */
+.legend {
+    border: 500px solid transparent;
+    border-left: 800px solid rgb(0, 255, 255, 0.49);
+    border-bottom: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Contents */
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.content-txt {
+    width: 400px;
+    height: 150px;
+    float: left;
+    position: relative;
+    top: 200px;
+    -webkit-animation: content-s 7.5s infinite;
+    -moz-animation: content-s 7.5s infinite;
+    animation: content-s 7.5s infinite;
+}
+
+    .content-txt h1 {
+        font-family: Intro;
+        font-size: 35px;
+        color: #fff;
+        text-align: left;
+        margin-left: 30px;
+        padding-bottom: 10px;
     }
 
-    /* Contents */
-    .content {
-        width: 100%;
-        height: 100%;
-        position: absolute;
+    .content-txt h2 {
+        font-family: Quicksand;
+        font-weight: normal;
+        font-size: 25px;
+        font-style: italic;
+        color: #fff;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+/* Switch */
+.switch {
+    width: 120px;
+    height: 10px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 99;
+    left: 30px;
+}
+
+    .switch > ul {
+        list-style: none;
+    }
+
+        .switch > ul > li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #333;
+            float: left;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+    .switch ul {
         overflow: hidden;
     }
 
-    .content-txt {
-        width: 400px;
-        height: 150px;
-        float: left;
-        position: relative;
-        top: 300px;
-        -webkit-animation: content-s 7.5s infinite;
-        -moz-animation: content-s 7.5s infinite;
-        animation: content-s 7.5s infinite;
-    }
+.on {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #f39c12;
+    position: relative;
+    -webkit-animation: on 30s infinite;
+    -moz-animation: on 30s infinite;
+    animation: on 30s infinite;
+}
 
-        .content-txt h1 {
-            font-family: Intro;
-            font-size: 35px;
-            color: #fff;
-            text-align: left;
-            margin-left: 30px;
-            padding-bottom: 10px;
-        }
-
-        .content-txt h2 {
-            font-family: Quicksand;
-            font-weight: normal;
-            font-size: 25px;
-            font-style: italic;
-            color: #fff;
-            text-align: left;
-            margin-left: 30px;
-        }
-
-    /* Switch */
-    .switch {
-        width: 120px;
-        height: 10px;
-        position: absolute;
-        bottom: 50px;
-        z-index: 99;
-        left: 30px;
-    }
-
-        .switch > ul {
-            list-style: none;
-        }
-
-            .switch > ul > li {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background: #333;
-                float: left;
-                margin-right: 5px;
-                cursor: pointer;
-            }
-
-        .switch ul {
-            overflow: hidden;
-        }
-
-    .on {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background: #f39c12;
-        position: relative;
-        -webkit-animation: on 30s infinite;
-        -moz-animation: on 30s infinite;
-        animation: on 30s infinite;
-    }
 @media (max-width:601px) {
     #slider {
         width: 100%;
@@ -233,337 +230,337 @@
         animation: on 30s infinite;
     }
 }
-    /* Animation */
-    @-webkit-keyframes slide {
-        0%,100% {
-            margin-left: 0%;
-        }
-
-        21% {
-            margin-left: 0%;
-        }
-
-        25% {
-            margin-left: 100%;
-        }
-
-        46% {
-            margin-left: 100%;
-        }
-
-        50% {
-            margin-left: 200%;
-        }
-
-        71% {
-            margin-left: 200%;
-        }
-
-        75% {
-            margin-left: 300%;
-        }
-
-        96% {
-            margin-left: 300%;
-        }
+/* Animation */
+@-webkit-keyframes slide {
+    0%,100% {
+        margin-left: 0%;
     }
 
-    @-moz-keyframes slide {
-        0%,100% {
-            margin-left: 0%;
-        }
-
-        21% {
-            margin-left: 0%;
-        }
-
-        25% {
-            margin-left: 100%;
-        }
-
-        46% {
-            margin-left: 100%;
-        }
-
-        50% {
-            margin-left: 200%;
-        }
-
-        71% {
-            margin-left: 200%;
-        }
-
-        75% {
-            margin-left: 300%;
-        }
-
-        96% {
-            margin-left: 300%;
-        }
+    21% {
+        margin-left: 0%;
     }
 
-    @keyframes slide {
-        0%,100% {
-            margin-left: 0%;
-        }
-
-        21% {
-            margin-left: 0%;
-        }
-
-        25% {
-            margin-left: 100%;
-        }
-
-        46% {
-            margin-left: 100%;
-        }
-
-        50% {
-            margin-left: 200%;
-        }
-
-        71% {
-            margin-left: 200%;
-        }
-
-        75% {
-            margin-left: 300%;
-        }
-
-        96% {
-            margin-left: 300%;
-        }
+    25% {
+        margin-left: 100%;
     }
 
-    @-webkit-keyframes content-s {
-        0% {
-            left: -420px;
-        }
-
-        10% {
-            left: 0px;
-        }
-
-        30% {
-            left: 0px;
-        }
-
-        40% {
-            left: 0px;
-        }
-
-        50% {
-            left: 0px;
-        }
-
-        60% {
-            left: 0px;
-        }
-
-        70% {
-            left: 0;
-        }
-
-        80% {
-            left: -420px;
-        }
-
-        90% {
-            left: -420px;
-        }
-
-        100% {
-            left: -420px;
-        }
+    46% {
+        margin-left: 100%;
     }
 
-    @-moz-keyframes content-s {
-        0% {
-            left: -420px;
-        }
-
-        10% {
-            left: 0px;
-        }
-
-        30% {
-            left: 0px;
-        }
-
-        40% {
-            left: 0px;
-        }
-
-        50% {
-            left: 0px;
-        }
-
-        60% {
-            left: 0px;
-        }
-
-        70% {
-            left: 0;
-        }
-
-        80% {
-            left: -420px;
-        }
-
-        90% {
-            left: -420px;
-        }
-
-        100% {
-            left: -420px;
-        }
+    50% {
+        margin-left: 200%;
     }
 
-    @keyframes content-s {
-        0% {
-            left: -420px;
-        }
-
-        10% {
-            left: 20px;
-        }
-
-        15% {
-            left: 0px;
-        }
-
-        30% {
-            left: 0px;
-        }
-
-        40% {
-            left: 0px;
-        }
-
-        50% {
-            left: 0px;
-        }
-
-        60% {
-            left: 0px;
-        }
-
-        70% {
-            left: 0;
-        }
-
-        80% {
-            left: -420px;
-        }
-
-        90% {
-            left: -420px;
-        }
-
-        100% {
-            left: -420px;
-        }
+    71% {
+        margin-left: 200%;
     }
 
-    @-webkit-keyframes on {
-        0%,100% {
-            margin-left: 0%;
-        }
-
-        21% {
-            margin-left: 0%;
-        }
-
-        25% {
-            margin-left: 15px;
-        }
-
-        46% {
-            margin-left: 15px;
-        }
-
-        50% {
-            margin-left: 30px;
-        }
-
-        71% {
-            margin-left: 30px;
-        }
-
-        75% {
-            margin-left: 45px;
-        }
-
-        96% {
-            margin-left: 45px;
-        }
+    75% {
+        margin-left: 300%;
     }
 
-    @-moz-keyframes on {
-        0%,100% {
-            margin-left: 0%;
-        }
+    96% {
+        margin-left: 300%;
+    }
+}
 
-        21% {
-            margin-left: 0%;
-        }
-
-        25% {
-            margin-left: 15px;
-        }
-
-        46% {
-            margin-left: 15px;
-        }
-
-        50% {
-            margin-left: 30px;
-        }
-
-        71% {
-            margin-left: 30px;
-        }
-
-        75% {
-            margin-left: 45px;
-        }
-
-        96% {
-            margin-left: 45px;
-        }
+@-moz-keyframes slide {
+    0%,100% {
+        margin-left: 0%;
     }
 
-    @keyframes on {
-        0%,100% {
-            margin-left: 0%;
-        }
-
-        21% {
-            margin-left: 0%;
-        }
-
-        25% {
-            margin-left: 15px;
-        }
-
-        46% {
-            margin-left: 15px;
-        }
-
-        50% {
-            margin-left: 30px;
-        }
-
-        71% {
-            margin-left: 30px;
-        }
-
-        75% {
-            margin-left: 45px;
-        }
-
-        96% {
-            margin-left: 45px;
-        }
+    21% {
+        margin-left: 0%;
     }
+
+    25% {
+        margin-left: 100%;
+    }
+
+    46% {
+        margin-left: 100%;
+    }
+
+    50% {
+        margin-left: 200%;
+    }
+
+    71% {
+        margin-left: 200%;
+    }
+
+    75% {
+        margin-left: 300%;
+    }
+
+    96% {
+        margin-left: 300%;
+    }
+}
+
+@keyframes slide {
+    0%,100% {
+        margin-left: 0%;
+    }
+
+    21% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: 100%;
+    }
+
+    46% {
+        margin-left: 100%;
+    }
+
+    50% {
+        margin-left: 200%;
+    }
+
+    71% {
+        margin-left: 200%;
+    }
+
+    75% {
+        margin-left: 300%;
+    }
+
+    96% {
+        margin-left: 300%;
+    }
+}
+
+@-webkit-keyframes content-s {
+    0% {
+        left: -420px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    30% {
+        left: 0px;
+    }
+
+    40% {
+        left: 0px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    60% {
+        left: 0px;
+    }
+
+    70% {
+        left: 0;
+    }
+
+    80% {
+        left: -420px;
+    }
+
+    90% {
+        left: -420px;
+    }
+
+    100% {
+        left: -420px;
+    }
+}
+
+@-moz-keyframes content-s {
+    0% {
+        left: -420px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    30% {
+        left: 0px;
+    }
+
+    40% {
+        left: 0px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    60% {
+        left: 0px;
+    }
+
+    70% {
+        left: 0;
+    }
+
+    80% {
+        left: -420px;
+    }
+
+    90% {
+        left: -420px;
+    }
+
+    100% {
+        left: -420px;
+    }
+}
+
+@keyframes content-s {
+    0% {
+        left: -420px;
+    }
+
+    10% {
+        left: 20px;
+    }
+
+    15% {
+        left: 0px;
+    }
+
+    30% {
+        left: 0px;
+    }
+
+    40% {
+        left: 0px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    60% {
+        left: 0px;
+    }
+
+    70% {
+        left: 0;
+    }
+
+    80% {
+        left: -420px;
+    }
+
+    90% {
+        left: -420px;
+    }
+
+    100% {
+        left: -420px;
+    }
+}
+
+@-webkit-keyframes on {
+    0%,100% {
+        margin-left: 0%;
+    }
+
+    21% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: 15px;
+    }
+
+    46% {
+        margin-left: 15px;
+    }
+
+    50% {
+        margin-left: 30px;
+    }
+
+    71% {
+        margin-left: 30px;
+    }
+
+    75% {
+        margin-left: 45px;
+    }
+
+    96% {
+        margin-left: 45px;
+    }
+}
+
+@-moz-keyframes on {
+    0%,100% {
+        margin-left: 0%;
+    }
+
+    21% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: 15px;
+    }
+
+    46% {
+        margin-left: 15px;
+    }
+
+    50% {
+        margin-left: 30px;
+    }
+
+    71% {
+        margin-left: 30px;
+    }
+
+    75% {
+        margin-left: 45px;
+    }
+
+    96% {
+        margin-left: 45px;
+    }
+}
+
+@keyframes on {
+    0%,100% {
+        margin-left: 0%;
+    }
+
+    21% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: 15px;
+    }
+
+    46% {
+        margin-left: 15px;
+    }
+
+    50% {
+        margin-left: 30px;
+    }
+
+    71% {
+        margin-left: 30px;
+    }
+
+    75% {
+        margin-left: 45px;
+    }
+
+    96% {
+        margin-left: 45px;
+    }
+}

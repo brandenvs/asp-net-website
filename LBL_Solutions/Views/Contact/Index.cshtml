@@ -1,112 +1,7 @@
-﻿@*@model LBL_Solutions.Models.ContactMsgModel
+﻿@model LBL_Solutions.Models.ContactMsgModel
 @{
     ViewData["Title"] = "Contact Page";
-}
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/contact.css">
-</head>
-<body>
-<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<script type="text/javascript">
-    const startingMinutes =0.05;   
-    let time=startingMinutes*60;   
-    const countdownEl=document.getElementById('countdown');   
-    setInterval(updateCountdown, 1000);
-   
-    function updateCountdown(){      
-        const minutes=Math.floor(time/60);      
-        let seconds= time % 60;      
-        seconds=seconds < 10 ? '0' + seconds : seconds;      
-        countdownEl.innerHTML=minutes+":"+seconds;      
-        time--;  
-    }
-</script>
-<br />
-<br />
-<br />
-<br />
-
-<div class="row">  
-    <div class="column">
-        <div class="col-md-6">        
-            <div>            
-                @if (ViewBag.Message == null)            
-                {                
-                    <div>                    
-                        <form method="post">    
-                            <div class="form-group">                            
-                                <label asp-for="Name">Name</label>                            
-                                <input asp-for="Name" class="form-control" />                            
-                                <span asp-validation-for="Name"                             
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Email">Email</label>                            
-                                <input asp-for="Email" class="form-control" />                            
-                                <span asp-validation-for="Email"                          
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Subject">Subject</label>                            
-                                <input asp-for="Subject" class="form-control" />                            
-                                <span asp-validation-for="Subject"
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Message">Message</label>                            
-                                <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>                               
-                                <span asp-validation-for="Message" class="text-muted"></span>              
-                            </div>                        
-                                
-                            <div>    
-                                <br />
-                                <button type="submit" class="btn btn-success">Send </button>
-                                        
-                                @if (ViewBag.Message != null)        
-                                {                
-                                    <meta http-equiv="refresh" content="3; url='http://localhost:9963'" />                
-                                    <div>@ViewBag.Message <p>You are being redirected in</p></div>        
-                                    <div id="countdown-container">     
-                                        <div id="countdown">
-                                            <span id="seconds">3s</span>        
-                                        </div>                
-                                    </div> 
-                                }
-                            </div>  
-                        </form>   
-                    </div>   
-                }   
-            </div>
-        </div>        
-    </div>
-            
-    <div class="column">            
-        <a href="/Contact/Index"><img class="w3-image" src="/Images/Contact_Banner.png" alt="Architecture" width="1500" height="800"></a>
-        <div class="w3-content w3-padding" style="max-width:1564px">  
-            <div class="w3-container w3-padding-32" id="Services">    
-                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 h3">Alternative Contact Detials</h3>    
-                <p>
-                    Call/WhatsApp/SMS Branden : +27 565 0206 <br />
-                    Email Address : <a>info@linebylinesolutions.com</a>
-                </p>
-        
-    
-                
-            </div>
-        </div>            
-    </div>
-    
-</div></body></html>*@
-@model LBL_Solutions.Models.ContactMsgModel
-@{
-    ViewData["Title"] = "Contact Page";
-    Layout = "_LayoutContact";
+    Layout = "_Layout";
 }
 <!DOCTYPE html>
 <html>
@@ -116,15 +11,20 @@
 <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/contact.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/customSite.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="body">
         <a href="/Contact/Index"><img class="w3-image" src="/Images/Contact_Banner.png" alt="Architecture" width="1500" height="800"></a>
 
-<div class="row">
-  <div class="column"> 
-            @if (ViewBag.Message == null)
+    <div class="w3-row-padding w3-center">
+         <div class="w3-col l6 m6 w3-margin-bottom">
+                       
+ @if (ViewBag.Message == null)
             {
                 <div>
                 <form method="post">    
@@ -159,48 +59,26 @@
                         </form>           
                     </div>    
                 }  
-  </div>
-      
-  <br />    
-  <br />
-  <br />
-  <br />
-  <div class="column">            
-        <div class="w3-content w3-padding" style="max-width:1564px">  
-            <div class="w3-container w3-padding-32" id="Services">    
-                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 h3">Alternative Contact Detials</h3>    
-                
-                    <!-- Add font awesome icons -->
+</div>
+     <div class="w3-col l6 m6 w3-margin-bottom">   
+         <div class="w3-card">
+                     <h3 class="w3-serif w3-text-white h3">Alternative Contact Details</h3>
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-google"></a>
 <a href="#" class="fa fa-linkedin"></a>
-@*<a href="#" class="fa fa-youtube"></a>
-*@<a href="#" class="fa fa-instagram"></a>
-@*<a href="#" class="fa fa-pinterest"></a>
-<a href="#" class="fa fa-snapchat-ghost"></a>
-<a href="#" class="fa fa-skype"></a>
-<a href="#" class="fa fa-android"></a>
-<a href="#" class="fa fa-dribbble"></a>
-<a href="#" class="fa fa-vimeo"></a>
-<a href="#" class="fa fa-tumblr"></a>
-<a href="#" class="fa fa-vine"></a>
-<a href="#" class="fa fa-foursquare"></a>
-<a href="#" class="fa fa-stumbleupon"></a>
-<a href="#" class="fa fa-flickr"></a>
-<a href="#" class="fa fa-yahoo"></a>
-<a href="#" class="fa fa-reddit"></a>
-<a href="#" class="fa fa-rss"></a>*@<br />
-<p>
-                        Call/WhatsApp/SMS Branden : +27 565 0206 <br />
-                    Email Address : <a>info@linebylinesolutions.com</a>
+<a href="#" class="fa fa-instagram"></a>
 
-                </p>               
-            </div>
-        </div> 
-  </div>
-  
+      <h5 class="w3-serif w3-text-dark-gray w3-text-dark-gray h5">
+              Call/WhatsApp/SMS Branden : +27 (081) 565 0206 <br />                    
+    Email Address : <a>brandenconnected@gmail.com</a>
+      </h5>
+      </div>
+
+      </div>
 </div>
+
+
 
                                       
 @if (ViewBag.Message != null)                               
