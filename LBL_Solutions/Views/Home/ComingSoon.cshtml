@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<head>
+    
+   <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<h1 style="text-align:center; color:crimson"><b>Coming Soon!</b></h1>
+    <div class="popup">                                    
+        <h2>This Page is Under Construction</h2>                                          
+        <a href="https://linebylinesolution.azurewebsites.net">Please wait while we redirect you</a>                                                      
+        <div id="countdown-container">                                       
+            <div id="countdown">                                   
+                <b><span id="time">12s</span></b>                                          
+            </div></div>                                     
+        </div>                                     
+        <meta http-equiv="refresh" content="12; url='https://linebylinesolution.azurewebsites.net'" />
+    <script type="text/javascript">
+    const startingMinutes =0.2;   
+    let time=startingMinutes*60;   
+    const countdownEl=document.getElementById('countdown');   
+    setInterval(updateCountdown, 1000);
+   
+    function updateCountdown(){      
+        const minutes=Math.floor(time/60);      
+        let seconds= time % 60;      
+        seconds=seconds < 10 ? '0' + seconds : seconds;      
+        countdownEl.innerHTML=minutes+":"+seconds;      
+        time--;  
+    }
+    window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+</script>
