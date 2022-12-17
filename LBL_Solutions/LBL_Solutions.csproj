@@ -7,6 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\fonts\Lato-Bold.ttf" />
+    <None Include="wwwroot\css\fonts\Lato-Bold.woff" />
+    <None Include="wwwroot\css\fonts\Lato-Bold.woff2" />
+    <None Include="wwwroot\css\fonts\Lato-Light.ttf" />
+    <None Include="wwwroot\css\fonts\Lato-Light.woff" />
+    <None Include="wwwroot\css\fonts\Lato-Light.woff2" />
+    <None Include="wwwroot\css\fonts\Lato-Medium.ttf" />
+    <None Include="wwwroot\css\fonts\Lato-Medium.woff" />
+    <None Include="wwwroot\css\fonts\Lato-Medium.woff2" />
+    <None Include="wwwroot\css\fonts\Lato-Regular.ttf" />
+    <None Include="wwwroot\css\fonts\Lato-Regular.woff" />
+    <None Include="wwwroot\css\fonts\Lato-Regular.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HT.Components" Version="6.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
