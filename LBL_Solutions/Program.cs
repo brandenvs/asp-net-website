@@ -1,9 +1,6 @@
 ﻿using HT.Components;
-using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System.Net;
+// Welcome to Line-by-Line have a look at https://linebylinesolutions.azurewebsites.net/ for deployed solution. 
+// Current Build - Alpha
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
