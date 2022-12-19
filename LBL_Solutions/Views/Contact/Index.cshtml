@@ -1,346 +1,290 @@
-﻿@model LBL_Solutions.Models.ContactMsgModel
-@{
-    ViewData["Title"] = "Contact Page";
-    Layout = null;
-}
+﻿@model LBL_Solutions.Models.ContactMsgModel 
 <!DOCTYPE html>
+@{
+    ViewData["Title"] = "Contact Page"; Layout = null;
+}
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="Line-by-line Software Soultions" />
+    <meta name="keywords" content="informationtechnology, IT, software, services, development, websites, mobile, Android, iOS, Windows, PWA" />
+    <meta name="description" content="Building new and innovative technologies with software. Providing a service to clients to help them create Websites, Progressive Web Applications (PWA), Mobile applications, Windows applications and Android applications for client brands or companies." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Line-by-Line Software Solutions" />
+    <meta property="og:description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
+    <meta property="og:site_name" content="Line-by-Line Software Solutions" />
+    <meta property="og:image" content="/Images/Logos/Line-by-Line_LogoBlack.png" />
+    <meta itemprop="name" content="Line-by-Line Software Solutions" />
+    <meta itemprop="image" content="/Images/Logos/Line-by-Line_LogoBlack.png" />
+    <meta property="og:url" content="https://linebylinesolutions.azurewebsites.net" />
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/Logos/logo.ico" />
 
-    		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="Content-Language" content="en" />
-		<meta name="Line-by-line Software Soultions" />
-		<meta name="keywords" content="informationtechnology, IT, software, services, development, websites, mobile, Android, iOS, Windows, PWA" />
-		<meta
-			name="description"
-			content="Building new and innovative technologies with software. Providing a service to clients to help them create Websites, Progressive Web Applications (PWA), Mobile applications, Windows applications and Android applications for client brands or companies."
-		/>
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Line-by-Line Software Solutions" />
-		<meta
-			property="og:description"
-			content="Building new and innovative technologies with software. Providing a service to clients to help them create Websites, Progressive Web Applications (PWA), Mobile applications, Windows applications and Android applications for client brands or companies."
-		/>
-		<meta property="og:site_name" content="Line-by-Line Software Solutions" />
-		<meta property="og:image" content="https://linebylinesolution.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-		<meta itemprop="name" content="Line-by-Line Software Solutions" />
-		<meta itemprop="image" content="https://linebylinesolution.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-		<meta property="og:url" content="https://linebylinesolution.azurewebsites.net" />
-		<meta name="twitter:description" content="Line-by-Line helps clients achieve success with designing, building and deploying software solutions" />
-		<meta name="twitter:title" content="Line-by-Line Software Solutions" />
-		<meta name="twitter:image" content="https://linebylinesolution.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-		<title>Line-by-Line Sleek Software Solutions</title>
-		<link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen" />
-		<meta name="viewport" content="width=device-width, user-scalable=1" />
-		<script type="text/javascript" src="/js/deps-min.js"></script>
-		<script type="text/javascript" async src="/js/player-min.js"></script>
+    <meta name="description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen" />
+    <meta name="viewport" content="width=device-width, user-scalable=1" />
+    <script type="text/javascript" src="/js/deps-min.js"></script>
+    <script type="text/javascript" async src="/js/player-min.js"></script>
 </head>
-	<body id="starship">
-		<div id="wrapper">
-			<div id="header" class="section" data-limit=".15">
-				<div class="header-bg"></div>
 
-				<div class="header-inner">
-					<a href="/" id="logo" alt="SpaceX - go to homepage"> <img src="/Images/Logos/Line-by-Line_LogoBlack.png" title="Line-by-Line - Your Solution" alt="Line-by-Line Sleek Software Solutions" /></a>
+<body>
+    <div id="wrapper">
+        <div id="header" class="section" data-limit=".15">
+            <div class="header-bg"></div>
 
-					<div id="navigation">
-						<ul class="nav-links">
-							<li class="nav-item"><a href="/Contact/Index">Book a Consoltation</a></li>
+            <div class="header-inner">
+                <a href="/" id="logo" alt="Go to homepage"> <img src="/Images/Logos/Line-by-Line_LogoBlack.png" title="Line-by-Line - Your Solution" alt="Line-by-Line Sleek Software Solutions" /></a>
 
-							<li class="nav-item"><a href="/Home/ComingSoon">Developer Portfolio</a></li>
+                <div id="navigation">
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="/Home/ComingSoon">Developer Portfolio</a></li>
+                        <li class="nav-item"><a href="/Home/ComingSoon">Our Prices</a></li>
+                    </ul>
+                </div>
+            </div>
 
-							<li class="nav-item"><a href="/Home/ComingSoon">Our Prices</a></li>
-						</ul>
-					</div>
-				</div>
+            <div id="navigation-right">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#" rel="noopener" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
 
-				<div id="navigation-right">
-					<ul class="nav-links">
-						<li class="nav-item"><a href="#" rel="noopener" target="_blank">LinkedIn</a></li>
-					</ul>
-				</div>
+            <div id="menu-close"></div>
 
-				<div id="menu-close"></div>
+            <div id="menu">
+                <div id="menu-background"></div>
 
-				<div id="menu">
-					<div id="menu-background"></div>
+                <div id="menu-navigation">
+                    <ul class="nav-links">
+                        <li class="nav-item primary"><a href="/Home/ComingSoon">Developer Portfolio</a></li>
+                        <li class="nav-item primary"><a href="/Home/ComingSoon">Our Prices</a></li>
+                        <li class="nav-item secondary"><a href="/Home/ComingSoon">Website & Web Development</a></li>
+                        <li class="nav-item secondary"><a href="/launches/">Android & iOS Development</a></li>
+                        <li class="nav-item secondary"><a href="/Home/ComingSoon">Windows Development</a></li>
+                        <li class="nav-item secondary"><a href="/Home/ComingSoon">Cloud Development</a></li>
+                        <li class="nav-item secondary"><a href="#" rel="noopener" target="_blank">Coming Soon...</a></li>
+                    </ul>
+                </div>
+            </div>
 
-					<div id="menu-navigation">
-						<ul class="nav-links">
-							<li class="nav-item primary"><a href="/Contact/Index">Book a Consolation</a></li>
-
-							<li class="nav-item primary"><a href="/Home/ComingSoon">Developer Portfolio</a></li>
-
-							<li class="nav-item primary"><a href="/Home/ComingSoon">Our Prices</a></li>
-
-							<li class="nav-item secondary"><a href="/Home/ComingSoon">Website & Web Development</a></li>
-
-							<li class="nav-item secondary"><a href="/launches/">Android & iOS Development</a></li>
-
-							<li class="nav-item secondary"><a href="/Home/ComingSoon">Windows Development</a></li>
-
-							<li class="nav-item secondary"><a href="/Home/ComingSoon">Cloud Development</a></li>
-
-							<li class="nav-item secondary"><a href="#" rel="noopener" target="_blank">Coming Soon...</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<button id="hamburger" aria-expanded="false" aria-controls="menu" aria-label="Menu" role="button" aria-haspopup="dialog">
+            <button id="hamburger" aria-expanded="false" aria-controls="menu" aria-label="Menu" role="button" aria-haspopup="dialog">
 					<div id="bar1" class="bar"></div>
-
 					<div id="bar2" class="bar"></div>
-
-					<div id="bar3" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
 				</button>
-			</div>
+        </div>
+        <div class="only--desktop">
+            <div id="scroller">
+                <div class="section">
+                    <div id="opacity" class="section-inner feature">
+                        <div class="inner-left-bottom">
+                            <h3 class="animate">How can we help you?</h3>
+                            <h2 class="animate">Find The Right Solution For You</h2>
+                        </div>
+                        <div class="inner-right-bottom">
+                            @if (ViewBag.Message == null) {
+                            <div>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <label asp-for="Name">Name</label>
+                                        <input asp-for="Name" class="form-control" placeholder="Your Full Name" />
+                                        <span asp-validation-for="Name" class="text-muted"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Email">Email</label>
+                                        <input asp-for="Email" class="form-control" placeholder="Your Email Adderess" />
+                                        <span asp-validation-for="Email" class="text-muted"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Subject">Subject</label>
+                                        <input asp-for="Subject" class="form-control" placeholder="Message Subject" />
+                                        <span asp-validation-for="Subject" class="text-muted"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Message">Your Message</label>
+                                        <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>
+                                        <span asp-validation-for="Message" class="text-muted"></span>
+                                    </div>
 
-			<div id="scroller">
-				<div id="feature" class="section">
-					<div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Backgrounds/Line-by-Line_Banner.png" data-mobile="/Images/Backgrounds/Line-by-Line_Banner.png"></div>
+                                    <div>
+                                        <br />
 
-					<div id="opacity" class="section-inner feature">
-						<div class="inner-left-bottom">
-							<h3 class="animate">Find Your Solution</h3>
-							<h2 class="animate">Book a Consoltation</h2>
+                                        <a class="btn animate" tabindex="0" onclick="href='/Home/ComingSoon'" data-container="Hello">
+                                            <div class="hover"></div>
+                                            <span class="text">Send</span>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                            }
 
-		
-						</div>
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3>Alternative Contact Details</h3>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-google"></a>
+                            <a href="https://za.linkedin.com/in/branden-van-staden" class="fa fa-linkedin"></a>
+                            <a href="#" class="fa fa-instagram"></a>
 
-						<div class="scrollme">
-							<svg width="30px" height="20px">
+                            <h5 class="w3-serif w3-text-dark-gray w3-text-dark-gray h5">
+                                Call/WhatsApp/SMS Branden : +27 (081) 565 0206 <br /> Email Address : <a>brandenconnected@gmail.com</a>
+                            </h5>
+                        </div>
+
+                        <div class="scrollme">
+                            <svg width="30px" height="20px">
 								<path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
 							</svg>
-						</div>
-					</div>
-				</div></div>
-
-                       
- @if (ViewBag.Message == null)
-            {
-                <div>
-                <form method="post">    
-                    <div class="form-group">                            
-                                <label asp-for="Name">Name</label>                            
-                                <input asp-for="Name" class="form-control" placeholder="Your Full Name"/>                            
-                                <span asp-validation-for="Name"                             
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Email">Email</label>                            
-                                <input asp-for="Email" class="form-control" placeholder="Your Email Adderess" />                            
-                                <span asp-validation-for="Email"                          
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Subject">Subject</label>                            
-                                <input asp-for="Subject" class="form-control" placeholder="Message Subject" />                            
-                                <span asp-validation-for="Subject"
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Message">Your Message</label>                            
-                                <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>                               
-                                <span asp-validation-for="Message" class="text-muted"></span>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="only--mobile">
+            <div id="scroller">
+                <div id="feature" class="section">
+                    <div id="opacity" class="section-inner feature">
+                        <div class="section-inner resize">
+                            <div class="inner-center-top">
+                                <h3 class="animate">How can we help you?</h3>
+                                <h2 class="animate">Find The Right Solution for You</h2>
                             </div>
-                            
-                            <div> 
-                                <br />
-                                <button type="submit" class="btn btn-success">Send </button>                            
-                            </div>                           
-                        </form>           
-                    </div>    
-                }  
-                     <h3">Alternative Contact Details</h3>
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="https://za.linkedin.com/in/branden-van-staden" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-instagram"></a>
+                        </div>
+                    </div>
+                    <div class="inner-center">
 
-      <h5 class="w3-serif w3-text-dark-gray w3-text-dark-gray h5">
-              Call/WhatsApp/SMS Branden : +27 (081) 565 0206 <br />                    
-    Email Address : <a>brandenconnected@gmail.com</a>
-      </h5>
-      </div>
+                        @if (ViewBag.Message == null) {
+                        <div>
+                            <form method="post">
+                                <div class="form-group">
+                                    <label asp-for="Name">Name</label>
+                                    <input asp-for="Name" class="form-control" placeholder="Your Full Name" />
+                                    <span asp-validation-for="Name" class="text-muted"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Email">Email</label>
+                                    <input asp-for="Email" class="form-control" placeholder="Your Email Adderess" />
+                                    <span asp-validation-for="Email" class="text-muted"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Subject">Subject</label>
+                                    <input asp-for="Subject" class="form-control" placeholder="Message Subject" />
+                                    <span asp-validation-for="Subject" class="text-muted"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Message">Your Message</label>
+                                    <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>
+                                    <span asp-validation-for="Message" class="text-muted"></span>
+                                </div>
 
-      </div>  </div>
-                
-            @if (ViewBag.Message != null)                               
-{                  
-          <div class="row">
-              <div class="column">
-                  Please Wait....
-              </div>
-              <div class="column">
-                  Loading....
-              </div>
-          </div>                           
-    <div class="popup">                                    
-        <h2>Sent! Be in Touch Soon!</h2>                                          
-        <a href="https://linebylinesolutions.azurewebsites.net">Please wait while we redirect you</a>                                                      
-        <div id="countdown-container">                                       
-            <div id="countdown">                                   
-                <b><span id="time">12s</span></b>                                          
-            </div></div>                                     
-        </div>                                     
-        <meta http-equiv="refresh" content="12; url='https://linebylinesolutions.azurewebsites.net'" />
+                                <div>
+                                    <br />
+
+                                    <a class="btn animate" tabindex="0" onclick="href='/Home/ComingSoon'" data-container="Hello">
+                                        <div class="hover"></div>
+                                        <span class="text">Send</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        }
+                    </div>
+
+                    <div class="scrollme">
+                        <svg width="30px" height="20px">
+								<path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
+							</svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-dc">
+                <div class="section-inner">
+                    <div class="text-columns">
+                        <div class="text-column">
+                            <p><b>Alternative Contact Details</b></p>
+                            <p></p>
+                            <ul>
+                                <li>Call/WhatsApp/SMS Branden :</li>
+                                <li>+27 (081) 565 0206</li>
+                                <li>Email Address :</li>
+                                <li><a>brandenconnected@gmail.com</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <p>
+                    <span>Line-by-Line Software Solutions &copy; 2022</span>
+                    <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
+                    <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
+                    <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
+                    <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    @if (ViewBag.Message != null) {
+    <div class="row">
+        <div class="column">
+            Please Wait....
+        </div>
+        <div class="column">
+            Loading....
+        </div>
+    </div>
+    <div class="popup">
+        <h2>Sent! Be in Touch Soon!</h2>
+        <a href="https://linebylinesolutions.azurewebsites.net">Please wait while we redirect you</a>
+        <div id="countdown-container">
+            <div id="countdown">
+                <b><span id="time">12s</span></b>
+            </div>
+        </div>
+    </div>
+    <meta http-equiv="refresh" content="12; url='https://linebylinesolutions.azurewebsites.net'" />
     <script type="text/javascript">
-    const startingMinutes =0.2;   
-    let time=startingMinutes*60;   
-    const countdownEl=document.getElementById('countdown');   
-    setInterval(updateCountdown, 1000);
-   
-    function updateCountdown(){      
-        const minutes=Math.floor(time/60);      
-        let seconds= time % 60;      
-        seconds=seconds < 10 ? '0' + seconds : seconds;      
-        countdownEl.innerHTML=minutes+":"+seconds;      
-        time--;  
+        const startingMinutes =0.2;   
+        let time=startingMinutes*60;   
+        const countdownEl=document.getElementById('countdown');   
+        setInterval(updateCountdown, 1000);
+       
+        function updateCountdown(){      
+            const minutes=Math.floor(time/60);      
+            let seconds= time % 60;      
+            seconds=seconds < 10 ? '0' + seconds : seconds;      
+            countdownEl.innerHTML=minutes+":"+seconds;      
+            time--;  
+        }
+        window.addEventListener("load", function(){
+        setTimeout(
+            function open(event){
+                document.querySelector(".popup").style.display = "block";
+            },
+            2000 
+        )
+    });
+    
+    
+    document.querySelector("#close").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "none";
+    });
+    </script>
+
     }
-    window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },
-        2000 
-    )
-});
+    <script type="text/javascript" src="/js/core-min.js"></script>
 
+    <script type="text/javascript" src="/js/vehicles-min.js"></script>
 
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-});
-</script>
-                                }
-                         
+    <script type="text/javascript" async src="/js/tabs-min.js"></script>
 
-                                
-                            		<script type="text/javascript" src="/js/core-min.js"></script>
-		<script type="text/javascript" src="/js/vehicles-min.js"></script>
-		<script type="text/javascript" async src="/js/tabs-min.js"></script>
-                            </body>
-@*<body class="body">
-        <a href="/Contact/Index"><img class="w3-image" src="/Images/Backgrounds/Line-by-Line_Banner.png" alt="Banner"></a>
+</body>
 
-    <div class="w3-row-padding w3-center">
-         <div class="w3-col l6 m6 w3-margin-bottom">
-                       
- @if (ViewBag.Message == null)
-            {
-                <div>
-                <form method="post">    
-                    <div class="form-group">                            
-                                <label asp-for="Name">Name</label>                            
-                                <input asp-for="Name" class="form-control" placeholder="Your Full Name"/>                            
-                                <span asp-validation-for="Name"                             
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Email">Email</label>                            
-                                <input asp-for="Email" class="form-control" placeholder="Your Email Adderess" />                            
-                                <span asp-validation-for="Email"                          
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Subject">Subject</label>                            
-                                <input asp-for="Subject" class="form-control" placeholder="Message Subject" />                            
-                                <span asp-validation-for="Subject"
-                                class="text-muted"></span>                        
-                            </div>                        
-                            <div class="form-group">                            
-                                <label asp-for="Message">Your Message</label>                            
-                                <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>                               
-                                <span asp-validation-for="Message" class="text-muted"></span>              
-                            </div>
-                            
-                            <div> 
-                                <br />
-                                <button type="submit" class="btn btn-success">Send </button>                            
-                            </div>                           
-                        </form>           
-                    </div>    
-                }  
-</div>
-     <div class="w3-col l6 m6 w3-margin-bottom">   
-         <div class="w3-card">
-                     <h3 class="w3-serif w3-text-white h3">Alternative Contact Details</h3>
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="https://za.linkedin.com/in/branden-van-staden" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-instagram"></a>
-
-      <h5 class="w3-serif w3-text-dark-gray w3-text-dark-gray h5">
-              Call/WhatsApp/SMS Branden : +27 (081) 565 0206 <br />                    
-    Email Address : <a>brandenconnected@gmail.com</a>
-      </h5>
-      </div>
-
-      </div>
-</div>*@
-
-
-
-                                      
-@*@if (ViewBag.Message != null)                               
-{                  
-          <div class="row">
-              <div class="column">
-                  Please Wait....
-              </div>
-              <div class="column">
-                  Loading....
-              </div>
-          </div>                           
-    <div class="popup">                                    
-        <h2>Sent! Be in Touch Soon!</h2>                                          
-        <a href="https://linebylinesolutions.azurewebsites.net">Please wait while we redirect you</a>                                                      
-        <div id="countdown-container">                                       
-            <div id="countdown">                                   
-                <b><span id="time">12s</span></b>                                          
-            </div></div>                                     
-        </div>                                     
-        <meta http-equiv="refresh" content="12; url='https://linebylinesolutions.azurewebsites.net'" />
-    <script type="text/javascript">
-    const startingMinutes =0.2;   
-    let time=startingMinutes*60;   
-    const countdownEl=document.getElementById('countdown');   
-    setInterval(updateCountdown, 1000);
-   
-    function updateCountdown(){      
-        const minutes=Math.floor(time/60);      
-        let seconds= time % 60;      
-        seconds=seconds < 10 ? '0' + seconds : seconds;      
-        countdownEl.innerHTML=minutes+":"+seconds;      
-        time--;  
-    }
-    window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },
-        2000 
-    )
-});
-
-
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-});
-</script>
-                                }*@
-
-@*</body>
-</html>*@
-
-   
+</html>

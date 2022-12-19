@@ -1,56 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">       
-    <link rel="stylesheet" href="/css/customSite.css">
-    <link rel="stylesheet" href="/css/site.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/x-icon" href="/Images/Line-by-Line_Logo.png">
-
-          	
-</head>
-<div class="div-desktop">
-        <div class="w3-top">            
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">  
-            <a href="https://linebylinesolution.azurewebsites.net/" class="w3-bar-item w3-button"><img src="/Images/Line-by-Line_Logo.png" style="max-height:25px; max-width:25px"/><b>Line_by_Line</b> Solutions</a> 
-            <div class="w3-right w3-hide-small">             
-                <a onclick="href='/Team/Branden'"  class="w3-bar-item w3-button">View Developer Profile</a>                
-                <a onclick="href='/Contact/Index'" class="w3-bar-item w3-button">Contact</a>           
-            </div>
-        </div> 
-</div> 
-</div>
-
-    <div class="div-mobile">
-        <div class="w3-top"> 
-          <section class="top-nav w3-bar w3-white w3-wide w3-padding w3-card">
-    <div>           
-            <a href="https://linebylinesolution.azurewebsites.net/" class="w3-bar-item w3-button"><img src="/Images/Line-by-Line_Logo.png" style="max-height:25px; max-width:25px"/><b>Line_by_Line</b> Solutions</a> 
-    </div>
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
-  </label>
-    <ul class="menu">
-      <li><a onclick="href='/Team/Branden'"  class="w3-bar-item w3-button">View Developer Profile</a></li>
-      <li><a onclick="href='/Contact/Index'" class="w3-bar-item w3-button">Contact</a></li>
-    </ul>
-
-  </section>
-  </div>
-  </div>
-  
-  <body>
-    <main role="main" class="pb-3">            
-        @RenderBody()       
-    </main>        
-
-    <!-- Footer -->
-<footer class="footer">
-  <p title="LBL_Solutions" target="_blank" class="card-footer card" style="bottom:0">&copy; 2022 - Line_by_Line_Solutions</p>
-</footer>
-</body>
-
+    <body>    
+        <main role="main" class="pb-3">     
+            @RenderBody()            
+        </main>        
+    </body>
 </html>
