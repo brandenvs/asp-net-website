@@ -1,11 +1,13 @@
 ﻿@model LBL_Solutions.Models.ContactMsgModel 
-<!DOCTYPE html>
-@{
+@{ 
     ViewData["Title"] = "Contact Page"; Layout = null;
 }
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    @*Title*@
+    <title>Enquiry</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en" />
     <meta name="Line-by-line Software Soultions" />
@@ -23,11 +25,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="/Images/Logos/logo.ico" />
 
     <meta name="description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
-    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen" />
-    <meta name="viewport" content="width=device-width, user-scalable=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="/js/deps-min.js"></script>
     <script type="text/javascript" async src="/js/player-min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </head>
 
 <body>
@@ -40,8 +43,8 @@
 
                 <div id="navigation">
                     <ul class="nav-links">
-                        <li class="nav-item"><a href="/Home/ComingSoon">Developer Portfolio</a></li>
-                        <li class="nav-item"><a href="/Home/ComingSoon">Our Prices</a></li>
+                        <li class="nav-item"><a href="/Team/Branden">View Developer</a></li>
+                        <li class="nav-item"><a href="/Prices/Index">Our Prices</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,8 +62,8 @@
 
                 <div id="menu-navigation">
                     <ul class="nav-links">
-                        <li class="nav-item primary"><a href="/Home/ComingSoon">Developer Portfolio</a></li>
-                        <li class="nav-item primary"><a href="/Home/ComingSoon">Our Prices</a></li>
+                        <li class="nav-item primary"><a href="/Team/Branden">View Developer</a></li>
+                        <li class="nav-item primary"><a href="/Prices/Index">Our Prices</a></li>
                         <li class="nav-item secondary"><a href="/Home/ComingSoon">Website & Web Development</a></li>
                         <li class="nav-item secondary"><a href="/launches/">Android & iOS Development</a></li>
                         <li class="nav-item secondary"><a href="/Home/ComingSoon">Windows Development</a></li>
@@ -71,137 +74,134 @@
             </div>
 
             <button id="hamburger" aria-expanded="false" aria-controls="menu" aria-label="Menu" role="button" aria-haspopup="dialog">
-					<div id="bar1" class="bar"></div>
-					<div id="bar2" class="bar"></div>
-                    <div id="bar3" class="bar"></div>
-				</button>
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
         </div>
-        <div class="only--desktop">
-            <div id="scroller">
-                <div class="section">
-                    <div id="opacity" class="section-inner feature">
-                        <div class="inner-left-bottom">
-                            <h3 class="animate">How can we help you?</h3>
-                            <h2 class="animate">Find The Right Solution For You</h2>
-                        </div>
-                        <div class="inner-right-bottom">
-                            @if (ViewBag.Message == null) {
-                            <div>
-                                <form method="post">
-                                    <div class="form-group">
-                                        <label asp-for="Name">Name</label>
-                                        <input asp-for="Name" class="form-control" placeholder="Your Full Name" />
-                                        <span asp-validation-for="Name" class="text-muted"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label asp-for="Email">Email</label>
-                                        <input asp-for="Email" class="form-control" placeholder="Your Email Adderess" />
-                                        <span asp-validation-for="Email" class="text-muted"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label asp-for="Subject">Subject</label>
-                                        <input asp-for="Subject" class="form-control" placeholder="Message Subject" />
-                                        <span asp-validation-for="Subject" class="text-muted"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label asp-for="Message">Your Message</label>
-                                        <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>
-                                        <span asp-validation-for="Message" class="text-muted"></span>
-                                    </div>
-
-                                    <div>
-                                        <br />
-
-                                        <a class="btn animate" tabindex="0" onclick="href='/Home/ComingSoon'" data-container="Hello">
-                                            <div class="hover"></div>
-                                            <span class="text">Send</span>
-                                        </a>
-                                    </div>
-                                </form>
-                            </div>
-                            }
-
-                        </div>
-                        <div class="inner-left-middle">
-                            <h3>Alternative Contact Details</h3>
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-google"></a>
-                            <a href="https://za.linkedin.com/in/branden-van-staden" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-
-                            <h5 class="w3-serif w3-text-dark-gray w3-text-dark-gray h5">
-                                Call/WhatsApp/SMS Branden : +27 (081) 565 0206 <br /> Email Address : <a>brandenconnected@gmail.com</a>
-                            </h5>
-                        </div>
-
-                        <div class="scrollme">
-                            <svg width="30px" height="20px">
-								<path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
-							</svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="only--mobile">
-            <div id="scroller">
+        <div id="scroller">
+            <div class="only--desktop">
                 <div id="feature" class="section">
+                    @if (ViewBag.Message == null) {
                     <div id="opacity" class="section-inner feature">
                         <div class="section-inner resize">
-                            <div class="inner-center-top">
+                            <div class="inner-left-middle">
                                 <h3 class="animate">How can we help you?</h3>
                                 <h2 class="animate">Find The Right Solution for You</h2>
                             </div>
+                            <div class="inner-right-middle">
+                                <form id="form" method="post" style="align-content:flex-start">
+                                    <div class="input-box active-grey">
+                                        <label><h3 class="animate">Your Name</h3></label>
+                                        <input asp-for="Name" type="text" class="input-1" />
+                                        <span asp-validation-for="Name" class="text-muted"></span>
+                                    </div>
+
+                                    <div class="input-box active-grey">
+                                        <label><h3 class="animate">Your Email</h3></label>
+                                        <input asp-for="Email" type="text" class="input-1" />
+                                        <span asp-validation-for="Email" class="text-muted"></span>
+                                    </div>
+                                    <div class="input-box active-grey">
+                                        <label><h3 class="animate">Your Subject</h3></label>
+                                        <select asp-for="Subject" class="input-1">
+                                                <option value="-1"></option>
+                                                <option value="General">General</option>
+                                                <option value="Support">Support</option>
+                                                <option value="Mobile">Mobile Development</option>
+                                                <option value="Website">Website Development</option>
+                                                <option value="Windows">Windows Development</option>
+                                                <option value="Android">Android Development</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                    </div>
+                                    <div class="input-box active-grey">
+                                        <label><h3 class="animate">Your Message</h3></label>
+                                        <textarea asp-for="Message" class="textinput"></textarea>
+                                        <span asp-validation-for="Message" class="text-muted"></span>
+                                    </div>
+                                    <br />                                        
+                                    <button class="sendbtn" type="submit">Send</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="inner-center">
+                    }
 
-                        @if (ViewBag.Message == null) {
-                        <div>
-                            <form method="post">
-                                <div class="form-group">
-                                    <label asp-for="Name">Name</label>
-                                    <input asp-for="Name" class="form-control" placeholder="Your Full Name" />
-                                    <span asp-validation-for="Name" class="text-muted"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label asp-for="Email">Email</label>
-                                    <input asp-for="Email" class="form-control" placeholder="Your Email Adderess" />
-                                    <span asp-validation-for="Email" class="text-muted"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label asp-for="Subject">Subject</label>
-                                    <input asp-for="Subject" class="form-control" placeholder="Message Subject" />
-                                    <span asp-validation-for="Subject" class="text-muted"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label asp-for="Message">Your Message</label>
-                                    <textarea rows="5" cols="15" asp-for="Message" class="form-control"></textarea>
-                                    <span asp-validation-for="Message" class="text-muted"></span>
-                                </div>
+                </div>
+            </div>
 
-                                <div>
-                                    <br />
-
-                                    <a class="btn animate" tabindex="0" onclick="href='/Home/ComingSoon'" data-container="Hello">
-                                        <div class="hover"></div>
-                                        <span class="text">Send</span>
-                                    </a>
+            <div class="only--mobile">
+                <div id="feature" class="section">
+                    @if (ViewBag.Message == null) {
+                    <div class="section section-dc">
+                        <div class="section-inner">
+                            <div class="text-columns">
+                                <div class="text-column">
+                                    <form id="form" method="post" style="align-content:flex-start">
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Name</h3></label>
+                                            <input asp-for="Name" type="text" class="input-1" />
+                                            <span asp-validation-for="Name" class="text-muted"></span>
+                                        </div>
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Email</h3></label>
+                                            <input asp-for="Email" type="text" class="input-1" />
+                                            <span asp-validation-for="Email" class="text-muted"></span>
+                                        </div>
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Subject</h3></label>
+                                            <select asp-for="Subject" class="input-1">
+                                                    <option value="-1"></option>
+                                                    <option value="General">General</option>
+                                                    <option value="Support">Support</option>
+                                                    <option value="Mobile">Mobile Development</option>
+                                                    <option value="Website">Website Development</option>
+                                                    <option value="Windows">Windows Development</option>
+                                                    <option value="Android">Android Development</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                        </div>
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Message</h3></label>
+                                            <textarea asp-for="Message" class="textinput"></textarea>
+                                            <span asp-validation-for="Message" class="text-muted"></span>
+                                        </div>
+                                            <button class="sendbtn" type="submit">Send</button>
+                                    </form>                                    
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                        }
                     </div>
+                    }
+                </div>
+                <div class="scrollme">
+                    <svg width="30px" height="20px">
+                        <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
+                    </svg>
+                </div>
+            </div>
 
-                    <div class="scrollme">
-                        <svg width="30px" height="20px">
-								<path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
-							</svg>
+            @if (ViewBag.Message != null) {
+
+            <div id="feature" class="section">
+                <div id="opacity" class="section-inner feature">
+                        <div class="section-inner opacity">
+                        <div class="inner-center">
+                            <h3 class="animate">Thank You</h3>
+                            <h2 class="animate">We Will Contact You Shortly.</h2>
+                            <p><a href="https://linebylinesolutions.azurewebsites.net">Please wait while we redirect you</a></p>
+                            <div id="countdown-container">
+                                <div id="countdown">
+                                    <p><b><span id="time">12s</span></b></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <meta http-equiv="refresh" content="12; url='https://linebylinesolutions.azurewebsites.net'" /> }
             <div class="section section-dc">
                 <div class="section-inner">
                     <div class="text-columns">
@@ -230,55 +230,32 @@
             </div>
         </div>
     </div>
-
-    @if (ViewBag.Message != null) {
-    <div class="row">
-        <div class="column">
-            Please Wait....
-        </div>
-        <div class="column">
-            Loading....
-        </div>
-    </div>
-    <div class="popup">
-        <h2>Sent! Be in Touch Soon!</h2>
-        <a href="https://linebylinesolutions.azurewebsites.net">Please wait while we redirect you</a>
-        <div id="countdown-container">
-            <div id="countdown">
-                <b><span id="time">12s</span></b>
-            </div>
-        </div>
-    </div>
-    <meta http-equiv="refresh" content="12; url='https://linebylinesolutions.azurewebsites.net'" />
     <script type="text/javascript">
-        const startingMinutes =0.2;   
-        let time=startingMinutes*60;   
-        const countdownEl=document.getElementById('countdown');   
+        const startingMinutes = 0.2;
+        let time = startingMinutes * 60;
+        const countdownEl = document.getElementById('countdown');
         setInterval(updateCountdown, 1000);
-       
-        function updateCountdown(){      
-            const minutes=Math.floor(time/60);      
-            let seconds= time % 60;      
-            seconds=seconds < 10 ? '0' + seconds : seconds;      
-            countdownEl.innerHTML=minutes+":"+seconds;      
-            time--;  
-        }
-        window.addEventListener("load", function(){
-        setTimeout(
-            function open(event){
-                document.querySelector(".popup").style.display = "block";
-            },
-            2000 
-        )
-    });
-    
-    
-    document.querySelector("#close").addEventListener("click", function(){
-        document.querySelector(".popup").style.display = "none";
-    });
-    </script>
 
-    }
+        function updateCountdown() {
+            const minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            countdownEl.innerHTML = minutes + ":" + seconds;
+            time--;
+        }
+        window.addEventListener("load", function () {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup").style.display = "block";
+                },
+                2000
+            )
+        });
+
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        });
+    </script>
     <script type="text/javascript" src="/js/core-min.js"></script>
 
     <script type="text/javascript" src="/js/vehicles-min.js"></script>

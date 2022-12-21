@@ -38,36 +38,13 @@ namespace LBL_Solutions.Controllers
                     smtp.Send(msz);
 
                     ModelState.Clear();
-                    ViewBag.Message = "Thank you for Contacting us ";
+                    ViewBag.Message = "Thank you for Contacting us " + vm.Name;
                 }
                 catch (Exception ex)
                 {
                     ModelState.Clear();
                     ViewBag.Message = $" Sorry we are facing Problem here {ex.Message}";
                 }
-
-                //using (MailMessage mm = new MailMessage(model.Email, model.To))
-                //{
-                //    mm.Subject = model.Subject;
-                //    mm.Body = model.Body;
-                //    if (model.Attachment.Length > 0)
-                //    {
-                //        string fileName = Path.GetFileName(model.Attachment.FileName);
-                //        mm.Attachments.Add(new Attachment(model.Attachment.OpenReadStream(), fileName));
-                //    }
-                //    mm.IsBodyHtml = false;
-                //    using (SmtpClient smtp = new SmtpClient())
-                //    {
-                //        smtp.Host = "smtp.gmail.com";
-                //        smtp.EnableSsl = true;
-                //        NetworkCredential NetworkCred = new NetworkCredential(model.Email, model.Password);
-                //        smtp.UseDefaultCredentials = true;
-                //        smtp.Credentials = NetworkCred;
-                //        smtp.Port = 587;
-                //        smtp.Send(mm);
-                //        ViewBag.Message = "Email sent.";
-                //    }
-                //}
                 return View();
             }
             return View();

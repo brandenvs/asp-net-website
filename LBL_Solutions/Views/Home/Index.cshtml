@@ -1,4 +1,7 @@
-<!DOCTYPE html> @{ ViewData["Title"] = "Home Page"; Layout = null; }
+<!DOCTYPE html> 
+@{
+    ViewData["Title"] = "Home Page"; Layout = null; 
+}
 <html lang="en">
 
 <head>
@@ -37,9 +40,9 @@
                     <ul class="nav-links">
                         <li class="nav-item"><a href="/Contact/Index">Book a Consoltation</a></li>
 
-                        <li class="nav-item"><a href="/Home/ComingSoon">Developer Portfolio</a></li>
+                        <li class="nav-item"><a href="/Team/Branden">View Developer</a></li>
 
-                        <li class="nav-item"><a href="/Home/ComingSoon">Our Prices</a></li>
+                        <li class="nav-item"><a href="/Prices/Index">Our Prices</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,11 +62,11 @@
                     <ul class="nav-links">
                         <li class="nav-item primary"><a href="/Contact/Index">Book a Consolation</a></li>
 
-                        <li class="nav-item primary"><a href="/Home/ComingSoon">Developer Portfolio</a></li>
+                        <li class="nav-item primary"><a href="/Team/Branden">View Developer</a></li>
 
-                        <li class="nav-item primary"><a href="/Home/ComingSoon">Our Prices</a></li>
+                        <li class="nav-item primary"><a href="/Prices/Index">Our Prices</a></li>
 
-                        <li class="nav-item secondary"><a href="/Home/ComingSoon">Website & Web Development</a></li>
+                        <li class="nav-item secondary"><a href="/Prices/Index">Website & Web Development</a></li>
 
                         <li class="nav-item secondary"><a href="/launches/">Android & iOS Development</a></li>
 
@@ -108,41 +111,85 @@
                     </div>
                 </div>
             </div>
-
-            <div class="section section-dc">
-                <div class="section-inner">
-                    <div class="text-columns">
-                        <div class="text-column">
-                            <p>
-                                <b>Who are we</b><br /> Line-by-Line Software Solutions is a full-cycle app & software development company which covers client business needs with the help of the best possible software solutions. Since 2022, we have been inventing digital solutions, building websites, startups, mobile applications, progressive web applications, Android applications and much more. Helping brands the top in their markets.
+            <div id="article" class="section">
+                <div class="section-content">
+                    <div class="contents">
+                        <div class="text-left">
+                            <h2 class="animate">Who are we</h2>
+                            <p class="animate">
+                                Line-by-Line Software Solutions is a full-cycle app & software development company which
+                                covers client business needs with the help of the best possible software solutions.
+                                Since 2022, we have been inventing digital solutions, building websites, startups,
+                                mobile applications, progressive web applications, Android applications and much more.
+                                Helping brands the top in their markets.
                             </p>
-
-                            <p>
-                                <b>Fully Customized Solutions</b>:<br /> You are in the driver’s seat of your future solution. If you want to execute a certain feature, we will complete it for you.
-                            </p>
-
-                            <p>
-                                <b>Fast Time to Market</b><br /> Line-by-Line Software Solutions is your opportunity to make it to the market as soon as possible and at an affordable cost.
-                            </p>
-                        </div>
-
-                        <div class="text-column">
-                            <p><b>Let us help you</b></p>
-
-                            <p></p>
-
-                            <ul>
-                                <li>Save up to 40% total cost (compared to in-house development)</li>
-
-                                <li>Reduce your digital product’s delivery time to market up to 30%</li>
-
-                                <li>Cooperate with teams who are 100% filled with qualified specialists</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="columns" class="section">
+				<div class="content-center">
+					<div class="column3 rideshare-stats">
+						<img class="img animate" src="/Images/Content/billing_icon.png" alt="">
+                        <h2 class="animate">Save Up to 40% Total Cost</h2>
+                        <span class="animate">
+                            You can save up to 40% in total costs compared to in house development. 
+                            Putting emphasis on your budget and utilizing project management methodologies such as 
+                            Agile we can develop software faster and more cost effective than ever.</span>
+					</div>
+					<div class="column3 rideshare-stats">
+						<img class="img animate" src="/Images/Content/calendar_icon.png" alt="">
+                        <h2 class="animate">Fast Time to Market</h2>
+                        <span class="animate">
+                            Line-by-Line Software Solutions is your opportunity to make it to the market as soon as
+                            possible and at an affordable cost.
+                            Innovative Project Management methodologies are used
+                            such as agile and scrum to achieve a rapid build and deploy approach.
 
+                        </span>
+					</div>
+					<div class="column3 rideshare-stats">
+                        <img class="animate" src="/Images/Content/contract_icon.png" alt="">
+                        <h2 class ="img animate">Fully Customized Solutions</h2>
+                        <span class="animate">
+                            Making use of latest technology within software development - the design of your application
+                            will be captivating with a modern elegance.<br />
+                            You are in the driver’s seat of your future solution.
+                            If you want to execute a certain feature, we will complete it for you.
+                        </span>
+					</div>
+				</div>
+			</div>
+            <br />
+            <br />
+@*<div id="stats" class="section"></div>*@
+@*            <div class="progress-bar">
+                <div class="section">
+                    <div class="section-content">
+                        <div class="content-center">
+                            <h3 class="animate js-bounding">The Phases</h3>
+                            <h2 class="animate">Project Life Cycle</h2>
+                            <p class="animate">
+
+                                <div class="progress-span progress-words">
+                                    <div><h3>Project Planning & Design</h3></div>
+                                    <div><h3>Project Mock-up, Budget & Timeline</h3></div>
+                                    <div><h3>Build Phase</h3></div>
+                                    <div><h3>Testing & Deployment Phase</h3></div>
+                                    <div><h3>Production Phase</h3></div>
+                                </div>
+                                <div class="progress-line"></div>
+                                <div class="progress-span progress-dots">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@          
             <div id="uses" class="slider quickjump section swiper-container collapse">
                 <div class="swiper-wrapper resize">
                     <div class="swiper-slide">
@@ -224,7 +271,7 @@
 							/>
 						</svg>
                 </div>
-            </div>
+            </div>            
             <script>
                 new Swiper ('#uses', {
                 						direction: 'horizontal',
@@ -238,25 +285,23 @@
                 						}
                 					});
             </script>
-
             <div class="section">
                 <div class="section-content">
                     <div class="content-center">
                         <div class="line-tall animate"></div>
-                        <img class="framed3" src="/Images/Content/Branden_vs_profile.png" alt="Branden" style="max-height:350px; max-width:350px" />
-                        <h3 class="animate js-bounding">Software Engineer</h3>
-                        <h2 class="animate">Branden van Staden</h2>
-                        <p class="animate">
-                            CEO & Founder of Line-by-Line Solutions<br /> Web - Mobile - Ecommerce - Windows - Cloud<br /> Location: Cape Town, Western Cape<br /> South Africa.
-                        </p>
-
+                        <h3 class="animate js-bounding">This could be the start of something great</h3>
+                        <h2 class="animate">Take the next step</h2>
                         <a class="btn large animate" tabindex="0" href="/Contact/Index" target="_blank">
                             <div class="hover"></div>
                             <div class="text">Book a Consoltation</div>
                         </a>
                         <a class="btn large animate" tabindex="0" href="/Team/Branden" target="_blank">
                             <div class="hover"></div>
-                            <div class="text">VIEW Profile</div>
+                            <div class="text">View Developer</div>
+                        </a>
+                        <a class="btn large animate" tabindex="0" href="/Prices/Index" target="_blank">
+                            <div class="hover"></div>
+                            <div class="text">View Prices</div>
                         </a>
                     </div>
                 </div>
