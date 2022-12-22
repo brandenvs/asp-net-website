@@ -3,7 +3,15 @@
     ViewData["Title"] = "Home Page"; Layout = null; 
 }
 <html lang="en">
-
+<system.webServer>
+    <security>
+        <dynamicIpSecurity denyAction="Forbidden">
+            <denyByConcurrentRequests enabled="true" maxConcurrentRequests="10" />
+            <denyByRequestRate enabled="true" maxRequests="30"
+                               requestIntervalInMilliseconds="300" />
+        </dynamicIpSecurity>
+    </security>
+</system.webServer>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en" />
@@ -27,7 +35,25 @@
     <script type="text/javascript" src="/js/deps-min.js"></script>
     <script type="text/javascript" async src="/js/player-min.js"></script>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
 
+<script>
+
+    /* Add "https://api.ipify.org?format=json" statement
+               this will communicate with the ipify servers in
+               order to retrieve the IP address $.getJSON will
+               load JSON-encoded data from the server using a
+               GET HTTP request */
+
+    $.getJSON("https://api.ipify.org?format=json", function (data) {
+
+        // Setting text of element P with id gfg
+        console.log(data.ip);
+        $("#gfg").html(data.ip);
+
+    })
+</script>
 <body>
     <div id="wrapper">
         <div id="header" class="section" data-limit=".15">
@@ -38,7 +64,7 @@
 
                 <div id="navigation">
                     <ul class="nav-links">
-                        <li class="nav-item"><a href="/Contact/Index">Book a Consoltation</a></li>
+                        <li class="nav-item"><a href="/Contact/Index">Book Consoltation</a></li>
                         <li class="nav-item"><a href="/Team/Branden">View Developer</a></li>
                         <li class="nav-item"><a href="/Prices/Index">Our Prices</a></li>
                     </ul>
@@ -55,7 +81,7 @@
 
                 <div id="menu-navigation">
                     <ul class="nav-links">
-                        <li class="nav-item primary"><a href="/Contact/Index">Book a Consolation</a></li>
+                        <li class="nav-item primary"><a href="/Contact/Index">Book Consolation</a></li>
                         <li class="nav-item primary"><a href="/Team/Branden">View Developer</a></li>
                         <li class="nav-item primary"><a href="/Prices/Index">Our Prices</a></li>
                         <li class="nav-item secondary"><a href="/Home/ComingSoon">Website & Web Development</a></li>
@@ -279,7 +305,7 @@
                         <h2 class="animate">Take the next step</h2>
                         <a class="btn large animate" tabindex="0" href="/Contact/Index" target="_blank">
                             <div class="hover"></div>
-                            <div class="text">Book a Consoltation</div>
+                            <div class="text">Book Consoltation</div>
                         </a>
                         <a class="btn large animate" tabindex="0" href="/Team/Branden" target="_blank">
                             <div class="hover"></div>
@@ -321,7 +347,6 @@
     </div>
 
     <script type="text/javascript" src="/js/core-min.js"></script>
-
     <script type="text/javascript" src="/js/vehicles-min.js"></script>
     <script type="text/javascript" async src="/js/tabs-min.js"></script>
 </body>

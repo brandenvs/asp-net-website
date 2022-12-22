@@ -2,7 +2,15 @@
 @{
     ViewData["Title"] = "Error";
 }
-
+<system.webServer>
+    <security>
+        <dynamicIpSecurity denyAction="Forbidden">
+            <denyByConcurrentRequests enabled="true" maxConcurrentRequests="10" />
+            <denyByRequestRate enabled="true" maxRequests="30"
+                               requestIntervalInMilliseconds="300" />
+        </dynamicIpSecurity>
+    </security>
+</system.webServer>
 <h1 class="text-danger">Error.</h1>
 <h2 class="text-danger">An error occurred while processing your request.</h2>
 

@@ -1,9 +1,17 @@
-﻿<!DOCTYPE html> 
+﻿<!DOCTYPE html>
 @{
-    ViewData["Title"] = "Branden Portfolio"; Layout = null; 
+    ViewData["Title"] = "Branden Portfolio"; Layout = null;
 }
 <html lang="en">
-
+<system.webServer>
+    <security>
+        <dynamicIpSecurity denyAction="Forbidden">
+            <denyByConcurrentRequests enabled="true" maxConcurrentRequests="10" />
+            <denyByRequestRate enabled="true" maxRequests="30"
+                               requestIntervalInMilliseconds="300" />
+        </dynamicIpSecurity>
+    </security>
+</system.webServer>
 <head>
     @*Title*@
     <title>View Branden</title>
@@ -38,7 +46,7 @@
 
                 <div id="navigation">
                     <ul class="nav-links">
-                        <li class="nav-item"><a href="/Contact/Index">Book a Consoltation</a></li>
+                        <li class="nav-item"><a href="/Contact/Index">Book Consoltation</a></li>
                         <li class="nav-item"><a href="/Prices/Index">Our Prices</a></li>
                     </ul>
                 </div>
@@ -54,10 +62,9 @@
 
             <div id="menu">
                 <div id="menu-background"></div>
-
                 <div id="menu-navigation">
                     <ul class="nav-links">
-                        <li class="nav-item primary"><a href="/Contact/Index">Book a Consolation</a></li>
+                        <li class="nav-item primary"><a href="/Contact/Index">Book Consolation</a></li>
                         <li class="nav-item primary"><a href="/Prices/Index">Our Prices</a></li>
                         <li class="nav-item secondary"><a href="/Home/ComingSoon">Website & Web Development</a></li>
                         <li class="nav-item secondary"><a href="/Home/ComingSoon">Android & iOS Development</a></li>
@@ -117,7 +124,7 @@
                     <div class="contents">
                         <div class="text-left">
                             <h2 class="animate">About</h2>
-                            <h4 class ="animate">Official Developer and Founder for Line-by-Line Solutions</h4>
+                            <h4 class="animate">Official Developer and Founder for Line-by-Line Solutions</h4>
                             <p class="animate">
                                 Post Graduate Spealizing in Computer Aplication and Information System Sciences. Furthering my Knowledge by Studying Data Sciences.
                                 Driven Indivual Looking to Expand Into New and Innovative Technologies, Intergrating My Knowledge With My Passion - Software Development.
@@ -131,9 +138,9 @@
             </div>
             <div class="section section-dc">
                 <div class="section-inner">
-                    <div class="text-columns animate">                        
-                        <div class="text-column">     
-                            <h2>Skills</h2>    
+                    <div class="text-columns animate">
+                        <div class="text-column">
+                            <h2>Skills</h2>
                             <h4>Programming Languages</h4>
                             <p>
                                 > Java<br />
@@ -148,10 +155,10 @@
                                 > Xamarin<br />
                                 > Entity Framework
                             </p>
-                            </div>
-                            <div class="text-column">
-                                <br />
-                                <br />
+                        </div>
+                        <div class="text-column">
+                            <br />
+                            <br />
                             <h4>Software Development IDEs</h4>
                             <p>
                                 > Visual Studio<br />
@@ -170,7 +177,7 @@
                         <div class="text-column">
                             <h2>Services</h2>
                             <p>
-                                Managing a portfolio of both Small and Large Scale Projects. Qualified with a Computer and Information Sciences in Application Development 
+                                Managing a portfolio of both Small and Large Scale Projects. Qualified with a Computer and Information Sciences in Application Development
                                 I provide Full-Stack Development Services:<br /><br />
                                 (1) Website and Web Application Developer Including Progressive Web Applications,<br />
                                 (2) Mobile Application Development (Android and iOS Devices),<br />
@@ -180,34 +187,29 @@
                         </div>
                     </div>
                 </div>
-            </div>                        
+            </div>
             <div class="section">
                 <div class="section-content">
                     <div class="content-center">
                         <div class="line-tall animate"></div>
-                        <h3 class="animate js-bounding">LinkedIn</h3>
-                        <h2 class="animate">View Branden's Profile</h2>
-                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="branden-van-staden" data-version="v1">                            
-                            <a class="badge-base__link LI-simple-link" href="https://za.linkedin.com/in/branden-van-staden?trk=profile-badge">                            
-                            </a>                            
-                        </div>
-                        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                        <h3 class="animate js-bounding">Find out more</h3>
+                        <h2 class="animate">Book a FREE Consoltation</h2>
                         <a class="btn large animate" tabindex="0" href="/Contact/Index" target="_blank">
                             <div class="hover"></div>
-                            <div class="text">Book a Consoltation</div>
+                            <div class="text">Book Consoltation</div>
                         </a>
                     </div>
                 </div>
             </div>
-    <div id="footer">
-        <p>
-            <span>Line-by-Line Software Solutions &copy; 2022</span>
-            <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
-            <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
-            <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
-            <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
-        </p>
-    </div>
+            <div id="footer">
+                <p>
+                    <span>Line-by-Line Software Solutions &copy; 2022</span>
+                    <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
+                    <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
+                    <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
+                    <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
+                </p>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="/js/core-min.js"></script>

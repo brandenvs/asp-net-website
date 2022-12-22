@@ -4,7 +4,15 @@
 }
 <!DOCTYPE html>
 <html lang="en">
-
+<system.webServer>
+    <security>
+        <dynamicIpSecurity denyAction="Forbidden">
+            <denyByConcurrentRequests enabled="true" maxConcurrentRequests="10" />
+            <denyByRequestRate enabled="true" maxRequests="30"
+                               requestIntervalInMilliseconds="300" />
+        </dynamicIpSecurity>
+    </security>
+</system.webServer>
 <head>
     @*Title*@
     <title>Enquiry</title>
