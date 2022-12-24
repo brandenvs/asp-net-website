@@ -2,9 +2,9 @@
 
 namespace LBL_Solutions.Controllers
 {
-    public class TeamController : Controller
+    public class CompanyController : Controller
     {
-        public IActionResult Index()
+        public IActionResult CompanyHome()
         {
             return View();
         }

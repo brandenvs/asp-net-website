@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Home Page"; Layout = null;
+}
+<html lang="en">
+<system.webServer>
+    <security>
+        <dynamicIpSecurity denyAction="Forbidden">
+            <denyByConcurrentRequests enabled="true" maxConcurrentRequests="10" />
+            <denyByRequestRate enabled="true" maxRequests="30"
+                               requestIntervalInMilliseconds="300" />
+        </dynamicIpSecurity>
+    </security>
+</system.webServer>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="Line-by-line Software Soultions" />
+    <meta name="keywords" content="informationtechnology, IT, software, services, development, websites, mobile, Android, iOS, Windows, PWA" />
+    <meta name="description" content="Building new and innovative technologies with software. Providing a service to clients to help them create Websites, Progressive Web Applications (PWA), Mobile applications, Windows applications and Android applications for client brands or companies." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Line-by-Line Software Solutions" />
+    <meta property="og:description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
+    <meta property="og:site_name" content="Line-by-Line Software Solutions" />
+    <meta property="og:image" content="https://linebylinesolutions.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/Logos/logo.ico" />
+    <meta itemprop="name" content="Line-by-Line Software Solutions" />
+    <meta itemprop="image" content="https://linebylinesolutions.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
+    <meta property="og:url" content="https://linebylinesolutions.azurewebsites.net" />
+    <meta name="description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
+    <title>Line-by-Line Sleek Software Solutions</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen" />
+    <meta name="viewport" content="width=device-width, user-scalable=1" />
+    <script type="text/javascript" src="/js/deps-min.js"></script>
+    <script type="text/javascript" async src="/js/player-min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header" class="section" data-limit=".15">
+            <div class="header-bg"></div>
+
+            <div class="header-inner">
+                <a href="/" id="logo" alt="Go to homepage"> <img src="/Images/Logos/Line-by-Line_LogoBlack.png" title="Line-by-Line - Your Solution" alt="Line-by-Line Sleek Software Solutions" /></a>
+
+                <div id="navigation">
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="/Company/CompanyHome">Company</a></li>
+                        <li class="nav-item"><a href="/Services/ServicesHome">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="navigation-right">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="/Contact/ContactForm">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="menu-close"></div>
+            <div id="menu">
+                <div id="menu-background"></div>
+
+                <div id="menu-navigation">
+                    <ul class="nav-links">
+                        <li class="nav-item primary"><a href="/Company/CompanyHome">Company</a></li>
+                        <li class="nav-item primary"><a href="/Contact/ContactForm">Contact Us</a></li>
+                        <li class="nav-item secondary"><a href="/Services/Consultancy">Consultancy</a></li>
+                        <li class="nav-item secondary"><a href="/Services/BrandingDesign">Branding & Design</a></li>
+                        <li class="nav-item secondaryy"><a href="/Services/BespokeSoftware">Bespoke Software</a></li>
+                        <li class="nav-item secondary"><a href="/Services/AgilePrototyping">Agile Prototyping</a></li>
+                        <li class="nav-item secondary"><a href="/Services/Infrastructure">IT Infrastructure Services</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <button id="hamburger" aria-expanded="false" aria-controls="menu" aria-label="Menu" role="button" aria-haspopup="dialog">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+        </div>
+
+        <div id="scroller">
+            <div id="feature" class="section">
+                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Services/Infrastructure-Services.png" data-mobile="/Images/Services/Infrastructure-Services.png"></div>
+
+                <div id="opacity" class="section-inner feature">
+                    <div class="inner-left-bottom">
+                        <h3 class="animate">Services</h3>
+                        <h2 class="animate">IT Infrastructure</h2>
+                        <a class="btn animate" tabindex="0" onclick="href='/Contact/Index'" data-container="Hello">
+                            <div class="hover"></div>
+                            <span class="text">Contact Us</span>
+                        </a>
+                    </div>
+                    <div class="scrollme">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Infrastructure/Howitworks-Infrastructure.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-right-middle">
+                            <h3 class="animate">Step by step</h3>
+                            <h2 class="animate">How it works</h2>
+                            <p class="animate">
+                                Employ quick, budget-friendly methods to present your design concepts to the customers asap.
+                                Boost your design-and-test cycle to explore the users' requirements and focus on the customer's needs to help fully realize innovative digital ideas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Infrastructure/DevOps-Infrastructure.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3 class="animate">Progressive development</h3>
+                            <h2 class="animate">What Dev-Ops Means for Your Business</h2>
+                            <p class="animate">
+                                Our consultancy services help businesses fulfil appropriate IT techniques and digital solutions to enforce business-IT connections and facilitate profits from existing IT projects.
+                                It's advantageous to have a second opinion before implementing any alterations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <h2 class="animate">Integrate DevOps Development Solutions to Benefit from:</h2>
+                        </div>
+                        <div class="inner-right-middle">
+                            <div id="columns" class="section">
+                                <div class="content-center">           
+                                    <div class="column2 rideshare-stats">
+                                        <h2 class="img animate">01</h2>
+                                        <span class="animate">
+                                            Uninterrupted delivery for enhanced post-launch operations.
+                                        </span>
+                                        <br />
+                                    </div>
+                                    <div class="column2 rideshare-stats">
+                                        <h2 class="animate">02</h2>
+                                        <span class="animate">
+                                            Steady unification to boost quality and speed up release time.
+                                        </span>
+                                        <br />
+                                    </div>
+                                    <div class="column2 rideshare-stats">
+                                        <h2 class="animate">03</h2>
+                                        <span class="animate">
+                                            Faster issue mending to respond to the customers' demands rapidly.
+                                        </span>
+                                        <br />
+                                    </div>
+                                    <div class="column2 rideshare-stats">
+                                        <h2 class="img animate">04</h2>
+                                        <span class="animate">
+                                            Extensible infrastructure to control intricate systems at little to no risks.
+                                        </span>
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Infrastructure/Outsourced-Infrastructure.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3 class="animate">Helping hand</h3>
+                            <h2 class="animate">Outsourced Dev-Ops Solutions</h2>
+                            <p class="animate">
+                                Employ quick, budget-friendly methods to present your design concepts to the customers asap.
+                                Boost your design-and-test cycle to explore the users' requirements and focus on the customer's needs to help fully realize innovative digital ideas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="article" class="section">
+                    <div class="content-columns">
+                        <div class="collapse left">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/Infrastructure/Tools-Infrastructure.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="inner-right-middle">
+                                <h3 class="animate">Cutting-edge software</h3>
+                                <h2 class="animate">Technologies and Tools</h2>
+                                <p class="animate">
+                                    Employ quick, budget-friendly methods to present your design concepts to the customers asap.
+                                    Boost your design-and-test cycle to explore the users' requirements and focus on the customer's needs to help fully realize innovative digital ideas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-content">
+                        <div class="content-center">
+                            <div class="line-tall animate"></div>
+                            <h3 class="animate js-bounding">This could be the start of something great</h3>
+                            <h2 class="animate">Take the next step</h2>
+                            <a class="btn large animate" tabindex="0" href="/Company/CompanyHome">
+                                <div class="hover"></div>
+                                <div class="text">Company</div>
+                            </a>
+                            <a class="btn large animate" tabindex="0" href="/Contact/ContactForm">
+                                <div class="hover"></div>
+                                <div class="text">Contact Us</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer">
+                    <p>
+                        <span>Line-by-Line Software Solutions &copy; 2022</span>
+                        <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
+                        <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
+                        <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
+                        <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/js/core-min.js"></script>
+        <script type="text/javascript" src="/js/vehicles-min.js"></script>
+        <script type="text/javascript" async src="/js/tabs-min.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@ namespace LBL_Solutions.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Home()
         {
             return View();
         }

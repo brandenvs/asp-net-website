@@ -7,12 +7,12 @@ namespace LBL_Solutions.Controllers
     public class ContactController : Controller
     {
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult ContactForm()
         {
             return View();
         }
         [HttpPost]
-        public ViewResult Index(ContactMsgModel vm)
+        public ViewResult ContactForm(ContactMsgModel vm)
         {
             if (ModelState.IsValid)
             {

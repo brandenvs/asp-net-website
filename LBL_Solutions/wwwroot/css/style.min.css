@@ -2501,7 +2501,7 @@ body.isMobile .hover {
     margin: 0;
     height: auto;
     display: inline-block;
-    padding: 0
+    padding: 10px 10px
 }
 
 .column3 {

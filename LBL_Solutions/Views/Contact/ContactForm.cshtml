@@ -51,14 +51,14 @@
 
                 <div id="navigation">
                     <ul class="nav-links">
-                        <li class="nav-item"><a href="/Team/Branden">View Developer</a></li>
-                        <li class="nav-item"><a href="/Prices/Index">Our Prices</a></li>
+                        <li class="nav-item"><a href="/Company/CompanyHome">Company</a></li>
+                        <li class="nav-item"><a href="/Services/ServicesHome">Services</a></li>
                     </ul>
                 </div>
             </div>
             <div id="navigation-right">
                 <ul class="nav-links">
-                    <li class="nav-item"><a href="#" rel="noopener" target="_blank">LinkedIn</a></li>
+                    <li class="nav-item"><a href="/Contact/ContactForm">Contact Us</a></li>
                 </ul>
             </div>
             <div id="menu-close"></div>
@@ -67,14 +67,17 @@
 
                 <div id="menu-navigation">
                     <ul class="nav-links">
-                        <li class="nav-item primary"><a href="/Team/Branden">View Developer</a></li>
-                        <li class="nav-item primary"><a href="/Prices/Index">Our Prices</a></li>
-                        <li class="nav-item secondary"><a href="/Home/ComingSoon">Website & Web Development</a></li>
-                        <li class="nav-item secondary"><a href="/Home/ComingSoon">Android & iOS Development</a></li>
-                        <li class="nav-item secondary"><a href="/Home/ComingSoon">Windows Development</a></li>
+                        <li class="nav-item primary"><a href="/Company/CompanyHome">Company</a></li>
+                        <li class="nav-item primary"><a href="/Contact/ContactForm">Contact Us</a></li>
+                        <li class="nav-item secondary"><a href="/Services/Consultancy">Consultancy</a></li>
+                        <li class="nav-item secondary"><a href="/Services/BrandingDesign">Branding & Design</a></li>
+                        <li class="nav-item secondaryy"><a href="/Services/BespokeSoftware">Bespoke Software</a></li>
+                        <li class="nav-item secondary"><a href="/Services/AgilePrototyping">Agile Prototyping</a></li>
+                        <li class="nav-item secondary"><a href="/Services/Infrastructure">IT Infrastructure Services</a></li>
                     </ul>
                 </div>
             </div>
+
             <button id="hamburger" aria-expanded="false" aria-controls="menu" aria-label="Menu" role="button" aria-haspopup="dialog">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
@@ -105,7 +108,7 @@
                                         <span asp-validation-for="Email" class="text-muted"></span>
                                     </div>
                                     <div class="input-box active-grey">
-                                        <label><h3 class="animate">Your Subject</h3></label>
+                                        <label><h3 class="animate">Choose Service</h3></label>
                                         <select asp-for="Subject" class="input-1">
                                                 <option value="-1"></option>
                                                 <option value="General">General</option>
@@ -152,7 +155,7 @@
                                             <span asp-validation-for="Email" class="text-muted"></span>
                                         </div>
                                         <div class="input-box active-grey">
-                                            <label><h3 class="animate">Your Subject</h3></label>
+                                            <label><h3 class="animate">Choose Service</h3></label>
                                             <select asp-for="Subject" class="input-1">
                                                     <option value="-1"></option>
                                                     <option value="General">General</option>

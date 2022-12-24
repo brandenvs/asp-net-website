@@ -4,7 +4,7 @@ namespace LBL_Solutions.Controllers
 {
     public class PricesController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Prices()
         {
             return View();
         }
