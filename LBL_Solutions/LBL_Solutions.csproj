@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\Images\Logos\logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\css\fonts\Lato-Bold.ttf" />
     <None Include="wwwroot\css\fonts\Lato-Bold.woff" />
     <None Include="wwwroot\css\fonts\Lato-Bold.woff2" />
@@ -19,6 +23,8 @@
     <None Include="wwwroot\css\fonts\Lato-Regular.ttf" />
     <None Include="wwwroot\css\fonts\Lato-Regular.woff" />
     <None Include="wwwroot\css\fonts\Lato-Regular.woff2" />
+    <None Include="wwwroot\Images\Logos\logo.ico" />
+    <None Include="wwwroot\favicon.ico" />
   </ItemGroup>
 
   <ItemGroup>

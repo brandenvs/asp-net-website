@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model LBL_Solutions.Models.ContactMsgModel
+<!DOCTYPE html>
 @{
     ViewData["Title"] = "Home Page"; Layout = null;
 }
@@ -13,67 +14,30 @@
     </security>
 </system.webServer>
 <head>
-    <style>
-        #mid {
-            position: relative;
-            width: 600px;
-            height: 200px;
-        }
 
-        #image {
-            height: 64px;
-            width: 64px;
-        }
-
-        #image2 {
-            position: absolute;
-            top: 45px;
-            left: 301px;
-            height: 64px;
-            width: 64px;
-        }
-
-        #gate {
-            background-image: url("http://5starsdesign.be/bg2.png");
-            position: absolute;
-            height: 50px;
-            width: 100%;
-            left: 0px;
-            top: 130px;
-            text-align: center;
-            font-family: "Arial Black", Gadget, sans-serif;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 50px;
-            background-color: yellow;
-            text-transform: uppercase;
-            background-size: 50px 50px;
-            color: white;
-            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-        }
-    </style>
-
+    <title>Line-by-Line - Consultancy</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en" />
     <meta name="Line-by-line Software Soultions" />
-    <meta name="keywords" content="informationtechnology, IT, software, services, development, websites, mobile, Android, iOS, Windows, PWA" />
-    <meta name="description" content="Building new and innovative technologies with software. Providing a service to clients to help them create Websites, Progressive Web Applications (PWA), Mobile applications, Windows applications and Android applications for client brands or companies." />
+    <meta name="keywords" content="agile, IT, infrastructure, software solutions, consultancy, branding, design, website, services" />
+    <meta name="description" content="Line-by-Line Software Solutions offers a full range of IT services focused on delivering high-end digital solutions for businesses and public organizations in the Commercial sector." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Line-by-Line Software Solutions" />
-    <meta property="og:description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
+    <meta property="og:description" content="Line-by-Line Software Solutions offers a full range of IT services focused on delivering high-end digital solutions for businesses and public organizations in the Commercial sector." />
     <meta property="og:site_name" content="Line-by-Line Software Solutions" />
-    <meta property="og:image" content="https://linebylinesolutions.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="/Images/Logos/logo.ico" />
+    <meta property="og:image" content="https://linebyline.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://linebyline.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
     <meta itemprop="name" content="Line-by-Line Software Solutions" />
-    <meta itemprop="image" content="https://linebylinesolutions.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-    <meta property="og:url" content="https://linebylinesolutions.azurewebsites.net" />
-    <meta name="description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
-    <title>Line-by-Line Sleek Software Solutions</title>
+    <meta itemprop="image" content="https://linebyline.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
+    <meta property="og:url" content="https://linebyline.azurewebsites.net" />
+    <meta name="description" content="Line-by-Line Software Solutions offers a full range of IT services focused on delivering high-end digital solutions for businesses and public organizations in the Commercial sector." />
     <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen" />
     <meta name="viewport" content="width=device-width, user-scalable=1" />
     <script type="text/javascript" src="/js/deps-min.js"></script>
     <script type="text/javascript" async src="/js/player-min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -121,31 +85,273 @@
 
         <div id="scroller">
             <div id="feature" class="section">
-                <div id="mid">
-                    <p>
-                        <img src="https://nest.com/support/images/misc-assets-icons/settings-icon.png" id="image" />
-                        <img src="https://nest.com/support/images/misc-assets-icons/settings-icon.png" id="image2" />
-                    </p>
-                </div>
-                <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-middle">
-                        <div id="gate">
-                            <h1>Under Construction</h1>
-                        </div>
-                        <div id="countdown-container">
-                            <div id="countdown">
-                                <h3>Redirecting in:</h3>
-                                <h3 id="time"></h3>
-                            </div>
-                        </div>
-                        <a class="btn animate" tabindex="0" onclick="href='/Home/Home'" data-container="Hello">
-                            <div class="hover"></div>
-                            <span class="text">Not Redirected?</span>
-                        </a>
+                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Services/Infrastructure-Services.png" data-mobile="/Images/Services/Infrastructure-Services.png"></div>
 
+                <div id="opacity" class="section-inner feature">
+                    <div class="inner-left-bottom">
+                        <h3 class="animate">Services</h3>
+                        <h2 class="animate">Consultancy</h2>
+                        <a class="btn animate" tabindex="0" onclick="href='#contact'" data-container="Hello">
+                            <div class="hover"></div>
+                            <span class="text">Contact Us</span>
+                        </a>
+                    </div>
+                    <div class="scrollme">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
+                        </svg>
                     </div>
                 </div>
             </div>
+
+            <div id="article" class="section">
+                <div class="section-content">
+                    <div class="content-center">
+                        <h3 class="animate">How it works</h3>
+                        <h2 class="animate">Our IT consulting approach</h2>
+                        <p class="animate">
+                            The provided IT consulting services allow you to develop and implement a truly effective business continuity management program.
+                            The decisions made are adequate for the enterprise and as straightforward as possible for the management, staff, customers, and business partners.
+                        </p>
+                        <div id="columns" class="section animate">
+                            <div class="column3 rideshare-stats">
+                                <img src="/Images/Consultancy/Consultancy-first.png" alt="">
+                                <h3 class="animate">Assessment Stage</h3>
+                                <span class="animate">
+                                    Our employees delve into the specifics of the enterprise, study its infrastructure and solutions used.
+                                </span>                          
+                            </div>
+                            <div class="column3 rideshare-stats">
+                                <img src="/Images/Content/contract_icon.png" alt="">
+                                <h3 class="animate">Recommendation Stage</h3>
+                                <span class="animate">
+                                    Based on the information received, the final assessment of IT systems is carried out, and recommendations for their optimization are developed.
+                                </span>
+                            </div>
+                            <div class="column3 rideshare-stats">
+                                <img src="/Images/Home/Results-HomeCore.png" alt="">
+                                <h3 class="animate">Execution Stage</h3>
+                                <span class="animate">
+                                    If the client decides to implement the recommendations, work is carried out to create new information systems or modernize them to meet the market's needs.
+                                </span>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Consultancy//Consultancy-You.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3 class="animate">You are our Number 1</h3>
+                            <h2 class="animate">Whats in it for you?</h2>
+                            <p class="animate">
+                                Consultancy involves a range of consulting services that include an audit of enterprise IT systems and developing a strategy to optimize expenses for support and business growth. 
+                                Using the offered service, company owners can see a complete picture of the operation of their information systems and receive professional advice on their modernization or replacement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Consultancy/Guiding-Consultancy.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-right-middle">
+                            <h3 class="animate">Helping hand</h3>
+                            <h2 class="animate">Guiding businesses</h2>
+                            <p class="animate">
+                                Our consultancy services help businesses fulfil appropriate IT techniques and digital solutions to enforce business-IT connections and facilitate profits from existing IT projects.
+                                It's advantageous to have a second opinion before implementing any alterations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Consultancy/Benefits-Consultancy.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3 class="animate">Working with Line-by-Line Software Solutions</h3>
+                            <h2 class="animate">Benefits</h2>
+                            <p class="animate">
+                                Turning to Line-by-Line Software Solutions provides opportunities for efficient, economical, and comfortable management of the organization's work.
+                                We study in detail all customer requests and develop an effective strategy, considering industry standards and leading trends in IT technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-content">
+                    <div class="content-center">
+                        <h3 class="animate">Working with Line-by-Line</h3>
+                        <h2 class="animate">Advantages</h2>
+                        <p class="animate">
+                            The provided IT consulting services allow you to develop and implement a truly effective business continuity management program.
+                            The decisions made are adequate for the enterprise and as straightforward as possible for the management, staff, customers, and business partners.
+                        </p>
+                        <div id="columns" class="section">
+                            <div class="column3 rideshare-stats">
+                                <img class="img animate" src="/Images/Content/calendar_icon.png" alt="">
+                                <span class="animate">
+                                    Comprehensive expertise and professional implementation of the required products.
+                                    The knowledge and experience of our specialists help them correctly and accurately build an optimization strategy
+                                </span>
+                            </div>
+                            <div class="column3 rideshare-stats">
+                                <img class="img animate" src="/Images/Content/billing_icon.png" alt="">
+                                <span class="animate">
+                                    Affordable cost of IT consulting regardless of the complexity of the decisions made.
+                                </span>   
+                            </div>
+                            <div class="column3 rideshare-stats">
+                                <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
+                                <span class="animate">
+                                    Personal approach - each project is considered individually, considering the specifics of the organization.
+                                    The company receives IT solutions that are most appropriate for its tasks.
+                                </span>           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="only--desktop" id="contact">
+                <div class="section-content" id="contact">
+                    @if (ViewBag.Message == null)
+                    {
+                        <div class="content-columns">
+                            <div class="collapse right">
+                                <div class="column animate">
+                                    <form id="form" method="post">
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Name</h3></label>
+                                            <input asp-for="Name" type="text" class="input-1" />
+                                            <span asp-validation-for="Name" class="text-muted"></span>
+                                        </div>
+
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Email</h3></label>
+                                            <input asp-for="Email" type="text" class="input-1" />
+                                            <span asp-validation-for="Email" class="text-muted"></span>
+                                        </div>
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Choose Service</h3></label>
+                                            <select asp-for="Subject" class="input-1">
+                                                <option value="-1"></option>
+                                                <option value="General">General</option>
+                                                <option value="Support">Support</option>
+                                                <option value="Mobile">Mobile Development</option>
+                                                <option value="Website">Website Development</option>
+                                                <option value="Windows">Windows Development</option>
+                                                <option value="Android">Android Development</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Message</h3></label>
+                                            <textarea asp-for="Message" class="textinput"></textarea>
+                                            <span asp-validation-for="Message" class="text-muted"></span>
+                                        </div>
+                                        <br />
+                                        <button class="sendbtn" type="submit">Send</button>
+                                    </form>
+                                </div>
+                                <div class="inner-left-middle">
+                                    <h3 class="animate">Contact Us</h3>
+                                    <h2 class="animate">Get in Touch</h2>
+                                    <p class="animate">
+                                        Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
+                                        Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
+                                        <br>
+                                        <br>
+                                        Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
+                                        get in touch, and we’ll be delighted to help you get started!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="only--mobile" id="contact">
+                <div class="section-content" id="contact">
+                    @if (ViewBag.Message == null)
+                    {
+                        <div class="content-columns">
+                            <div class="collapse left">
+                                <div class="column animate">
+                                    <h3 class="animate">Contact Us</h3>
+                                    <h2 class="animate">Get in Touch</h2>
+                                    <p class="animate">
+                                        Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
+                                        Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
+                                        <br>
+                                        <br>
+                                        Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
+                                        get in touch, and we’ll be delighted to help you get started!
+                                    </p>
+                                    <form id="form" method="post">
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Name</h3></label>
+                                            <input asp-for="Name" type="text" class="input-1" />
+                                            <span asp-validation-for="Name" class="text-muted"></span>
+                                        </div>
+
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Email</h3></label>
+                                            <input asp-for="Email" type="text" class="input-1" />
+                                            <span asp-validation-for="Email" class="text-muted"></span>
+                                        </div>
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Choose Service</h3></label>
+                                            <select asp-for="Subject" class="input-1">
+                                                <option value="-1">Consultancy</option>
+                                                <option value="General">Bespoke Software</option>
+                                                <option value="Support">IT Infrastructure</option>
+                                                <option value="Mobile">Branding & Design</option>
+                                                <option value="Website">Agile Prototyping</option>
+                                                <option value="Windows">Client Support</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-box active-grey">
+                                            <label><h3 class="animate">Your Message</h3></label>
+                                            <textarea asp-for="Message" class="textinput"></textarea>
+                                            <span asp-validation-for="Message" class="text-muted"></span>
+                                        </div>
+                                        <br />
+                                        <button class="sendbtn" type="submit">Send</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            @if (ViewBag.Message != null)
+            {
+                <meta http-equiv="refresh" content="0; url='/Contact/ContactSuccess'" />
+                <div id="article" class="section content-center">
+                    <h1 class="animate center-header">PLEASE WAIT....</h1>
+                </div>
+
+            }
             <div id="footer">
                 <p>
                     <span>Line-by-Line Software Solutions &copy; 2022</span>
@@ -157,42 +363,6 @@
             </div>
         </div>
     </div>
-    <meta http-equiv="refresh" content="12 url='/Home/Home'" />
-    <script type="text/javascript">
-        const startingMinutes = 0.2;
-        let time = startingMinutes * 60;
-        const countdownEl = document.getElementById('countdown');
-        setInterval(updateCountdown, 1000);
-
-        function updateCountdown() {
-            const minutes = Math.floor(time / 60);
-            let seconds = time % 60;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-            countdownEl.innerHTML = minutes + ":" + seconds;
-            time--;
-        }
-        window.addEventListener("load", function () {
-            setTimeout(
-                function open(event) {
-                    document.querySelector(".popup").style.display = "block";
-                },
-                2000
-            )
-        });
-
-
-        document.querySelector("#close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-        });
-
-        setInterval(function () {
-            $("#image").rotate({ count: 99999, forceJS: true, duration: 4 });
-        }, 52);
-
-        setInterval(function () {
-            $("#image2").rotate({ count: 99999, forceJS: true, endDeg: -360, duration: 4 });
-        }, 52);
-    </script>
     <script type="text/javascript" src="/js/core-min.js"></script>
     <script type="text/javascript" src="/js/vehicles-min.js"></script>
     <script type="text/javascript" async src="/js/tabs-min.js"></script>

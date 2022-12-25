@@ -1,7 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@model LBL_Solutions.Models.ContactMsgModel
 @{
-    ViewData["Title"] = "Home Page"; Layout = null;
+    ViewData["Title"] = "Contact Page"; Layout = null;
 }
+<!DOCTYPE html>
 <html lang="en">
 <system.webServer>
     <security>
@@ -13,47 +14,7 @@
     </security>
 </system.webServer>
 <head>
-    <style>
-        #mid {
-            position: relative;
-            width: 600px;
-            height: 200px;
-        }
-
-        #image {
-            height: 64px;
-            width: 64px;
-        }
-
-        #image2 {
-            position: absolute;
-            top: 45px;
-            left: 301px;
-            height: 64px;
-            width: 64px;
-        }
-
-        #gate {
-            background-image: url("http://5starsdesign.be/bg2.png");
-            position: absolute;
-            height: 50px;
-            width: 100%;
-            left: 0px;
-            top: 130px;
-            text-align: center;
-            font-family: "Arial Black", Gadget, sans-serif;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 50px;
-            background-color: yellow;
-            text-transform: uppercase;
-            background-size: 50px 50px;
-            color: white;
-            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-        }
-    </style>
-
-    <title>Line-by-Line - Agile</title>
+    <title>Message Sent!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en" />
     <meta name="Line-by-line Software Soultions" />
@@ -75,6 +36,7 @@
     <script type="text/javascript" src="/js/deps-min.js"></script>
     <script type="text/javascript" async src="/js/player-min.js"></script>
 </head>
+
 <body>
     <div id="wrapper">
         <div id="header" class="section" data-limit=".15">
@@ -118,23 +80,26 @@
                 <div id="bar3" class="bar"></div>
             </button>
         </div>
-
-        <div id="scroller">
-            <div id="feature" class="section">
-                <div id="mid">
-                    <p>
-                        <img src="https://nest.com/support/images/misc-assets-icons/settings-icon.png" id="image" />
-                        <img src="https://nest.com/support/images/misc-assets-icons/settings-icon.png" id="image2" />
-                    </p>
-                </div>
-                <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-middle">
-                        <div id="gate">
-                            <h1>Under Construction</h1>
+        <div id="scroller">    
+            <br />
+            <br />
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Home/DiscoverLBL-Home.png" alt="">
+                            </picture>
                         </div>
-                        <div id="countdown-container">
+                        <div class="inner-right-middle">
+                            <div id="gate">
+                                <h2 class="animate">Thank You!</h2>
+                                <h3 class="animate">For Contact Us</h3>
+                                <p class="animate">We will get back to you Soon!</p>
+                            </div>                                                                
+                            <div id="countdown-container">
                             <div id="countdown">
-                                <h3>Redirecting in:</h3>
+                                <h3 class="animate">Redirecting in:</h3>
                                 <h3 id="time"></h3>
                             </div>
                         </div>
@@ -142,10 +107,11 @@
                             <div class="hover"></div>
                             <span class="text">Not Redirected?</span>
                         </a>
-
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div id="footer">
                 <p>
                     <span>Line-by-Line Software Solutions &copy; 2022</span>
@@ -157,7 +123,7 @@
             </div>
         </div>
     </div>
-    <meta http-equiv="refresh" content="12 url='/Home/Home'" />
+
     <script type="text/javascript">
         const startingMinutes = 0.2;
         let time = startingMinutes * 60;
@@ -180,21 +146,16 @@
             )
         });
 
-
         document.querySelector("#close").addEventListener("click", function () {
             document.querySelector(".popup").style.display = "none";
         });
-
-        setInterval(function () {
-            $("#image").rotate({ count: 99999, forceJS: true, duration: 4 });
-        }, 52);
-
-        setInterval(function () {
-            $("#image2").rotate({ count: 99999, forceJS: true, endDeg: -360, duration: 4 });
-        }, 52);
     </script>
     <script type="text/javascript" src="/js/core-min.js"></script>
+
     <script type="text/javascript" src="/js/vehicles-min.js"></script>
+
     <script type="text/javascript" async src="/js/tabs-min.js"></script>
+
 </body>
+
 </html>

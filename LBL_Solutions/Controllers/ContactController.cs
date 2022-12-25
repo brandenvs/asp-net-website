@@ -49,7 +49,11 @@ namespace LBL_Solutions.Controllers
             }
             return View();
         }
-            
+        public IActionResult ContactSuccess()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

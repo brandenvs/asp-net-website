@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
     font-family: Lato-Medium;
     src: url(fonts/Lato-Medium.woff2) format("woff2"),url(fonts/Lato-Medium.woff) format("woff"),url(fonts/Lato-Medium.ttf) format("truetype");
     font-style: normal;
@@ -28,6 +28,22 @@
     font-style: normal;
     font-weight: 400;
     font-display: block
+}
+.containerCard {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 46, 170, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -10px 10px, rgba(0, 0, 0, 0.05) -0 0;
 }
 .div-desktop {
     display: none;
@@ -1466,21 +1482,27 @@ select option {
     }
 
 .rideshare-stats {
-    font-size: 0
+    min-height: inherit;
+    font-size: 0;
+    background: rgba(82, 94, 122, 0.2);
+    border-radius:10px;
 }
 
     .rideshare-stats img {
         display: inline-block;
         vertical-align: middle;
         width: 70px;
-        height: auto
+        height: auto;
+        background:rgba(0, 75, 255, 0.2);
+        border-radius: 10px;
+        margin: 15px;
     }
 
     .rideshare-stats h2 {
         display: inline-block;
         vertical-align: middle;
         width: calc(100% - 80px);
-        margin-left: 10px;
+        margin: 15px;
         font-size: 30px;
         line-height: 30px;
         max-width: 220px
@@ -1490,7 +1512,7 @@ select option {
         display: block;
         font-size: 16px;
         line-height: 25px;
-        margin-top: 30px;
+        margin: 15px;
         max-width: 300px
     }
 
@@ -1752,6 +1774,12 @@ p {
     height: auto;
     max-width: 100%
 }
+#launches .section {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%
+}
 
 #emojis {
     display: none
@@ -1996,7 +2024,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    margin: auto auto 10px
+    margin: 15px;
 }
 
 .over-header {
@@ -2357,15 +2385,20 @@ body.isMobile .hover {
 
 .section-content {
     width: 100%;
-    margin: 0 auto;
-    max-width: 1400px
+}
+#contact .section-content {
+    margin: 25px 0;
+    padding:50px 0;
+    top:20px;
+    background: rgba(39, 186, 245, 0.2);
+    border-radius:25px;
 }
 
 .content-center {
     width: 90%;
     height: auto;
     margin: 5px auto;
-    max-width: 960px;
+    max-width: 1450px;
 }
 
     .content-center p.left-align-wide {
@@ -2495,31 +2528,43 @@ body.isMobile .hover {
     margin: 0 0 0 50px
 }
 
-.column, .column2, .column3 {
+.column, .column2, .column3, .column4 {
     text-align: left;
     vertical-align: top;
-    margin: 0;
-    height: auto;
     display: inline-block;
-    padding: 10px 10px
 }
 
+.column4 {
+    width: 24%;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+}
 .column3 {
-    width: 30%
+    width: 30%;
+    height: 300px;
+    padding: 10px 0;
+    margin: 5px;
 }
 
 .column2 {
     width: 45%;
+    height: 300px;
+    margin: 15px;
 }
 
 .column {
-    width: 47%
+    width: 47%;
+    padding: 10px;
+    margin: 5px;
 }
 
 #stats .column3 {
     text-align: center
 }
-
+#stats .column4 {
+    text-align: center
+}
 #stats .number {
     display: block;
     font: 140px/140px D-DIN-Light,Arial,Verdana,sans-serif;
@@ -4328,7 +4373,7 @@ body.isDesktop #menu-navigation a, body.isDesktop a {
         font: 15px/20px Lato-Bold,Arial,Verdana,sans-serif;
         font-weight: 400;
         font-style: normal;
-        margin-bottom: 5px
+        margin: 15px;
     }
 
     a.btn, p:first-of-type {
@@ -4574,11 +4619,14 @@ body.isDesktop #menu-navigation a, body.isDesktop a {
 @media screen and (max-width:900px) {
     #columns .column3 {
         width: 100%;
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        padding:5px 0;
     }
 
+
     .rideshare-stats h2, .rideshare-stats span {
-        max-width: 100%
+        max-width: 100%;
+        margin:15px;
     }
 }
 
@@ -4806,6 +4854,7 @@ body.isDesktop #menu-navigation a, body.isDesktop a {
     #article .section-content {
         padding: 100px 0
     }
+
 
     .article-date {
         font-size: 14px
@@ -5168,6 +5217,7 @@ body.isDesktop #menu-navigation a, body.isDesktop a {
     padding: 0 20px;
     width: auto
 }
+
 
 #launches .background {
     height: 100%
@@ -5741,8 +5791,8 @@ input {
     border: 1px;
     border-color:white;
     width: -webkit-fill-available;
-    height: 30px;
-    font-size: 20px;
+    height: 45px;
+    font-size: 25px;
     margin: 5px 0;
 }
 .custom-list {
