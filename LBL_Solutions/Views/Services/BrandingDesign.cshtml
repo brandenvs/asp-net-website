@@ -1,6 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@model LBL_Solutions.Models.ContactMsgModel
+<!DOCTYPE html>
 @{
-    ViewData["Title"] = "Home Page"; Layout = null;
+    ViewData["Title"] = "Branding and Design Page"; Layout = null;
 }
 <html lang="en">
 <system.webServer>
@@ -13,46 +14,6 @@
     </security>
 </system.webServer>
 <head>
-    <style>
-        #mid {
-            position: relative;
-            width: 600px;
-            height: 200px;
-        }
-
-        #image {
-            height: 64px;
-            width: 64px;
-        }
-
-        #image2 {
-            position: absolute;
-            top: 45px;
-            left: 301px;
-            height: 64px;
-            width: 64px;
-        }
-
-        #gate {
-            background-image: url("http://5starsdesign.be/bg2.png");
-            position: absolute;
-            height: 50px;
-            width: 100%;
-            left: 0px;
-            top: 130px;
-            text-align: center;
-            font-family: "Arial Black", Gadget, sans-serif;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 50px;
-            background-color: yellow;
-            text-transform: uppercase;
-            background-size: 50px 50px;
-            color: white;
-            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-        }
-    </style>
-
     <title>Line-by-Line - Branding & Design</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en" />
@@ -121,43 +82,315 @@
 
         <div id="scroller">
             <div id="feature" class="section">
-                <div id="mid">
-                    <p>
-                        <img src="https://nest.com/support/images/misc-assets-icons/settings-icon.png" id="image" />
-                        <img src="https://nest.com/support/images/misc-assets-icons/settings-icon.png" id="image2" />
-                    </p>
-                </div>
-                <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-middle">
-                        <div id="gate">
-                            <h1>Under Construction</h1>
-                        </div>
-                        <div id="countdown-container">
-                            <div id="countdown">
-                                <h3>Redirecting in:</h3>
-                                <h3 id="time"></h3>
-                            </div>
-                        </div>
-                        <a class="btn animate" tabindex="0" onclick="href='/Home/Home'" data-container="Hello">
-                            <div class="hover"></div>
-                            <span class="text">Not Redirected?</span>
-                        </a>
+                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/BrandingDesign/BrandingDesign.png" data-mobile="/Images/BrandingDesign/BrandingDesign.png"></div>
 
+                <div id="opacity" class="section-inner feature">
+                    <div class="inner-left-bottom" style="background: rgba(0, 0, 0, 0.3);border-radius:25px; padding:25px;">
+                       
+                        <h2 class="animate">Branding & Design</h2>
+                        <p class="animate">
+                            Branding & design implies much more than working on a concept –
+                            it involves problem-solving, A/B testing, quality assurance, and a creative approach altogether.
+                            All this, coupled with brand identity, make for a refined end-user experience.
+                        </p>
+                        <a class="btn animate" tabindex="0" onclick="href='#contact'" data-container="Hello">
+                            <div class="hover"></div>
+                            <span class="text">Contact Us</span>
+                        </a>
+                    </div>
+                    <div class="scrollme">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
+                        </svg>
                     </div>
                 </div>
             </div>
-            <div id="footer">
-                <p>
-                    <span>Line-by-Line Software Solutions &copy; 2022</span>
-                    <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
-                    <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
-                    <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
-                    <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
-                </p>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/BrandingDesign/WebDev-Design.png" alt="" />
+                            </picture>
+                        </div>
+                        <div class="inner-right-middle">
+                            <h3 class="animate">Website Development</h3>
+                            <h2 class="animate">Web Design Solutions</h2>
+                            <p class="animate">
+                                Line-by-Line Software Solutions adapts the necessary UI/UX elements tailored according to the customer’s needs and preferences.
+                                Instead of considering UX as some sort of an afterthought, we start working on it from the get-go,
+                                seeing how its primary purpose is to smooth the decision-making process for the users.
+                                We never stop validating design decisions throughout the entire development cycle and ensure that they fair properly under real-world conditions,
+                                fully matching the business needs.
+                                <br />
+                                <br />
+                                Our design services include both B2B and B2C website design solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section-content">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column animate">
+                                <img src="/Images/BrandingDesign/MobileComp-Design.gif" alt="" />
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3 class="animate">Adaptable</h3>
+                            <h2 class="animate">Smartphone-Tablet Compatibility</h2>
+                            <p class="animate">
+                                Our highly flexible software solutions and design ideas allow for complete
+                                compatibility to any existing devices – be it a smartphone, a tablet, or a PC, the adaptable experience is altered according to the platform's requirements
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/BrandingDesign/B2CWeb-Design.png" alt="" />
+                            </picture>
+                        </div>
+                        <div class="inner-right-middle">
+                            <h3 class="animate">UI/UX Design</h3>
+                            <h2 class="animate">B2C Web Design</h2>
+                            <p class="animate">
+                                We customize B2C web development solutions to ensure that the needs of our customers are met in full.
+                                Our mobile-ready websites come with any sort of functionality you may imagine. SEO-friendly design ideas and effective marketing solutions ensure greater exposure.
+                                We collaborate with our customers to come up with the most user-centered and efficient design ideas that will facilitate business growth in no time at all.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content" id="contact">
+                <div class="section">
+                    <div class="section-content">
+                        <div class="content-center">
+                            <h2 class="animate">
+                                B2C web design you can rely on
+                            </h2>
+                            <p class="animate" style="padding:25px">
+                                Seeing how we’re primarily considered experts in this field, our desire to reach greater heights has helped us craft the ideal B2C web design solutions.
+                                We want to collaborate with you to generate more leads for your business via an intelligent and intuitive web design strategy.
+                                We feel like we have what it takes to help your business reach the next level. Just give us a call or request a quote to get started.
+                                We assure you that the website we’ll build for you will look and feel no less than impressive and will generate prospective new customers for your company.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="article" class="section">
+                    <div class="content-columns">
+                        <div class="collapse right">
+                            <div class="column animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/BrandingDesign/User-centered-Design.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="inner-left-middle">
+                                <h3 class="animate">User-centered Solutions</h3>
+                                <h2 class="animate">Intuitive, user-centered navigation</h2>
+                                <p class="animate" style="padding:20px">
+                                    A cluttered website will never succeed. If you don’t want to drive your customers away, you will want to concentrate on making the right web design choices.
+                                    No matter the products or services you are promoting, the next step in your web evolution would be making sure that your website is clear and concise in all the right ways.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="article" class="section">
+                    <div class="content-columns">
+                        <div class="collapse left">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/BrandingDesign/EmotionalAspect-Design.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="inner-right-middle">
+                                <h3 class="animate">
+                                    Emotional Appeal
+                                </h3>
+                                <h2 class="animate">Emotional aspects</h2>
+                                <p class="animate">
+                                    Emotional attachments are extremely important – there’s no doubt about it.<br />
+                                    A number of studies indicate that customers are more likely to stick around with those brands and businesses that have a certain emotional appeal.
+                                    It’s very much explainable by the fact that we, as people, are more susceptible to the voice of emotions than one of logical thinking.
+                                    Making your website more appealing in all sorts of emotional ways is just as important as coming up with the right UX solutions.
+                                    <br />
+                                    <br />
+                                    Your web design should resonate with people’s hearts just as much as it should with their minds.
+                                    The images, the color schemes, the texts all should look and feel natural for people to want to keep on scrolling.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="article" class="section">
+                    <div class="content-columns">
+                        <div class="collapse right">
+                            <div class="column animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/BrandingDesign/Performance-Design.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="inner-left-middle">
+                                <h3 class="animate">Enhanced Functionality</h3>
+                                <h2 class="animate">Optimal performance</h2>
+                                <p class="animate">
+                                    Finally, any website has to load quickly.<br />
+                                    All the buttons should work and every single part of the User Experience
+                                    well-polished to avoid losing customers who could not navigate through your web page.
+                                    It’s nearly impossible to underestimate how important those details are, really.
+                                    <br />
+                                    <br />
+                                    We prioritize these things and make sure that your website looks and feels the way you expect.
+                                    With no faults or tons of arising issues – outstanding performance, fast load times, and fully functional design all the way!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="only--desktop" id="contact">
+                    <div class="section-content" id="contact">
+                        @if (ViewBag.Message == null)
+                        {
+                            <div class="content-columns">
+                                <div class="collapse right">
+                                    <div class="column animate">
+                                        <form id="form" method="post">
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Name</h3></label>
+                                                <input asp-for="Name" type="text" class="input-1" />
+                                                <span asp-validation-for="Name" class="text-muted"></span>
+                                            </div>
+
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Email</h3></label>
+                                                <input asp-for="Email" type="text" class="input-1" />
+                                                <span asp-validation-for="Email" class="text-muted"></span>
+                                            </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Choose Service</h3></label>
+                                                <select asp-for="Subject" class="input-1">
+                                                    <option value="-1"></option>
+                                                    <option value="General">General</option>
+                                                    <option value="Support">Support</option>
+                                                    <option value="Mobile">Mobile Development</option>
+                                                    <option value="Website">Website Development</option>
+                                                    <option value="Windows">Windows Development</option>
+                                                    <option value="Android">Android Development</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Message</h3></label>
+                                                <textarea asp-for="Message" class="textinput"></textarea>
+                                                <span asp-validation-for="Message" class="text-muted"></span>
+                                            </div>
+                                            <br />
+                                            <button class="sendbtn" type="submit">Send</button>
+                                        </form>
+                                    </div>
+                                    <div class="inner-left-middle">
+                                        <h3 class="animate">Contact Us</h3>
+                                        <h2 class="animate">Get in Touch</h2>
+                                        <p class="animate">
+                                            Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
+                                            Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
+                                            <br>
+                                            <br>
+                                            Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
+                                            get in touch, and we’ll be delighted to help you get started!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="only--mobile" id="contact">
+                    <div class="section-content" id="contact">
+                        @if (ViewBag.Message == null)
+                        {
+                            <div class="content-columns">
+                                <div class="collapse left">
+                                    <div class="column animate">
+                                        <h3 class="animate">Contact Us</h3>
+                                        <h2 class="animate">Get in Touch</h2>
+                                        <p class="animate">
+                                            Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
+                                            Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
+                                            <br>
+                                            <br>
+                                            Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
+                                            get in touch, and we’ll be delighted to help you get started!
+                                        </p>
+                                        <form id="form" method="post">
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Name</h3></label>
+                                                <input asp-for="Name" type="text" class="input-1" />
+                                                <span asp-validation-for="Name" class="text-muted"></span>
+                                            </div>
+
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Email</h3></label>
+                                                <input asp-for="Email" type="text" class="input-1" />
+                                                <span asp-validation-for="Email" class="text-muted"></span>
+                                            </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Choose Service</h3></label>
+                                                <select asp-for="Subject" class="input-1">
+                                                    <option value="-1">Consultancy</option>
+                                                    <option value="General">Bespoke Software</option>
+                                                    <option value="Support">IT Infrastructure</option>
+                                                    <option value="Mobile">Branding & Design</option>
+                                                    <option value="Website">Agile Prototyping</option>
+                                                    <option value="Windows">Client Support</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Message</h3></label>
+                                                <textarea asp-for="Message" class="textinput"></textarea>
+                                                <span asp-validation-for="Message" class="text-muted"></span>
+                                            </div>
+                                            <br />
+                                            <button class="sendbtn" type="submit">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                @if (ViewBag.Message != null)
+                {
+                    <meta http-equiv="refresh" content="0; url='/Contact/ContactSuccess'" />
+                    <div id="article" class="section content-center">
+                        <h1 class="animate center-header">PLEASE WAIT....</h1>
+                    </div>
+
+                }
+                <div id="footer">
+                    <p>
+                        <span>Line-by-Line Software Solutions &copy; 2022</span>
+                        <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
+                        <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
+                        <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
+                        <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <meta http-equiv="refresh" content="12 url='/Home/Home'" />
     <script type="text/javascript">
         const startingMinutes = 0.2;
         let time = startingMinutes * 60;
@@ -180,21 +413,28 @@
             )
         });
 
-
         document.querySelector("#close").addEventListener("click", function () {
             document.querySelector(".popup").style.display = "none";
         });
-
-        setInterval(function () {
-            $("#image").rotate({ count: 99999, forceJS: true, duration: 4 });
-        }, 52);
-
-        setInterval(function () {
-            $("#image2").rotate({ count: 99999, forceJS: true, endDeg: -360, duration: 4 });
-        }, 52);
+        function sticktothetop() {
+            var window_top = $(window).scrollTop();
+            var top = $('#stick-here').offset().top;
+            if (window_top > top) {
+                $('#stickThis').addClass('stick');
+                $('#stick-here').height($('#stickThis').outerHeight());
+            } else {
+                $('#stickThis').removeClass('stick');
+                $('#stick-here').height(0);
+            }
+        }
+        $(function () {
+            $(window).scroll(sticktothetop);
+            sticktothetop();
+        });
     </script>
     <script type="text/javascript" src="/js/core-min.js"></script>
     <script type="text/javascript" src="/js/vehicles-min.js"></script>
     <script type="text/javascript" async src="/js/tabs-min.js"></script>
+
 </body>
 </html>

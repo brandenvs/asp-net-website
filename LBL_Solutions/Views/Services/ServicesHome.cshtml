@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 @{
-    ViewData["Title"] = "Home Page"; Layout = null;
+    ViewData["Title"] = "Services Page"; Layout = null;
 }
 <html lang="en">
 <system.webServer>
@@ -13,46 +13,6 @@
     </security>
 </system.webServer>
 <head>
-    <style>
-        #mid {
-            position: relative;
-            width: 600px;
-            height: 200px;
-        }
-
-        #image {
-            height: 64px;
-            width: 64px;
-        }
-
-        #image2 {
-            position: absolute;
-            top: 45px;
-            left: 301px;
-            height: 64px;
-            width: 64px;
-        }
-
-        #gate {
-            background-image: url("http://5starsdesign.be/bg2.png");
-            position: absolute;
-            height: 50px;
-            width: 100%;
-            left: 0px;
-            top: 130px;
-            text-align: center;
-            font-family: "Arial Black", Gadget, sans-serif;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 50px;
-            background-color: yellow;
-            text-transform: uppercase;
-            background-size: 50px 50px;
-            color: white;
-            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-        }
-    </style>
-
     <title>Line-by-Line - Services</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en" />
@@ -86,7 +46,8 @@
                 <div id="navigation">
                     <ul class="nav-links">
                         <li class="nav-item"><a href="/Company/CompanyHome">Company</a></li>
-                        <li class="nav-item"><a href="/Services/ServicesHome">Services</a></li>
+                        <li class="nav-item"><a href="/Contact/ContactForm">Contact Us</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -121,24 +82,142 @@
 
         <div id="scroller">
             <div id="feature" class="section">
-                <div id="parallax" class="background" data-speed="0.0025"></div>
+                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Backgrounds/1.png" data-mobile="/Images/Backgrounds/2.png"></div>
+
                 <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-bottom">
-                        <div id="gate">
-                            <h1>Under Construction</h1>
-                            <div id="countdown-container">
-                                <div id="countdown">
-                                    <h3>Redirecting in:</h3>
-                                    <h3 id="time"></h3>
-                                </div>
-                                <a class="btn animate" tabindex="0" onclick="href='/home/Home'" data-container="Hello">
-                                    <div class="hover"></div>
-                                    <span class="text">Not Redirected?</span>
-                                </a>
-                            </div>
+                    <div class="inner-left-bottom" style="background: rgba(0, 0, 0, 0.3);border-radius: 25px;padding: 25px;">
+                        <h3 class="animate">Just for you</h3>
+                        <h2 class="animate">Our Services</h2>
+
+                        <a class="btn animate" tabindex="0" onclick="href='/Contact/ContactForm'" data-container="Hello">
+                            <div class="hover"></div>
+                            <span class="text">Contact Us</span>
+                        </a>
+                    </div>
+
+                    <div class="scrollme">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Agile/Agile.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-right-middle">
+                            <h3 class="animate">Discover</h3>
+                            <h2 class="animate">Agile Prototyping</h2>
+                            <p class="animate">
+                                Employ quick, budget-friendly methods to present your design concepts to the customers asap.
+                                Boost your design-and-test cycle to explore the users' requirements and focus on the customer's needs to help fully realize innovative digital ideas.
+                            </p>
+                            <a class="btn animate" tabindex="0" onclick="href='/Services/AgilePrototyping'" data-container="Hello">
+                                <div class="hover"></div>
+                                <span class="text">Learn more</span>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Bespoke/Bespoke.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3 class="animate">Discover</h3>
+                            <h2 class="animate">Bespoke Software</h2>
+                            <p class="animate">
+                                Employ quick, budget-friendly methods to present your design concepts to the customers asap.
+                                Boost your design-and-test cycle to explore the users' requirements and focus on the customer's needs to help fully realize innovative digital ideas.
+                            </p>
+                            <a class="btn animate" tabindex="0" onclick="href='/Services/BespokeSoftware'" data-container="Hello">
+                                <div class="hover"></div>
+                                <span class="text">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/BrandingDesign/BrandingDesign.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-right-middle">
+                            <h3 class="animate">Discover</h3>
+                            <h2 class="animate">Branding & Design</h2>
+                            <p class="animate">
+                                Branding & design implies much more than working on a concept –
+                                it involves problem-solving, A/B testing, quality assurance, and a creative approach altogether.
+                                All this, coupled with brand identity, make for a refined end-user experience.
+                            </p>
+                            <a class="btn animate" tabindex="0" onclick="href='/Services/BrandingDesign'" data-container="Hello">
+                                <div class="hover"></div>
+                                <span class="text">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Consultancy/Consultancy.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3 class="animate">Discover</h3>
+                            <h2 class="animate">Consultancy</h2>
+                            <p class="animate">
+                                Our consultancy services help businesses fulfill appropriate IT techniques and digital solutions to enforce business-IT connections and facilitate profits from existing IT projects.
+                                It's advantageous to have a second opinion before implementing any alterations.
+                            </p>
+                            <a class="btn animate" tabindex="0" onclick="href='/Services/Consultancy'" data-container="Hello">
+                                <div class="hover"></div>
+                                <span class="text">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Infrastructure/Infrastructure.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-right-middle">
+                            <h3 class="animate">Discover</h3>
+                            <h2 class="animate">I.T Infrastructure</h2>
+                            <p class="animate">
+                                An intelligent IT infrastructure offers flexible solutions that facilitate quicker adaptation to new and more effective business models.
+                                We review a customer's existing assets from the ground up and develop the right end-to-end infrastructure services.
+                            </p>
+                            <a class="btn animate" tabindex="0" onclick="href='/Services/Infrastructure'" data-container="Hello">
+                                <div class="hover"></div>
+                                <span class="text">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <div id="footer">
                     <p>
                         <span>Line-by-Line Software Solutions &copy; 2022</span>
@@ -150,42 +229,7 @@
                 </div>
             </div>
         </div>
-        <meta http-equiv="refresh" content="12" url="/Home/Home" />
-        <script type="text/javascript">
-            const startingMinutes = 0.2;
-            let time = startingMinutes * 60;
-            const countdownEl = document.getElementById('countdown');
-            setInterval(updateCountdown, 1000);
 
-            function updateCountdown() {
-                const minutes = Math.floor(time / 60);
-                let seconds = time % 60;
-                seconds = seconds < 10 ? '0' + seconds : seconds;
-                countdownEl.innerHTML = minutes + ":" + seconds;
-                time--;
-            }
-            window.addEventListener("load", function () {
-                setTimeout(
-                    function open(event) {
-                        document.querySelector(".popup").style.display = "block";
-                    },
-                    2000
-                )
-            });
-
-
-            document.querySelector("#close").addEventListener("click", function () {
-                document.querySelector(".popup").style.display = "none";
-            });
-
-            setInterval(function () {
-                $("#image").rotate({ count: 99999, forceJS: true, duration: 4 });
-            }, 52);
-
-            setInterval(function () {
-                $("#image2").rotate({ count: 99999, forceJS: true, endDeg: -360, duration: 4 });
-            }, 52);
-        </script>
         <script type="text/javascript" src="/js/core-min.js"></script>
         <script type="text/javascript" src="/js/vehicles-min.js"></script>
         <script type="text/javascript" async src="/js/tabs-min.js"></script>

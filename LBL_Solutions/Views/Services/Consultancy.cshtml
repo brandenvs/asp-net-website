@@ -1,7 +1,7 @@
 ﻿@model LBL_Solutions.Models.ContactMsgModel
 <!DOCTYPE html>
 @{
-    ViewData["Title"] = "Home Page"; Layout = null;
+    ViewData["Title"] = "Consultancy Page"; Layout = null;
 }
 <html lang="en">
 <system.webServer>
@@ -85,12 +85,16 @@
 
         <div id="scroller">
             <div id="feature" class="section">
-                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Services/Infrastructure-Services.png" data-mobile="/Images/Services/Infrastructure-Services.png"></div>
+                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Consultancy/Consultancy.png" data-mobile="/Images/Consultancy/Consultancy.png"></div>
 
                 <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-bottom">
-                        <h3 class="animate">Services</h3>
+                    <div class="inner-left-bottom" style="background: rgb(75, 93, 168, 0.50);border-radius: 25px;padding: 25px;">                     
                         <h2 class="animate">Consultancy</h2>
+                        <p class="animate">
+                            Our consultancy services help businesses fulfill appropriate IT techniques and digital solutions to enforce business-IT 
+                            connections and facilitate profits from existing IT projects. 
+                            It's advantageous to have a second opinion before implementing any alterations.
+                        </p>
                         <a class="btn animate" tabindex="0" onclick="href='#contact'" data-container="Hello">
                             <div class="hover"></div>
                             <span class="text">Contact Us</span>
@@ -271,17 +275,17 @@
                                         <button class="sendbtn" type="submit">Send</button>
                                     </form>
                                 </div>
-                                <div class="inner-left-middle">
+                                <div class="inner-left-bottom">
                                     <h3 class="animate">Contact Us</h3>
                                     <h2 class="animate">Get in Touch</h2>
-                                    <p class="animate">
+                                    <span class="animate">
                                         Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
                                         Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
                                         <br>
                                         <br>
                                         Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
                                         get in touch, and we’ll be delighted to help you get started!
-                                    </p>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -363,6 +367,47 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        const startingMinutes = 0.2;
+        let time = startingMinutes * 60;
+        const countdownEl = document.getElementById('countdown');
+        setInterval(updateCountdown, 1000);
+
+        function updateCountdown() {
+            const minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            countdownEl.innerHTML = minutes + ":" + seconds;
+            time--;
+        }
+        window.addEventListener("load", function () {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup").style.display = "block";
+                },
+                2000
+            )
+        });
+
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        });
+        function sticktothetop() {
+            var window_top = $(window).scrollTop();
+            var top = $('#stick-here').offset().top;
+            if (window_top > top) {
+                $('#stickThis').addClass('stick');
+                $('#stick-here').height($('#stickThis').outerHeight());
+            } else {
+                $('#stickThis').removeClass('stick');
+                $('#stick-here').height(0);
+            }
+        }
+        $(function () {
+            $(window).scroll(sticktothetop);
+            sticktothetop();
+        });
+    </script>
     <script type="text/javascript" src="/js/core-min.js"></script>
     <script type="text/javascript" src="/js/vehicles-min.js"></script>
     <script type="text/javascript" async src="/js/tabs-min.js"></script>

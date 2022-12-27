@@ -85,11 +85,11 @@
         </div>
 
         <div id="scroller">
-            <div id="feature" class="section">
+            <div class="section" id="feature">
                 <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Backgrounds/1.png" data-mobile="/Images/Backgrounds/2.png"></div>
 
                 <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-bottom">
+                    <div class="inner-left-bottom" style="background: rgba(0, 0, 0, 0.3);border-radius: 25px;padding: 25px;">
                         <h3 class="animate">Line-by-Line Software Solutions</h3>
 
                         <h2 class="animate">Simple solutions to complex problems</h2>
@@ -107,9 +107,8 @@
                     </div>
                 </div>
             </div>
-
-            <div id="article" class="section">
-                <div class="content-columns">
+            <div class="section">
+                <div class="content-columns" id="featureItem1">
                     <div class="collapse left">
                         <div class="column-image animate">
                             <picture class="responsive-image">
@@ -133,12 +132,12 @@
                     </div>
                 </div>
             </div>
-            <div id="uses" class="slider quickjump section swiper-container collapse">
+            <div class="slider quickjump section swiper-container collapse" id="uses">
                 <div class="swiper-wrapper resize">
                     <div class="swiper-slide">
                         <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Consoltancy-HomeService.png" data-desktop="/Images/Home/Consoltancy-HomeService.png" style="background-size: contain;"></div>
 
-                        <div class="section-inner resize">
+                        <div class="section-inner resize" id="sliderItem1">
                             <div class="inner-left-middle">
                                 <h3 class="animate js-bounding">Intuitive</h3>
 
@@ -157,7 +156,7 @@
                     <div class="swiper-slide">
                         <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="Images/Home/Agile-HomeService.png" data-desktop="/Images/Home/Agile-HomeService.png" style="background-size: contain;"></div>
 
-                        <div class="section-inner resize">
+                        <div class="section-inner resize" id="sliderItem2">
                             <div class="inner-left-middle">
                                 <h3 class="animate">Practical</h3>
 
@@ -176,7 +175,7 @@
                     <div class="swiper-slide">
                         <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Bespoke-HomeService.png" data-desktop="/Images/Home/Bespoke-HomeService.png" style="background-size: contain;"></div>
 
-                        <div class="section-inner resize">
+                        <div class="section-inner resize" id="sliderItem3">
                             <div class="inner-left-middle">
                                 <h3 class="animate">Innovative</h3>
                                 <h2 class="animate">Bespoke Software</h2>
@@ -193,7 +192,7 @@
                     <div class="swiper-slide">
                         <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Design-HomeService.png" data-desktop="/Images/Home/Design-HomeService.png" style="background-size: contain;"></div>
 
-                        <div class="section-inner resize">
+                        <div class="section-inner resize" id="sliderItem4">
                             <div class="inner-left-middle">
                                 <h3 class="animate">Inventive</h3>
                                 <h2 class="animate">Branding & Design</h2>
@@ -208,13 +207,13 @@
                         </div>
                     </div>
                 </div>
-                <div id="gallery-prev-use" class="gallery-prev swiper-button-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                <div class="gallery-prev swiper-button-prev" id="gallery-prev-use">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 6 10">
                             <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(6) rotate(90)" fill="#fff" />
                         </svg>
                 </div>
-                <div id="gallery-next-use" class="gallery-next swiper-button-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                <div class="gallery-next swiper-button-next" id="gallery-next-use">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 6 10">
                             <path
 								d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
 								transform="translate(0 10) rotate(-90)"
@@ -244,7 +243,7 @@
                             Our Core Values guide and inspire us to provide high-quality software solutions to our customers.
                         </p>
                         <div id="columns" class="section">
-                            <div class="column3 rideshare-stats" style="height:350px">
+                            <div class="column3 rideshare-stats" id="column1">
                                 <img class="img animate" src="/Images/Home/Results-HomeCore.png" alt="">
                                 <h3 class="animate">Deliver Results</h3>
                                 <span class="animate">
@@ -252,7 +251,7 @@
                                     engineering, design, and culture, then partners with them to build and launch technology-driven solutions to their problems.
                                 </span>
                             </div>
-                            <div class="column3 rideshare-stats" style="height:350px">
+                            <div class="column3 rideshare-stats" id="column2">
                                 <img class="img animate" src="/Images/Home/Ownership-HomeCore.png" alt="">
                                 <h3 class="animate">Ownership</h3>
                                 <span class="animate">
@@ -261,7 +260,7 @@
                                     and expertise. We build a long-lasting relationship not just deliverables.
                                 </span>
                             </div>
-                            <div class="column3 rideshare-stats" style="height:350px">
+                            <div class="column3 rideshare-stats" id="column3">
                                 <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
                                 <h3 class="img animate">Customer-centered</h3>
                                 <span class="animate">
@@ -274,15 +273,15 @@
                     </div>
                 </div>
             </div>         
-            <div class="section">
+            <div class="section" id="itemFoot">
                 <div class="section-content">
                     <div class="content-center">
                         <div class="line-tall animate"></div>
                         <h3 class="animate js-bounding">This could be the start of something great</h3>
                         <h2 class="animate">Take the next step</h2>
-                        <a class="btn large animate" tabindex="0" href="/Services/Infrastructure">
+                        <a class="btn large animate" tabindex="0" href="/Services/ServicesHome">
                             <div class="hover"></div>
-                            <div class="text">IT Infrastructure</div>
+                            <div class="text">Our Services</div>
                         </a>
                         <a class="btn large animate" tabindex="0" href="/Contact/ContactForm">
                             <div class="hover"></div>

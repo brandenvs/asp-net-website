@@ -84,12 +84,15 @@
 
         <div id="scroller">
             <div id="feature" class="section">
-                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Services/Infrastructure-Services.png" data-mobile="/Images/Services/Infrastructure-Services.png"></div>
+                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Infrastructure/Infrastructure.png" data-mobile="/Images/Infrastructure/Infrastructure.png"></div>
 
                 <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-bottom">
-                        <h3 class="animate">Services</h3>
+                    <div class="inner-left-bottom" style="background: rgba(0, 0, 0, 0.3);border-radius: 25px;padding: 25px;">
                         <h2 class="animate">IT Infrastructure</h2>
+                        <p class="animate">
+                            An intelligent IT infrastructure offers flexible solutions that facilitate quicker adaptation to new and more effective business models.
+                            We review a customer's existing assets from the ground up and develop the right end-to-end infrastructure services.
+                        </p>
                         <a class="btn animate" tabindex="0" onclick="href='/Contact/ContactForm'" data-container="Hello">
                             <div class="hover"></div>
                             <span class="text">Contact Us</span>
@@ -158,9 +161,9 @@
                             </div>
                             <div class="column3 rideshare-stats">
                                 <img class="img animate" src="/Images/Content/billing_icon.png" alt="">
-                                     <span class="animate">
-                                            Steady unification to boost quality and speed up release time.
-                                        </span>
+                                <span class="animate">
+                                    Steady unification to boost quality and speed up release time.
+                                </span>
                             </div>
                             <div class="column3 rideshare-stats">
                                 <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
@@ -202,8 +205,18 @@
                                 <h3 class="animate">Cutting-edge software</h3>
                                 <h2 class="animate">Technologies and Tools</h2>
                                 <p class="animate">
-                                    Employ quick, budget-friendly methods to present your design concepts to the customers asap.
-                                    Boost your design-and-test cycle to explore the users' requirements and focus on the customer's needs to help fully realize innovative digital ideas.
+                                    Software Solutions DevOps experts employ a variety of innovative tools that ensure quality implementation, monitoring, delivery, logging, and infrastructure development:
+                                    <ul class="custom-list">
+                                        <li class="star">
+                                            Container: <b>Docker</b>
+                                        </li>
+                                        <li>
+                                            Clouds: <b>AWS, Azure & Google Cloud Platform</b>
+                                        </li>
+                                        <li>
+                                            Monistorin: <b>Custom Application Insights and Keymetrics</b>
+                                        </li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>
@@ -368,9 +381,24 @@
         document.querySelector("#close").addEventListener("click", function () {
             document.querySelector(".popup").style.display = "none";
         });
+        function sticktothetop() {
+            var window_top = $(window).scrollTop();
+            var top = $('#stick-here').offset().top;
+            if (window_top > top) {
+                $('#stickThis').addClass('stick');
+                $('#stick-here').height($('#stickThis').outerHeight());
+            } else {
+                $('#stickThis').removeClass('stick');
+                $('#stick-here').height(0);
+            }
+        }
+        $(function () {
+            $(window).scroll(sticktothetop);
+            sticktothetop();
+        });
     </script>
-        <script type="text/javascript" src="/js/core-min.js"></script>
-        <script type="text/javascript" src="/js/vehicles-min.js"></script>
-        <script type="text/javascript" async src="/js/tabs-min.js"></script>
+    <script type="text/javascript" src="/js/core-min.js"></script>
+    <script type="text/javascript" src="/js/vehicles-min.js"></script>
+    <script type="text/javascript" async src="/js/tabs-min.js"></script>
 </body>
 </html>
