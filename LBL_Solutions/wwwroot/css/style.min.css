@@ -426,7 +426,8 @@ table {
     bottom: 28px;
     margin-top: -22px;
     z-index: 10;
-    cursor: pointer
+    cursor: pointer;
+    top: 50%;
 }
 
     .gallery-next svg, .gallery-prev svg {
@@ -436,13 +437,16 @@ table {
     }
 
 .gallery-prev {
-    left: 50px;
-    right: auto
+    left: 2%;
+    right: auto;
+    top: 50%
+
 }
 
 #featured-next, .gallery-next {
-    right: 50px;
-    left: auto
+    right:5%;
+    left: auto;
+    top: 50%;
 }
 
 #featured-next, #featured-prev {
@@ -2334,11 +2338,14 @@ body.isMobile .hover {
     top: 50%;
     -webkit-transform: translate(0,-50%);
     transform: translate(0,-50%);
-    position: absolute
+    position: absolute;
+    padding:50px;
 }
 
 .inner-left-middle {
     left: 50px;
+    padding: 50px;
+    margin:15px
 }
 
 .inner-left-bottom {
@@ -2380,6 +2387,8 @@ body.isMobile .hover {
     display: inline-block;
     text-align: center;
     position: relative;
+    padding:20px 0;
+    margin:15px 0;
 }
 
 .section-content {
@@ -2393,15 +2402,12 @@ body.isMobile .hover {
 }
 #cards .inner-left-middle {
     background:rgb(206, 0, 255, 0.1);
-    padding:15px;
     border-radius:15px;
-    left:200px;
 
 }
 .content-center {
     width: 90%;
     height: auto;
-    margin: 5px auto;
     max-width: 1450px;
 }
 
@@ -2558,16 +2564,16 @@ body.isMobile .hover {
 }
 
 .column {
-    width: 47%;
+    width: auto;
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
 }
 #columnsCard .column3 {
     background: rgb(75, 93, 168, 0.8);
     padding: 5px;
     margin: 5px;
-    width: 45%;
-    height: auto;
+    height: 310px;
+
 }
 #stats .column3 {
     text-align: center
@@ -4254,7 +4260,9 @@ body.isDesktop #menu-navigation a, body.isDesktop a {
     }
 
     .gallery-next, .gallery-prev {
-        border-bottom: 1px solid transparent
+        border-bottom: 1px solid transparent;
+        top: 50%;
+
     }
 
         .gallery-next:focus, .gallery-prev:focus {

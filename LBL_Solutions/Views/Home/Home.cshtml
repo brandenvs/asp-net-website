@@ -67,6 +67,7 @@
                 <div id="menu-navigation">
                     <ul class="nav-links">
                         <li class="nav-item primary"><a href="/Company/CompanyHome">Company</a></li>
+                        <li class="nav-item primary"><a href="/Services/ServicesHome">Services</a></li>
                         <li class="nav-item primary"><a href="/Contact/ContactForm">Contact Us</a></li>
                         <li class="nav-item secondary"><a href="/Services/Consultancy">Consultancy</a></li>
                         <li class="nav-item secondary"><a href="/Services/BrandingDesign">Branding & Design</a></li>
@@ -89,7 +90,7 @@
                 <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Backgrounds/1.png" data-mobile="/Images/Backgrounds/2.png"></div>
 
                 <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-bottom" style="background: rgba(0, 0, 0, 0.3);border-radius: 25px;padding: 25px;">
+                    <div class="inner-left-bottom">
                         <h3 class="animate">Line-by-Line Software Solutions</h3>
 
                         <h2 class="animate">Simple solutions to complex problems</h2>
@@ -133,11 +134,11 @@
                 </div>
             </div>
             <div class="slider quickjump section swiper-container collapse" id="uses">
-                <div class="swiper-wrapper resize">
+                <div class="swiper-wrapper resize" style="max-height:600px;">
                     <div class="swiper-slide">
                         <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Consoltancy-HomeService.png" data-desktop="/Images/Home/Consoltancy-HomeService.png" style="background-size: contain;"></div>
 
-                        <div class="section-inner resize" id="sliderItem1">
+                        <div class="section-inner resize" style="background: rgba(39, 186, 245, 0.2);">
                             <div class="inner-left-middle">
                                 <h3 class="animate js-bounding">Intuitive</h3>
 
@@ -156,7 +157,7 @@
                     <div class="swiper-slide">
                         <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="Images/Home/Agile-HomeService.png" data-desktop="/Images/Home/Agile-HomeService.png" style="background-size: contain;"></div>
 
-                        <div class="section-inner resize" id="sliderItem2">
+                        <div class="section-inner resize" style="background: rgba(39, 186, 245, 0.2); height:600px;">
                             <div class="inner-left-middle">
                                 <h3 class="animate">Practical</h3>
 
@@ -175,7 +176,7 @@
                     <div class="swiper-slide">
                         <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Bespoke-HomeService.png" data-desktop="/Images/Home/Bespoke-HomeService.png" style="background-size: contain;"></div>
 
-                        <div class="section-inner resize" id="sliderItem3">
+                        <div class="section-inner resize" style="background: rgba(39, 186, 245, 0.2); height:600px;">
                             <div class="inner-left-middle">
                                 <h3 class="animate">Innovative</h3>
                                 <h2 class="animate">Bespoke Software</h2>
@@ -192,7 +193,7 @@
                     <div class="swiper-slide">
                         <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Design-HomeService.png" data-desktop="/Images/Home/Design-HomeService.png" style="background-size: contain;"></div>
 
-                        <div class="section-inner resize" id="sliderItem4">
+                        <div class="section-inner resize" style="background: rgba(39, 186, 245, 0.2); height:600px;">
                             <div class="inner-left-middle">
                                 <h3 class="animate">Inventive</h3>
                                 <h2 class="animate">Branding & Design</h2>
@@ -235,44 +236,88 @@
                                         }
                                     });
             </script>
-            <div class="section">
-                <div class="section-content">
-                    <div class="content-center">
-                        <h2 class="animate">Core Values</h2>
-                        <p class="animate">
-                            Our Core Values guide and inspire us to provide high-quality software solutions to our customers.
-                        </p>
-                        <div id="columns" class="section">
-                            <div class="column3 rideshare-stats" id="column1">
-                                <img class="img animate" src="/Images/Home/Results-HomeCore.png" alt="">
-                                <h3 class="animate">Deliver Results</h3>
-                                <span class="animate">
-                                    Line-by-Line Software is an innovation and engineering company that advises clients on product strategy,
-                                    engineering, design, and culture, then partners with them to build and launch technology-driven solutions to their problems.
-                                </span>
-                            </div>
-                            <div class="column3 rideshare-stats" id="column2">
-                                <img class="img animate" src="/Images/Home/Ownership-HomeCore.png" alt="">
-                                <h3 class="animate">Ownership</h3>
-                                <span class="animate">
-                                    Unlike the traditional players, we optimize for small teams,
-                                    lean budgets, consistent and sustainable velocity, transparency,
-                                    and expertise. We build a long-lasting relationship not just deliverables.
-                                </span>
-                            </div>
-                            <div class="column3 rideshare-stats" id="column3">
-                                <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
-                                <h3 class="img animate">Customer-centered</h3>
-                                <span class="animate">
-                                    We opt for a user-driven experience that is custom-tailored to meet any needs.
-                                    We know that putting the customer above all else is nothing new, but here’s the thing –
-                                    we care about every project and put our everything on the table.
-                                </span>
+            <div class="only--desktop">
+                <div class="section" style="top:25px;">
+                    <div class="section-content">
+                        <div class="content-center">
+                            <h2 class="animate">Core Values</h2>
+                            <p class="animate">
+                                Our Core Values guide and inspire us to provide high-quality software solutions to our customers.
+                            </p>
+                            <div id="columns" class="section">
+                                <div class="column3 rideshare-stats" id="column1">
+                                    <img class="img animate" src="/Images/Home/Results-HomeCore.png" alt="">
+                                    <h3 class="animate">Deliver Results</h3>
+                                    <span class="animate">
+                                        Line-by-Line Software is an innovation and engineering company that advises clients on product strategy,
+                                        engineering, design, and culture, then partners with them to build and launch technology-driven solutions to their problems.
+                                    </span>
+                                </div>
+                                <div class="column3 rideshare-stats" id="column2">
+                                    <img class="img animate" src="/Images/Home/Ownership-HomeCore.png" alt="">
+                                    <h3 class="animate">Ownership</h3>
+                                    <span class="animate">
+                                        Unlike the traditional players, we optimize for small teams,
+                                        lean budgets, consistent and sustainable velocity, transparency,
+                                        and expertise. We build a long-lasting relationship not just deliverables.
+                                    </span>
+                                </div>
+                                <div class="column3 rideshare-stats" id="column3">
+                                    <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
+                                    <h3 class="img animate">Customer-centered</h3>
+                                    <span class="animate">
+                                        We opt for a user-driven experience that is custom-tailored to meet any needs.
+                                        We know that putting the customer above all else is nothing new, but here’s the thing –
+                                        we care about every project and put our everything on the table.
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>         
+            </div>
+            <div class="only--mobile">
+                <div class="section-content" id="contact">
+                    <div class="content-columns">
+                        <div class="collapse left">
+                            <div class="column animate">
+                                <h2 class="animate">Core Values</h2>
+                                <p class="animate">
+                                    Our Core Values guide and inspire us to provide high-quality software solutions to our customers.
+                                </p>
+                                <div id="columnsCard" class="section">
+                                    <div class="column rideshare-stats" id="column1">
+                                        <img class="img animate" src="/Images/Home/Results-HomeCore.png" alt="">
+                                        <h3 class="animate">Deliver Results</h3>
+                                        <span class="animate">
+                                            Line-by-Line Software is an innovation and engineering company that advises clients on product strategy,
+                                            engineering, design, and culture, then partners with them to build and launch technology-driven solutions to their problems.
+                                        </span>
+                                    </div>
+                                    <div class="column rideshare-stats" id="column2">
+                                        <img class="img animate" src="/Images/Home/Ownership-HomeCore.png" alt="">
+                                        <h3 class="animate">Ownership</h3>
+                                        <span class="animate">
+                                            Unlike the traditional players, we optimize for small teams,
+                                            lean budgets, consistent and sustainable velocity, transparency,
+                                            and expertise. We build a long-lasting relationship not just deliverables.
+                                        </span>
+                                    </div>
+                                    <div class="column rideshare-stats" id="column3">
+                                        <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
+                                        <h3 class="img animate">Customer-centered</h3>
+                                        <span class="animate">
+                                            We opt for a user-driven experience that is custom-tailored to meet any needs.
+                                            We know that putting the customer above all else is nothing new, but here’s the thing –
+                                            we care about every project and put our everything on the table.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="section" id="itemFoot">
                 <div class="section-content">
                     <div class="content-center">

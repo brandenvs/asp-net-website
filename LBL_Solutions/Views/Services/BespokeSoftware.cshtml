@@ -1,7 +1,7 @@
 ﻿@model LBL_Solutions.Models.ContactMsgModel
 <!DOCTYPE html>
 @{
-    ViewData["Title"] = "Home Page"; Layout = null;
+    ViewData["Title"] = "Bespoke Page"; Layout = null;
 }
 <html lang="en">
 <system.webServer>
@@ -14,7 +14,7 @@
     </security>
 </system.webServer>
 <head>
-    <title>Line-by-Line - Bespoke</title>
+    <title>Line-by-Line - Bespoke Software</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en" />
     <meta name="Line-by-line Software Soultions" />
@@ -25,16 +25,21 @@
     <meta property="og:title" content="Line-by-Line Software Solutions" />
     <meta property="og:description" content="Line-by-Line Software Solutions offers a full range of IT services focused on delivering high-end digital solutions for businesses and public organizations in the Commercial sector." />
     <meta property="og:site_name" content="Line-by-Line Software Solutions" />
-    <meta property="og:image" content="https://linebyline.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://linebyline.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
+    <meta property="og:image" content="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" />
     <meta itemprop="name" content="Line-by-Line Software Solutions" />
-    <meta itemprop="image" content="https://linebyline.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-    <meta property="og:url" content="https://linebyline.azurewebsites.net" />
+    <meta itemprop="image" content="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" />
+    <meta property="og:url" content="https://linebyline.azurewebsites.net/" />
     <meta name="description" content="Line-by-Line Software Solutions offers a full range of IT services focused on delivering high-end digital solutions for businesses and public organizations in the Commercial sector." />
     <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen" />
     <meta name="viewport" content="width=device-width, user-scalable=1" />
     <script type="text/javascript" src="/js/deps-min.js"></script>
     <script type="text/javascript" async src="/js/player-min.js"></script>
+
+    <link runat="server" rel="shortcut icon" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" type="image/ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico">
 </head>
 <body>
     <div id="wrapper">
@@ -63,6 +68,7 @@
                 <div id="menu-navigation">
                     <ul class="nav-links">
                         <li class="nav-item primary"><a href="/Company/CompanyHome">Company</a></li>
+                        <li class="nav-item primary"><a href="/Services/ServicesHome">Services</a></li>
                         <li class="nav-item primary"><a href="/Contact/ContactForm">Contact Us</a></li>
                         <li class="nav-item secondary"><a href="/Services/Consultancy">Consultancy</a></li>
                         <li class="nav-item secondary"><a href="/Services/BrandingDesign">Branding & Design</a></li>
@@ -81,22 +87,23 @@
         </div>
 
         <div id="scroller">
-            <div id="feature" class="section">
-                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Bespoke/Bespoke.png" data-mobile="/Images/Bespoke/Bespoke.png"></div>
+            <div class="section" id="feature">
+                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Home/Bespoke-HomeService.png" data-mobile="/Images/Home/Bespoke-HomeService.png"></div>
+
                 <div id="opacity" class="section-inner feature">
                     <div class="inner-left-bottom" style="background: rgba(0, 0, 0, 0.3);border-radius: 25px;padding: 25px;">
-                        <h2 class="animate">
-                            Bespoke Software
-                        </h2>
+                        <h2 class="animate">Bespoke Software</h2>
                         <p class="animate">
-                            Deciding whether or not you need custom software developed for your business can be rather difficult.
+                            Deciding whether or not you need custom software developed for your business can be rather difficult. 
                             Below are five ways that your business can benefit from investing in a customized solution.
                         </p>
-                        <a class="btn animate" tabindex="0" onclick="href='#contact'" data-container="Hello">
+
+                        <a class="btn animate" tabindex="0" onclick="href='/Contact/ContactForm'" data-container="Hello">
                             <div class="hover"></div>
                             <span class="text">Contact Us</span>
                         </a>
                     </div>
+
                     <div class="scrollme">
                         <svg width="30px" height="20px">
                             <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
@@ -104,7 +111,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="article" class="section">
                 <div class="content-columns">
                     <div class="collapse left">
@@ -132,533 +138,484 @@
                     </div>
                 </div>
             </div>
-            <div class="only--desktop" id="cards">
-                <div class="section-content">
-                        <div class="content-columns">
-                            <div class="collapse right">
-                                <div class="column animate">
+                <div class="section-content" id="cards">
+                    <div class="content-columns">
+                        <div class="collapse right">
+                            <div class="column animate">
                                 <div id="columnsCard" class="section">
-                                        <div class="column3 rideshare-stats" id="column1" style="background: rgb(75, 93, 168, 0.8);">
-                                            <img class="img animate" src="/Images/Home/Results-HomeCore.png" alt="">
-                                            <h3 class="animate">Data-driven solutions</h3>
-                                            <span class="animate">
-                                                MS SQL Server, Postgress, Oracle DB and much more
-                                            </span>
-                                        </div>
-                                        <div class="column3 rideshare-stats" id="column2" style="background: rgb(75, 93, 168, 0.8);">
-                                            <img class="img animate" src="/Images/Home/Ownership-HomeCore.png" alt="">
-                                            <h3 class="animate">Custom Software development</h3>
-                                            <span class="animate">
-                                                Based on client requirements and selected technology stack (from Open Source to Machiene Code)
-                                            </span>
-                                        </div>
-                                        <div class="column3 rideshare-stats" id="column3" style="background: rgb(75, 93, 168, 0.8);">
-                                            <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
-                                            <h3 class="img animate">Software Solutions</h3>
-                                            <span class="animate">
-                                                Customized on client’s tech stack (e.g., Microsoft, Oracle, etc.).
-                                            </span>
-                                        </div>
+                                    <div class="column3 rideshare-stats" id="column1" style="background: rgb(75, 93, 168, 0.8);">
+                                        <img class="img animate" src="/Images/Home/Results-HomeCore.png" alt="">
+                                        <h3 class="animate">Data-driven solutions</h3>
+                                        <span class="animate">
+                                            MS SQL Server, Postgress, Oracle DB and much more
+                                        </span>
                                     </div>
-                                </div>
-                                <div class="inner-left-middle">
-                                    <h3 class="animate">
-                                        CUSTOMIZED SERVICES
-                                    </h3>
-                                    <h2 class="animate">
-                                        BESPOKE SOFTWARE SOLUTIONS
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-            <div class="only--mobile" id="contact">
-                <div class="section-content" id="contact">
-                        <div class="content-columns">
-                            <div class="collapse left">
-                                <div class="column animate">
-                                    <h3 class="animate">
-                                        CUSTOMIZED SERVICES
-                                    </h3>
-                                    <h2 class="animate" style="bottom: 15px;">
-                                        BESPOKE SOFTWARE SOLUTIONS
-                                    </h2>
-                                    <div id="columnsCard" class="section">
-                                        <div class="column3 rideshare-stats" id="column1" style="background: rgb(75, 93, 168, 0.8);">
-                                            <img class="img animate" src="/Images/Home/Results-HomeCore.png" alt="">
-                                            <h3 class="animate">Data-driven solutions</h3>
-                                            <span class="animate">
-                                                MS SQL Server, Postgress, Oracle DB and much more
-                                            </span>
-                                        </div>
-                                        <div class="column3 rideshare-stats" id="column2" style="background: rgb(75, 93, 168, 0.8);">
-                                            <img class="img animate" src="/Images/Home/Ownership-HomeCore.png" alt="">
-                                            <h3 class="animate">Custom Software development</h3>
-                                            <span class="animate">
-                                                Based on client requirements and selected technology stack (from Open Source to Machiene Code)
-                                            </span>
-                                        </div>
-                                        <div class="column3 rideshare-stats" id="column3" style="background: rgb(75, 93, 168, 0.8);">
-                                            <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
-                                            <h3 class="img animate">Software Solutions</h3>
-                                            <span class="animate">
-                                                Customized on client’s tech stack (e.g., Microsoft, Oracle, etc.).
-                                            </span>
-                                        </div>
+                                    <div class="column3 rideshare-stats" id="column2" style="background: rgb(75, 93, 168, 0.8);">
+                                        <img class="img animate" src="/Images/Home/Ownership-HomeCore.png" alt="">
+                                        <h3 class="animate">Custom Software development</h3>
+                                        <span class="animate">
+                                            Based on client requirements and selected technology stack (from Open Source to Machiene Code)
+                                        </span>
+                                    </div>
+                                    <div class="column3 rideshare-stats" id="column3" style="background: rgb(75, 93, 168, 0.8);">
+                                        <img class="animate" src="/Images/Home/Customer-HomeCore.png" alt="">
+                                        <h3 class="img animate">Software Solutions</h3>
+                                        <span class="animate">
+                                            Customized on client’s tech stack (e.g., Microsoft, Oracle, etc.).
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                </div>
-            </div>         
-            <div id="article" class="section">
-                <div class="content-columns">
-                    <div class="collapse left">
-                        <div class="column-image animate">
-                            <picture class="responsive-image">
-                                <img src="/Images/BrandingDesign/WebDev-Design.png" alt="" />
-                            </picture>
-                        </div>
-                        <div class="inner-right-middle">
-                            <h3 class="animate">
-                                What we offer
-                            </h3>
-                            <h2 class="animate">Development Scalability</h2>
-                            <p class="animate">
-                                We provide reliable, efficient, cost-saving, and smart technologies for B2C and B2B interactions. Cutting-edge products and
-                                services are offered to make your transition to the future utility ecosystem more effortless and seamless.
-                                <br />
-                                <br />
-                                By carefully analyzing our client`s needs and requirements for future software, we create projects that grow along with your business,
-                                making it more profitable and efficient in all the right ways..
-                            </p>
-                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="article" class="section">
-                <div class="content-columns" style="background: rgb(75, 93, 168, 0.50);border-radius: 25px; padding:50px">
-                    <div class="collapse right">
-                        <div class="column animate">
-                            <picture class="responsive-image">
-                                <img src="/Images/BrandingDesign/User-centered-Design.png" alt="" />
-                            </picture>
-                        </div>
-                        <div class="inner-left-middle">
-                            <h3 class="animate">
-                                Results-oriented
-                            </h3>
-                            <h2 class="animate">Targeted Solutions</h2>
-                            <p class="animate" style="padding:20px">
-                                Investing in bespoke software development implies ensuring that the end product will address all the needs you have 
-                                in all the right ways. Since every business is one of a kind, finding a universal, off-the-shelf software option that 
-                                would be tailored to satisfy just about any requirements is a tricky challenge.<br />
-                                There is no one-size-fits-all software solution, but choosing bespoke software development gives you all the advantages of tailoring your product to your business needs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="article" class="section">
-                <div class="content-columns" style=" background: rgb(75, 93, 168, 0.50);">
-                    <div class="collapse left">
-                        <div class="column-image animate">
-                            <picture class="responsive-image">
-                                <img src="/Images/Infrastructure/Tools-Infrastructure.png" alt="">
-                            </picture>
-                        </div>
-                        <div class="inner-right-middle">
-                            <h2 class="animate">Software Product Development</h2>
-                            <p class="animate">
-                                With software product development outsourced, you free up your resources and get access to the tech expertise of a 
-                                third-party vendor that handles the development and evolution of your app.
-                            </p>
-                            <p class="animate">
-                                <h3>We develop for:</h3>
-                                <ul class="custom-list">
-                                    <li>Mobile</li>                                   
-                                    <li>Desktop</li>
-                                    <li>Cloud-based</li>
-                                    <li>Web-based</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>                        
-            <div id="article" class="section">
-                <div class="content-columns">
-                    <div class="collapse right">
-                        <div class="column animate">
-                            <picture class="responsive-image">
-                                <img src="/Images/BrandingDesign/User-centered-Design.png" alt="" />
-                            </picture>
-                        </div>
-                        <div class="inner-left-middle">
-                            <h3 class="animate">
-                                Tailor-made solutions
-                            </h3>
-                            <h2 class="animate">
-                                Software Integration
-                            </h2>
-                            <p class="animate" style="padding:20px">
-                                If you have existing software that you aim to use for future endeavors, bespoke software development can help you refine it by integrating new and extended features. 
-                                Custom software will set the chance of integration issues to zero by fostering an integral software ecosystem that works exactly how your business needs it to.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="article" class="section">
-                <div class="content-columns" style=" background: rgb(75, 93, 168, 0.50);">
-                    <div class="collapse left">
-                        <div class="column-image animate">
-                            <picture class="responsive-image">
-                                <img src="/Images/BrandingDesign/WebDev-Design.png" alt="" />
-                            </picture>
-                        </div>
-                        <div class="inner-right-middle" style=" background: rgb(75, 93, 168, 0.50);">
-                            <h3 class="animate">
-
-                                Business-IT connection
-                            </h3>
-                            <h2 class="animate">Hardware Costs</h2>
-                            <p class="animate">
-                                Specific off-the-shelf software solutions require particular hardware. Otherwise, they won’t work the way they should, to begin with. 
-                                However, bespoke software solutions take your business’ hardware requirements into careful consideration. It implies additional 
-                                investments that may or may not pay themselves off in the future. It leads to cutting costs and streamlining your business processes, making software implementation pretty much seamless in the first place.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="article" class="section">
-                <div class="content-columns">
-                    <div class="collapse right">
-                        <div class="column-image animate">
-                            <picture class="responsive-image">
-                                <img src="/Images/Infrastructure/Tools-Infrastructure.png" alt="">
-                            </picture>
-                        </div>
-                        <div class="inner-left-middle">
-                            <h3 class="animate">
-                                Seamless integration
-                            </h3>
-                            <h2 class="animate">Enterprise application services</h2>
-                            <p class="animate">
-                                Our unique approach to application services enables us to revamp your entire enterprise portfolio from the get-go. We take advantage of cutting-edge 
-                                technological solutions to build faster, more responsive, and intuitive products that will meet your business needs. By doing so,
-                                we ensure a seamless digital customer experience is provided within the framework of any enterprise applications your company deals with. Simplifying IT processes, automating workflow, and improving IT flexibility.
-                            </p>
-                            <p class="animate">
-                                <ul class="custom-list">
-                                    <li>Application Development</li>
-                                    <li>Digital Transformation</li>
-                                    <li>Application Managment</li>
-                                    <li>Application Intergration</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider quickjump section swiper-container collapse" id="uses">
-                <div class="swiper-wrapper resize" style=" background: rgb(75, 93, 168, 0.50);">
-                    <div class="swiper-slide">
-                        <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Consoltancy-HomeService.png" data-desktop="/Images/Home/Consoltancy-HomeService.png" style="background-size: contain;"></div>
-
-                        <div class="section-inner resize" id="sliderItem1">
-                            <div class="inner-left-middle">
-                                <h2 class="animate">Analyzing the client's needs</h2>
-
+                <div id="article" class="section">
+                    <div class="content-columns">
+                        <div class="collapse left">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/BrandingDesign/WebDev-Design.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="inner-right-middle">
+                                <h3 class="animate">
+                                    What we offer
+                                </h3>
+                                <h2 class="animate">Development Scalability</h2>
                                 <p class="animate">
-                                    Collaborating with the customers to ensure that their ideas will get a fruitful realization in the long run.
+                                    We provide reliable, efficient, cost-saving, and smart technologies for B2C and B2B interactions. Cutting-edge products and
+                                    services are offered to make your transition to the future utility ecosystem more effortless and seamless.
+                                    <br />
+                                    <br />
+                                    By carefully analyzing our client`s needs and requirements for future software, we create projects that grow along with your business,
+                                    making it more profitable and efficient in all the right ways..
                                 </p>
-                                <a class="btn animate" tabindex="0" onclick="href='/Services/Consultancy'" data-container="Hello">
-                                    <div class="hover"></div>
-                                    <span class="text">Learn more</span>
-                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="Images/Home/Agile-HomeService.png" data-desktop="/Images/Home/Agile-HomeService.png" style="background-size: contain;"></div>
-
-                        <div class="section-inner resize" id="sliderItem2">
+                </div>
+                <div id="article" class="section">
+                    <div class="content-columns" style="background: rgb(75, 93, 168, 0.50);padding:10px;">
+                        <div class="collapse right">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/BrandingDesign/User-centered-Design.png" alt="" />
+                                </picture>
+                            </div>
                             <div class="inner-left-middle">
-                                <h2 class="animate">Designing proof of concept</h2>
-
+                                <h3 class="animate">
+                                    Results-oriented
+                                </h3>
+                                <h2 class="animate">Targeted Solutions</h2>
                                 <p class="animate">
-                                    Presenting a layout of the project to give the customers a better idea of how it will work.
+                                    Investing in bespoke software development implies ensuring that the end product will address all the needs you have
+                                    in all the right ways. Since every business is one of a kind, finding a universal, off-the-shelf software option that
+                                    would be tailored to satisfy just about any requirements is a tricky challenge.<br />
+                                    There is no one-size-fits-all software solution, but choosing bespoke software development gives you all the advantages of tailoring your product to your business needs.
                                 </p>
-                                <a class="btn animate" tabindex="0" onclick="href='/Services/AgilePrototypin'" data-container="Hello">
-                                    <div class="hover"></div>
-                                    <span class="text">Learn more</span>
-                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Bespoke-HomeService.png" data-desktop="/Images/Home/Bespoke-HomeService.png" style="background-size: contain;"></div>
-
-                        <div class="section-inner resize" id="sliderItem3">
-                            <div class="inner-left-middle">
-                                <h2 class="animate">Developing prototypes</h2>
+                </div>
+                <div id="article" class="section">
+                    <div class="content-columns">
+                        <div class="collapse left">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/Infrastructure/Tools-Infrastructure.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="inner-right-middle">
+                                <h2 class="animate">Software Product Development</h2>
                                 <p class="animate">
-                                    Producing a full-fledged mock-up tailored according to the customer's needs.                                
-                                    </p>
-                                <a class="btn animate" tabindex="0" onclick="href='/Services/BespokeSoftware'" data-container="Hello">
-                                    <div class="hover"></div>
-                                    <span class="text">Learn more</span>
-                                </a>
+                                    With software product development outsourced, you free up your resources and get access to the tech expertise of a
+                                    third-party vendor that handles the development and evolution of your app.
+                                </p>
+                                <p class="animate" style="margin:15px;padding:20px;">
+                                    <h3>We develop for:</h3>
+                                    <ul class="custom-list">
+                                        <li>Mobile</li>
+                                        <li>Desktop</li>
+                                        <li>Cloud-based</li>
+                                        <li>Web-based</li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Design-HomeService.png" data-desktop="/Images/Home/Design-HomeService.png" style="background-size: contain;"></div>
-
-                        <div class="section-inner resize" id="sliderItem4">
+                </div>
+                <div id="article" class="section">
+                    <div class="content-columns" style="background: rgb(75, 93, 168, 0.50);padding:10px;">
+                        <div class="collapse right">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/BrandingDesign/User-centered-Design.png" alt="" />
+                                </picture>
+                            </div>
                             <div class="inner-left-middle">
-
+                                <h3 class="animate">
+                                    Tailor-made solutions
+                                </h3>
                                 <h2 class="animate">
-                                    Testing the final product
+                                    Software Integration
                                 </h2>
                                 <p class="animate">
-                                    Ensuring that every detail is in place and works like a charm to meet the highest industry standards.                                
-                                    </p>
-                                <a class="btn animate" tabindex="0" onclick="href='/Services/BrandingDesign'" data-container="Hello">
-                                    <div class="hover"></div>
-                                    <span class="text">Learn more</span>
-                                </a>
+                                    If you have existing software that you aim to use for future endeavors, bespoke software development can help you refine it by integrating new and extended features.
+                                    Custom software will set the chance of integration issues to zero by fostering an integral software ecosystem that works exactly how your business needs it to.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="gallery-prev swiper-button-prev" id="gallery-prev-use">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
-                        <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(6) rotate(90)" fill="#fff" />
-                    </svg>
-                </div>
-                <div class="gallery-next swiper-button-next" id="gallery-next-use">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
-                        <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
-                              transform="translate(0 10) rotate(-90)"
-                              fill="#fff" />
-                    </svg>
-                </div>
-            </div>
-            <script>
-            new Swiper ('#uses', {
-            direction: 'horizontal',
-            loop: true,
-            speed: 1500,
-            simulateTouch: false,
-            pagination: false,
-            navigation: {
-            nextEl: '#gallery-next-use',
-            prevEl: '#gallery-prev-use',
-            }
-            });
-            </script>
-                        <div id="article" class="section">
-                <div class="content-columns">
-                    <div class="collapse left">
-                        <div class="column-image animate">
-                            <picture class="responsive-image">
-                                <img src="/Images/BrandingDesign/WebDev-Design.png" alt="" />
-                            </picture>
-                        </div>
-                        <div class="inner-right-middle">
-                            <h3 class="animate">
+                <div id="article" class="section">
+                    <div class="content-columns">
+                        <div class="collapse left">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/BrandingDesign/WebDev-Design.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="inner-right-middle">
+                                <h3 class="animate">
 
-                                Corporative benefits
-                            </h3>
-                            <h2 class="animate">Increased Reliability</h2>
-                            <p class="animate">
-                                When you are purchasing off-the-shelf software, you are dependent on the company that has developed it. The pricing, terms and conditions, and future of the business, are all out of your hands. 
-                                If that company suddenly goes bankrupt or stops updating the product, you will have a nerve-racking and limited time to find a new software provider. With custom software,
-                                you can use it as long as you like and the way you like. Of course, there are maintenance costs to consider. But overall, you’ll have far less to worry about.
-                            </p>
+                                    Business-IT connection
+                                </h3>
+                                <h2 class="animate">Hardware Costs</h2>
+                                <p class="animate">
+                                    Specific off-the-shelf software solutions require particular hardware. Otherwise, they won’t work the way they should, to begin with.
+                                    However, bespoke software solutions take your business’ hardware requirements into careful consideration. It implies additional
+                                    investments that may or may not pay themselves off in the future. It leads to cutting costs and streamlining your business processes, making software implementation pretty much seamless in the first place.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="only--desktop" id="contact">
-                <div class="section-content" id="contact">
-                    @if (ViewBag.Message == null)
-                    {
-                                <div class="content-columns">
-                                    <div class="collapse right">
-                                        <div class="column animate">
-                                            <form id="form" method="post">
-                                                <div class="input-box active-grey">
-                                                    <label><h3 class="animate">Your Name</h3></label>
-                                                    <input asp-for="Name" type="text" class="input-1" />
-                                                    <span asp-validation-for="Name" class="text-muted"></span>
-                                                </div>
+                <div id="article" class="section">
+                    <div class="content-columns" style="background: rgb(75, 93, 168, 0.50);padding:10px;">
+                        <div class="collapse right">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/Infrastructure/Tools-Infrastructure.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="inner-left-middle">
+                                <h3 class="animate">
+                                    Seamless integration
+                                </h3>
+                                <h2 class="animate">Enterprise application services</h2>
+                                <p class="animate">
+                                    Our unique approach to application services enables us to revamp your entire enterprise portfolio from the get-go. We take advantage of cutting-edge
+                                    technological solutions to build faster, more responsive, and intuitive products that will meet your business needs. By doing so,
+                                    we ensure a seamless digital customer experience is provided within the framework of any enterprise applications your company deals with. Simplifying IT processes, automating workflow, and improving IT flexibility.
+                                </p>
+                                <p class="animate">
+                                    <ul class="custom-list">
+                                        <li>Application Development</li>
+                                        <li>Digital Transformation</li>
+                                        <li>Application Managment</li>
+                                        <li>Application Intergration</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider quickjump section swiper-container collapse" id="uses">
+                    <div class="swiper-wrapper resize" style="padding:15px 0; margin:15px 0;">
+                        <div class="swiper-slide">
+                            <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Consoltancy-HomeService.png" data-desktop="/Images/Home/Consoltancy-HomeService.png" style="background-size: contain;"></div>
 
-                                                <div class="input-box active-grey">
-                                                    <label><h3 class="animate">Your Email</h3></label>
-                                                    <input asp-for="Email" type="text" class="input-1" />
-                                                    <span asp-validation-for="Email" class="text-muted"></span>
-                                                </div>
-                                                <div class="input-box active-grey">
-                                                    <label><h3 class="animate">Choose Service</h3></label>
-                                                    <select asp-for="Subject" class="input-1">
-                                                        <option value="-1"></option>
-                                                        <option value="General">General</option>
-                                                        <option value="Support">Support</option>
-                                                        <option value="Mobile">Mobile Development</option>
-                                                        <option value="Website">Website Development</option>
-                                                        <option value="Windows">Windows Development</option>
-                                                        <option value="Android">Android Development</option>
-                                                        <option value="Other">Other</option>
-                                                    </select>
-                                                </div>
-                                                <div class="input-box active-grey">
-                                                    <label><h3 class="animate">Your Message</h3></label>
-                                                    <textarea asp-for="Message" class="textinput"></textarea>
-                                                    <span asp-validation-for="Message" class="text-muted"></span>
-                                                </div>
-                                                <br />
-                                                <button class="sendbtn" type="submit">Send</button>
-                                            </form>
-                                        </div>
-                                        <div class="inner-left-middle">
-                                            <h3 class="animate">Contact Us</h3>
-                                            <h2 class="animate">Get in Touch</h2>
-                                            <p class="animate">
-                                                Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
-                                                Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
-                                                <br>
-                                                <br>
-                                                Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
-                                                get in touch, and we’ll be delighted to help you get started!
-                                            </p>
-                                        </div>
+                            <div class="section-inner resize" id="sliderItem1">
+                                <div class="inner-left-middle">
+                                    <h2 class="animate">Analyzing the client's needs</h2>
+
+                                    <p class="animate">
+                                        Collaborating with the customers to ensure that their ideas will get a fruitful realization in the long run.
+                                    </p>
+                                    <a class="btn animate" tabindex="0" onclick="href='/Services/Consultancy'" data-container="Hello">
+                                        <div class="hover"></div>
+                                        <span class="text">Learn more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="Images/Home/Agile-HomeService.png" data-desktop="/Images/Home/Agile-HomeService.png" style="background-size: contain;"></div>
+
+                            <div class="section-inner resize" id="sliderItem2">
+                                <div class="inner-left-middle">
+                                    <h2 class="animate">Designing proof of concept</h2>
+
+                                    <p class="animate">
+                                        Presenting a layout of the project to give the customers a better idea of how it will work.
+                                    </p>
+                                    <a class="btn animate" tabindex="0" onclick="href='/Services/AgilePrototypin'" data-container="Hello">
+                                        <div class="hover"></div>
+                                        <span class="text">Learn more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Bespoke-HomeService.png" data-desktop="/Images/Home/Bespoke-HomeService.png" style="background-size: contain;"></div>
+
+                            <div class="section-inner resize" id="sliderItem3">
+                                <div class="inner-left-middle">
+                                    <h2 class="animate">Developing prototypes</h2>
+                                    <p class="animate">
+                                        Producing a full-fledged mock-up tailored according to the customer's needs.
+                                    </p>
+                                    <a class="btn animate" tabindex="0" onclick="href='/Services/BespokeSoftware'" data-container="Hello">
+                                        <div class="hover"></div>
+                                        <span class="text">Learn more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Design-HomeService.png" data-desktop="/Images/Home/Design-HomeService.png" style="background-size: contain;"></div>
+
+                            <div class="section-inner resize" id="sliderItem4">
+                                <div class="inner-left-middle">
+
+                                    <h2 class="animate">
+                                        Testing the final product
+                                    </h2>
+                                    <p class="animate">
+                                        Ensuring that every detail is in place and works like a charm to meet the highest industry standards.
+                                    </p>
+                                    <a class="btn animate" tabindex="0" onclick="href='/Services/BrandingDesign'" data-container="Hello">
+                                        <div class="hover"></div>
+                                        <span class="text">Learn more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-prev swiper-button-prev" id="gallery-prev-use">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                            <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(6) rotate(90)" fill="#fff" />
+                        </svg>
+                    </div>
+                    <div class="gallery-next swiper-button-next" id="gallery-next-use">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                            <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                  transform="translate(0 10) rotate(-90)"
+                                  fill="#fff" />
+                        </svg>
+                    </div>
+                </div>
+                <script>
+                    new Swiper('#uses', {
+                        direction: 'horizontal',
+                        loop: true,
+                        speed: 1500,
+                        simulateTouch: false,
+                        pagination: false,
+                        navigation: {
+                            nextEl: '#gallery-next-use',
+                            prevEl: '#gallery-prev-use',
+                        }
+                    });
+                </script>
+                <div id="article" class="section">
+                    <div class="content-columns">
+                        <div class="collapse left">
+                            <div class="column-image animate">
+                                <picture class="responsive-image">
+                                    <img src="/Images/BrandingDesign/WebDev-Design.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="inner-right-middle">
+                                <h3 class="animate">
+
+                                    Corporative benefits
+                                </h3>
+                                <h2 class="animate">Increased Reliability</h2>
+                                <p class="animate">
+                                    When you are purchasing off-the-shelf software, you are dependent on the company that has developed it. The pricing, terms and conditions, and future of the business, are all out of your hands.
+                                    If that company suddenly goes bankrupt or stops updating the product, you will have a nerve-racking and limited time to find a new software provider. With custom software,
+                                    you can use it as long as you like and the way you like. Of course, there are maintenance costs to consider. But overall, you’ll have far less to worry about.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="only--desktop" id="contact">
+                    <div class="section-content" id="contact">
+                        @if (ViewBag.Message == null)
+                        {
+                            <div class="content-columns">
+                                <div class="collapse right">
+                                    <div class="column animate" style="width:50%">
+                                        <form id="form" method="post">
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Name</h3></label>
+                                                <input asp-for="Name" type="text" class="input-1" />
+                                                <span asp-validation-for="Name" class="text-muted"></span>
+                                            </div>
+
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Email</h3></label>
+                                                <input asp-for="Email" type="text" class="input-1" />
+                                                <span asp-validation-for="Email" class="text-muted"></span>
+                                            </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Choose Service</h3></label>
+                                                <select asp-for="Subject" class="input-1">
+                                                    <option value="-1"></option>
+                                                    <option value="General">General</option>
+                                                    <option value="Support">Support</option>
+                                                    <option value="Mobile">Mobile Development</option>
+                                                    <option value="Website">Website Development</option>
+                                                    <option value="Windows">Windows Development</option>
+                                                    <option value="Android">Android Development</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Message</h3></label>
+                                                <textarea asp-for="Message" class="textinput"></textarea>
+                                                <span asp-validation-for="Message" class="text-muted"></span>
+                                            </div>
+                                            <br />
+                                            <button class="sendbtn" type="submit">Send</button>
+                                        </form>
+                                    </div>
+                                    <div class="inner-left-middle">
+                                        <h3 class="animate">Contact Us</h3>
+                                        <h2 class="animate">Get in Touch</h2>
+                                        <p class="animate">
+                                            Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
+                                            Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
+                                            <br>
+                                            <br>
+                                            Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
+                                            get in touch, and we’ll be delighted to help you get started!
+                                        </p>
                                     </div>
                                 </div>
-                    }
+                            </div>
+                        }
+                    </div>
                 </div>
-            </div>
-            <div class="only--mobile" id="contact">
-                <div class="section-content" id="contact">
-                    @if (ViewBag.Message == null)
-                    {
-                                <div class="content-columns">
-                                    <div class="collapse left">
-                                        <div class="column animate">
-                                            <h3 class="animate">Contact Us</h3>
-                                            <h2 class="animate">Get in Touch</h2>
-                                            <p class="animate">
-                                                Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
-                                                Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
-                                                <br>
-                                                <br>
-                                                Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
-                                                get in touch, and we’ll be delighted to help you get started!
-                                            </p>
-                                            <form id="form" method="post">
-                                                <div class="input-box active-grey">
-                                                    <label><h3 class="animate">Your Name</h3></label>
-                                                    <input asp-for="Name" type="text" class="input-1" />
-                                                    <span asp-validation-for="Name" class="text-muted"></span>
-                                                </div>
+                <div class="only--mobile" id="contact">
+                    <div class="section-content" id="contact">
+                        @if (ViewBag.Message == null)
+                        {
+                            <div class="content-columns">
+                                <div class="collapse left">
+                                    <div class="column animate">
+                                        <h3 class="animate">Contact Us</h3>
+                                        <h2 class="animate">Get in Touch</h2>
+                                        <p class="animate">
+                                            Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
+                                            Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
+                                            <br>
+                                            <br>
+                                            Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
+                                            get in touch, and we’ll be delighted to help you get started!
+                                        </p>
+                                        <form id="form" method="post">
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Name</h3></label>
+                                                <input asp-for="Name" type="text" class="input-1" />
+                                                <span asp-validation-for="Name" class="text-muted"></span>
+                                            </div>
 
-                                                <div class="input-box active-grey">
-                                                    <label><h3 class="animate">Your Email</h3></label>
-                                                    <input asp-for="Email" type="text" class="input-1" />
-                                                    <span asp-validation-for="Email" class="text-muted"></span>
-                                                </div>
-                                                <div class="input-box active-grey">
-                                                    <label><h3 class="animate">Choose Service</h3></label>
-                                                    <select asp-for="Subject" class="input-1">
-                                                        <option value="-1">Consultancy</option>
-                                                        <option value="General">Bespoke Software</option>
-                                                        <option value="Support">IT Infrastructure</option>
-                                                        <option value="Mobile">Branding & Design</option>
-                                                        <option value="Website">Agile Prototyping</option>
-                                                        <option value="Windows">Client Support</option>
-                                                        <option value="Other">Other</option>
-                                                    </select>
-                                                </div>
-                                                <div class="input-box active-grey">
-                                                    <label><h3 class="animate">Your Message</h3></label>
-                                                    <textarea asp-for="Message" class="textinput"></textarea>
-                                                    <span asp-validation-for="Message" class="text-muted"></span>
-                                                </div>
-                                                <br />
-                                                <button class="sendbtn" type="submit">Send</button>
-                                            </form>
-                                        </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Email</h3></label>
+                                                <input asp-for="Email" type="text" class="input-1" />
+                                                <span asp-validation-for="Email" class="text-muted"></span>
+                                            </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Choose Service</h3></label>
+                                                <select asp-for="Subject" class="input-1">
+                                                    <option value="-1">Consultancy</option>
+                                                    <option value="General">Bespoke Software</option>
+                                                    <option value="Support">IT Infrastructure</option>
+                                                    <option value="Mobile">Branding & Design</option>
+                                                    <option value="Website">Agile Prototyping</option>
+                                                    <option value="Windows">Client Support</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-box active-grey">
+                                                <label><h3 class="animate">Your Message</h3></label>
+                                                <textarea asp-for="Message" class="textinput"></textarea>
+                                                <span asp-validation-for="Message" class="text-muted"></span>
+                                            </div>
+                                            <br />
+                                            <button class="sendbtn" type="submit">Send</button>
+                                        </form>
                                     </div>
                                 </div>
-                    }
+                            </div>
+                        }
+                    </div>
                 </div>
-            </div>
-            @if (ViewBag.Message != null)
-            {
-                <meta http-equiv="refresh" content="0; url='/Contact/ContactSuccess'" />
-                <div id="article" class="section content-center">
-                    <h1 class="animate center-header">PLEASE WAIT....</h1>
-                </div>
+                @if (ViewBag.Message != null)
+                {
+                    <meta http-equiv="refresh" content="0; url='/Contact/ContactSuccess'" />
+                    <div id="article" class="section content-center">
+                        <h1 class="animate center-header">PLEASE WAIT....</h1>
+                    </div>
 
-            }
-            <div id="footer">
-                <p>
-                    <span>Line-by-Line Software Solutions &copy; 2022</span>
-                    <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
-                    <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
-                    <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
-                    <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
-                </p>
+                }
+                <div id="footer">
+                    <p>
+                        <span>Line-by-Line Software Solutions &copy; 2022</span>
+                        <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
+                        <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
+                        <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
+                        <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
         <script type="text/javascript">
-    const startingMinutes = 0.2;
-        let time = startingMinutes * 60;
-        const countdownEl = document.getElementById('countdown');
-        setInterval(updateCountdown, 1000);
+            const startingMinutes = 0.2;
+            let time = startingMinutes * 60;
+            const countdownEl = document.getElementById('countdown');
+            setInterval(updateCountdown, 1000);
 
-        function updateCountdown() {
-            const minutes = Math.floor(time / 60);
-            let seconds = time % 60;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-            countdownEl.innerHTML = minutes + ":" + seconds;
-            time--;
-        }
-        window.addEventListener("load", function () {
-            setTimeout(
-                function open(event) {
-                    document.querySelector(".popup").style.display = "block";
-                },
-                2000
-            )
-        });
-
-        document.querySelector("#close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-        });
-        function sticktothetop() {
-            var window_top = $(window).scrollTop();
-            var top = $('#stick-here').offset().top;
-            if (window_top > top) {
-                $('#stickThis').addClass('stick');
-                $('#stick-here').height($('#stickThis').outerHeight());
-            } else {
-                $('#stickThis').removeClass('stick');
-                $('#stick-here').height(0);
+            function updateCountdown() {
+                const minutes = Math.floor(time / 60);
+                let seconds = time % 60;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                countdownEl.innerHTML = minutes + ":" + seconds;
+                time--;
             }
-        }
-        $(function () {
-            $(window).scroll(sticktothetop);
-            sticktothetop();
-        });
-    </script>
-    <script type="text/javascript" src="/js/core-min.js"></script>
-    <script type="text/javascript" src="/js/vehicles-min.js"></script>
-    <script type="text/javascript" async src="/js/tabs-min.js"></script>
+            window.addEventListener("load", function () {
+                setTimeout(
+                    function open(event) {
+                        document.querySelector(".popup").style.display = "block";
+                    },
+                    2000
+                )
+            });
+
+            document.querySelector("#close").addEventListener("click", function () {
+                document.querySelector(".popup").style.display = "none";
+            });
+            function sticktothetop() {
+                var window_top = $(window).scrollTop();
+                var top = $('#stick-here').offset().top;
+                if (window_top > top) {
+                    $('#stickThis').addClass('stick');
+                    $('#stick-here').height($('#stickThis').outerHeight());
+                } else {
+                    $('#stickThis').removeClass('stick');
+                    $('#stick-here').height(0);
+                }
+            }
+            $(function () {
+                $(window).scroll(sticktothetop);
+                sticktothetop();
+            });
+        </script>
+        <script type="text/javascript" src="/js/core-min.js"></script>
+        <script type="text/javascript" src="/js/vehicles-min.js"></script>
+        <script type="text/javascript" async src="/js/tabs-min.js"></script>
 </body>
 </html>
