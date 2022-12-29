@@ -2493,15 +2493,30 @@ body.isMobile .hover {
 }
 
 .content-columns .left {
-    display: block;
+    display: inline-grid;
     text-align: left;
-    margin: 0
+    margin: 0;
+    justify-items: start;
 }
 
 .content-columns .right {
+    display: inline-grid;
+    text-align: right;
+    margin: 0;
+    justify-items:end;
+}
+#contact .content-columns {
     display: block;
     text-align: right;
-    margin: 0
+    margin: 0;
+}
+
+    #contact .content-columns .collapse right {
+        display: inline-block;
+    }
+
+#contact .collapse.right {
+    width: 100%;
 }
 
 .content-columns .inner-left-middle, .content-columns .inner-right-middle {
@@ -2572,7 +2587,7 @@ body.isMobile .hover {
     background: rgb(75, 93, 168, 0.8);
     padding: 5px;
     margin: 5px;
-    height: 310px;
+    height: 410px;
 
 }
 #stats .column3 {
