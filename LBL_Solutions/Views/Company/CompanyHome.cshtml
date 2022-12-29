@@ -13,67 +13,32 @@
     </security>
 </system.webServer>
 <head>
-    <style>
-        #mid {
-            position: relative;
-            width: 600px;
-            height: 200px;
-        }
-
-        #image {
-            height: 64px;
-            width: 64px;
-        }
-
-        #image2 {
-            position: absolute;
-            top: 45px;
-            left: 301px;
-            height: 64px;
-            width: 64px;
-        }
-
-        #gate {
-            background-image: url("http://5starsdesign.be/bg2.png");
-            position: absolute;
-            height: 50px;
-            width: 100%;
-            left: 0px;
-            top: 130px;
-            text-align: center;
-            font-family: "Arial Black", Gadget, sans-serif;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 50px;
-            background-color: yellow;
-            text-transform: uppercase;
-            background-size: 50px 50px;
-            color: white;
-            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-        }
-    </style>
-
+    <title>Line-by-Line - Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en" />
     <meta name="Line-by-line Software Soultions" />
-    <meta name="keywords" content="informationtechnology, IT, software, services, development, websites, mobile, Android, iOS, Windows, PWA" />
-    <meta name="description" content="Building new and innovative technologies with software. Providing a service to clients to help them create Websites, Progressive Web Applications (PWA), Mobile applications, Windows applications and Android applications for client brands or companies." />
+    <meta name="keywords" content="agile, IT, infrastructure, software solutions, consultancy, branding, design, website, services" />
+    <meta name="description" content="Line-by-Line Software Solutions offers a full range of IT services focused on delivering high-end digital solutions for businesses and public organizations in the Commercial sector." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Line-by-Line Software Solutions" />
-    <meta property="og:description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
+    <meta property="og:description" content="Line-by-Line Software Solutions offers a full range of IT services focused on delivering high-end digital solutions for businesses and public organizations in the Commercial sector." />
     <meta property="og:site_name" content="Line-by-Line Software Solutions" />
-    <meta property="og:image" content="https://linebylinesolutions.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="/Images/Logos/logo.ico" />
+    <meta property="og:image" content="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" />
     <meta itemprop="name" content="Line-by-Line Software Solutions" />
-    <meta itemprop="image" content="https://linebylinesolutions.azurewebsites.net/Images/Logos/Line-by-Line_Logo.png" />
-    <meta property="og:url" content="https://linebylinesolutions.azurewebsites.net" />
-    <meta name="description" content="We Build Innovative Software for Clients - Websites, Web Apps, Android Apps, iOS Apps and Windows Apps." />
-    <title>Line-by-Line Sleek Software Solutions</title>
+    <meta itemprop="image" content="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" />
+    <meta property="og:url" content="https://linebyline.azurewebsites.net/" />
+    <meta name="description" content="Line-by-Line Software Solutions offers a full range of IT services focused on delivering high-end digital solutions for businesses and public organizations in the Commercial sector." />
     <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="screen" />
     <meta name="viewport" content="width=device-width, user-scalable=1" />
     <script type="text/javascript" src="/js/deps-min.js"></script>
     <script type="text/javascript" async src="/js/player-min.js"></script>
+
+    <link runat="server" rel="shortcut icon" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico" type="image/ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://linebyline.azurewebsites.net/Images/Logoslogo.ico">
 </head>
 <body>
     <div id="wrapper">
@@ -102,6 +67,7 @@
                 <div id="menu-navigation">
                     <ul class="nav-links">
                         <li class="nav-item primary"><a href="/Company/CompanyHome">Company</a></li>
+                        <li class="nav-item primary"><a href="/Services/ServicesHome">Services</a></li>
                         <li class="nav-item primary"><a href="/Contact/ContactForm">Contact Us</a></li>
                         <li class="nav-item secondary"><a href="/Services/Consultancy">Consultancy</a></li>
                         <li class="nav-item secondary"><a href="/Services/BrandingDesign">Branding & Design</a></li>
@@ -120,32 +86,260 @@
         </div>
 
         <div id="scroller">
-            <div id="feature" class="section">
-                <div id="mid">
-                    <p>
-                        <img src="https://nest.com/support/images/misc-assets-icons/settings-icon.png" id="image" />
-                        <img src="https://nest.com/support/images/misc-assets-icons/settings-icon.png" id="image2" />
-                    </p>
-                </div>
+            <div class="section" id="feature">
+                <div id="parallax" class="background" data-speed="0.0025" data-desktop="/Images/Backgrounds/1.png" data-mobile="/Images/Backgrounds/2.png"></div>
+
                 <div id="opacity" class="section-inner feature">
-                    <div class="inner-left-middle">
-                        <div id="gate">
-                            <h1>Under Construction</h1>
+                    <div class="inner-left-bottom">
+                        <h3 class="animate">Discover</h3>
+
+                        <h2 class="animate">Line-by-Line Software Solutions</h2>
+
+                        <a class="btn animate" tabindex="0" onclick="href='/Contact/ContactForm'" data-container="Hello">
+                            <div class="hover"></div>
+                            <span class="text">Contact Us</span>
+                        </a>
+                    </div>
+
+                    <div class="scrollme">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 " />
+                        </svg>
+                    </div>
+                </div>
+            </div>                        
+            <div class="section-content" id="contact">
+                <div class="section">
+                    <div class="section-content">
+                        <div class="content-center">
+                            <h2 class="animate">
+                                Our Mission
+                            </h2>
+                            <p class="animate">
+                                We are focused on providing out of the box software systems built for 
+                                clients to utilize technology and digitalize their process to make their 
+                                business run more efficiently enabling them to be more profitable. 
+                                <br />
+                                <br />
+                                Thanks to an individual approach to each client, Line-by-Line specialists can quickly build complicated software, 
+                                from simple business applications to complex systems that best meet a 
+                                particular customer's requirements.
+                            </p>
                         </div>
-                        <div id="countdown-container">
-                            <div id="countdown">
-                                <h3>Redirecting in:</h3>
-                                <h3 id="time"></h3>
+                    </div>
+                </div>                
+            </div>
+            <div class="section-content" id="cards">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column animate">
+                            <div id="columnsCard" class="section">
+                                <h2 class="animate">Meet Line-by-Line Lead Developers</h2>
+                                <br />
+                                <div class="column3 rideshare-stats" id="column1" style="background: rgb(75, 93, 168, 0.8);height: 800px;padding: 15px;">
+                                    <div class="column-image animate">
+                                        <picture class="responsive-image">
+                                            <img class="img animate" src="/Images/Content/Branden_vs_profile.png" alt="">
+                                        </picture>
+                                    </div>                                    
+                                    <h3 class="animate">Branden van Staden</h3>
+                                    <span class="animate">
+                                       CEO and Founder
+                                       <br />
+                                       <br />
+                                       Branden Leads and is involved in all Development and Operations in Line-by-Line Software Solutions. 
+                                       <br />
+                                       Experienced with project management and Software Engineering.
+                                       <br />
+                                       Branden oversees all operations ongoing within Line-by-Line Solutions, ensuring clients are always put first and standards are met.
+                                       Branden appreciates the value of a personal touch - 
+                                       "I take on the responsibility to give each client one on one Attention to Build I.T Solutions that best fits your Business’s Needs."             
+                                    </span>
+                                </div>        
+                                <div class="column3 rideshare-stats" id="column2" style="background: rgb(75, 93, 168, 0.8);height: 800px;padding: 15px;">
+                                    <div class="column-image animate">
+                                        <picture class="responsive-image">
+                                            <img class="img animate" src="/Images/Content/Heinrich-Wessels.png" alt="">
+                                        </picture>
+                                    </div>                                    
+                                    <h3 class="animate">Hendrie Wessels</h3>
+                                    <span class="animate">
+                                        Chief of Operations
+                                        <br />
+                                        <br />
+                                        Hendrie provides structure and is a team leader on both large- and small-scale projects in Line-by-Line Software Solutions.
+                                        <br />
+                                        Experienced with project management and Software Engineering.
+                                        <br />
+                                        Hendrie ensures our teams are functioning effectively and are able to execute all tasks at hand. 
+                                    </span>      
+                                </div>
                             </div>
                         </div>
-                        <a class="btn animate" tabindex="0" onclick="href='/Home/Home'" data-container="Hello">
-                            <div class="hover"></div>
-                            <span class="text">Not Redirected?</span>
-                        </a>
-
                     </div>
                 </div>
             </div>
+            <div class="slider quickjump section swiper-container collapse" id="uses">
+                <div class="swiper-wrapper resize">
+                    <div class="swiper-slide">
+                        <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Bespoke-HomeService.png" data-desktop="/Images/Home/Bespoke-HomeService.png" style="background-size: contain;"></div>
+
+                        <div class="section-inner resize">
+                            <div class="inner-left-middle" style="top:50%;">
+                                <h3 class="animate js-bounding">Our areas of expertise</h3>
+
+                                <h2 class="animate">Mobile Application</h2>
+
+                                <p class="animate">
+                                Mobile devices are being used more and more, reaching clients can be difficult if you do not have an "App" or progressive web applications.
+                                We design, build and deploy your custom mobile application solutions - intergrating your business model and structuture.
+                                </p>
+                                <a class="btn animate" tabindex="0" onclick="href='/Services/BrandingDesign'" data-container="Hello">
+                                    <div class="hover"></div>
+                                    <span class="text">Learn more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Design-HomeService.png" data-desktop="/Images/Home/Design-HomeService.png" style="background-size: contain;"></div>
+
+                        <div class="section-inner resize">
+                            <div class="inner-left-middle" style="top:50%;">
+                                <h3 class="animate js-bounding">Our areas of expertise</h3>
+
+                                <h2 class="animate">Web</h2>
+
+                                <p class="animate">
+                                We take web development seriously - with attention to secruity with a user-centered approach.    
+                                Putting your clients/users first, we build a web-based solution with efficent code and modern designs.
+                            </p>
+                                <a class="btn animate" tabindex="0" onclick="href='/Services/BrandingDesign'" data-container="Hello">
+                                    <div class="hover"></div>
+                                    <span class="text">Learn more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Bespoke-HomeService.png" data-desktop="/Images/Home/Bespoke-HomeService.png" style="background-size: contain;"></div>
+
+                        <div class="section-inner resize">
+                            <div class="inner-left-middle" style="top:50%;">
+                                <h3 class="animate js-bounding">Our areas of expertise</h3>
+                                <h2 class="animate">Customized Software</h2>
+                                <p class="animate">
+                                    Finding the right out of the box software solutions is difficult and your bussiness will always have to work around the contraints of the software.
+                                    Customized softwares allows your bussiness to take priotiy and we develop and customize software solutions to fit your exact needs.
+                                </p>
+                                <a class="btn animate" tabindex="0" onclick="href='/Services/BespokeSoftware'" data-container="Hello">
+                                    <div class="hover"></div>
+                                    <span class="text">Learn more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-background gallery-full resize_gallery" data-preload data-mobile="/Images/Home/Agile-HomeService" data-desktop="/Images/Home/Agile-HomeService.png" style="background-size: contain;"></div>
+
+                        <div class="section-inner resize">
+                            <div class="inner-left-middle" style="top:50%;">
+                                <h3 class="animate js-bounding">Our areas of expertise</h3>
+                                <h2 class="animate">Intergration</h2>
+                                <p class="animate">
+                                    We aim to build your solutions from start to finish. 
+                                    This allows easy intergration across the board.
+                                   
+                                    <ul class="custom-list">
+                                       <li>We analyse your current technolodgy and ongoing I.T projects</li>
+                                        <li>Build solutions that will either improve your current tech stack or revamp your infrastructure</li>
+                                        <li>Deploy your solution into your business - intergrating seamlessly</li>
+                                    </ul>
+                                </p>
+                                <a class="btn animate" tabindex="0" onclick="href='/Services/Infrastructure'" data-container="Hello">
+                                    <div class="hover"></div>
+                                    <span class="text">Learn more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-prev swiper-button-prev" id="gallery-prev-use">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 6 10">
+                        <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(6) rotate(90)" fill="#fff" />
+                    </svg>
+                </div>
+                <div class="gallery-next swiper-button-next" id="gallery-next-use">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 6 10">
+                        <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                              transform="translate(0 10) rotate(-90)"
+                              fill="#fff" />
+                    </svg>
+                </div>
+            </div>
+            <script>
+                new Swiper('#uses', {
+                    direction: 'horizontal',
+                    loop: true,
+                    speed: 1500,
+                    simulateTouch: false,
+                    pagination: false,
+                    navigation: {
+                        nextEl: '#gallery-next-use',
+                        prevEl: '#gallery-prev-use',
+                    }
+                });
+            </script>
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse left">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Home/Company-Agile.png" alt="" />
+                            </picture>
+                        </div>
+                        <div class="inner-right-middle">
+                            <h3 class="animate">
+                                Our workflow
+                            </h3>
+                            <h2 class="animate">Agile in a nutshell</h2>
+                            <p class="animate">
+                                At Line-by-Line, we firmly believe that people and interactions are more important than
+                                processes and tools.
+                                <br />
+                                <br />
+                                In Agile methodology, the priority is not the initial setting but the user's actual needs.
+                                It is usual for Agile to continually make changes to the technical specification, even amid development.
+                                <br />
+                                <br />
+                                Agile implies going through a series of cycles -
+                                iterations. Each iteration is a separate project, where a fragment of the program is developed, functionality is improved, and new capabilities are added.
+                            </p>
+                            <a class="btn animate" tabindex="0" onclick="href='/Services/AgilePrototyping'" data-container="Hello">
+                                <div class="hover"></div>
+                                <span class="text">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="itemFoot">
+                <div class="section-content">
+                    <div class="content-center">
+                        <div class="line-tall animate"></div>
+                        <h3 class="animate js-bounding">Find out more</h3>
+                        <h2 class="animate">Take the next step</h2>
+                        <a class="btn large animate" tabindex="0" href="/Services/ServicesHome">
+                            <div class="hover"></div>
+                            <div class="text">Our Services</div>
+                        </a>
+                        <a class="btn large animate" tabindex="0" href="/Contact/ContactForm">
+                            <div class="hover"></div>
+                            <div class="text">Contact Us</div>
+                        </a>
+                    </div>
+                </div>
+            </div>                            
             <div id="footer">
                 <p>
                     <span>Line-by-Line Software Solutions &copy; 2022</span>
@@ -157,44 +351,9 @@
             </div>
         </div>
     </div>
-    <meta http-equiv="refresh" content="12 url='/Home/Home'" />
-    <script type="text/javascript">
-        const startingMinutes = 0.2;
-        let time = startingMinutes * 60;
-        const countdownEl = document.getElementById('countdown');
-        setInterval(updateCountdown, 1000);
-
-        function updateCountdown() {
-            const minutes = Math.floor(time / 60);
-            let seconds = time % 60;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-            countdownEl.innerHTML = minutes + ":" + seconds;
-            time--;
-        }
-        window.addEventListener("load", function () {
-            setTimeout(
-                function open(event) {
-                    document.querySelector(".popup").style.display = "block";
-                },
-                2000
-            )
-        });
-
-
-        document.querySelector("#close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-        });
-
-        setInterval(function () {
-            $("#image").rotate({ count: 99999, forceJS: true, duration: 4 });
-        }, 52);
-
-        setInterval(function () {
-            $("#image2").rotate({ count: 99999, forceJS: true, endDeg: -360, duration: 4 });
-        }, 52);
-    </script>
     <script type="text/javascript" src="/js/core-min.js"></script>
     <script type="text/javascript" src="/js/vehicles-min.js"></script>
     <script type="text/javascript" async src="/js/tabs-min.js"></script>
 </body>
+
 </html>

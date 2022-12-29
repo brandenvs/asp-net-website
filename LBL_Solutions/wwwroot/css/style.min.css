@@ -4653,14 +4653,14 @@ body.isDesktop #menu-navigation a, body.isDesktop a {
 
     @media screen and (max-width:900px) {
         #columns .column3 {
-            width: 100%;
+            width: 90%;
             margin-bottom: 50px;
         }
         #columnsCard .column3 {
             background: rgb(75, 93, 168, 0.8);
             padding: 5px;
             margin: 5px;
-            width: 100%;
+            width: 90%;
             height: auto;
         }
 
