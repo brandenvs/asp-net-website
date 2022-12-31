@@ -196,170 +196,41 @@
                             <p class="animate">
                                 With the help of our outsourced DevOps coders, it will be more than achievable for you to stay above the competition that continues to implement changes and deploys IT products manually.
                                 <br /><br />
-                                The best DevOps practices speed up the development process as a whole, but it's even more important to understand that they grant the users unparalleled round-the-clock access to applications. 
+                                The best DevOps practices speed up the development process as a whole, but it's even more important to understand that they grant the users unparalleled round-the-clock access to applications.
                                 That way, by automating your development process with the help of US Software Solutions' specialists, you will not only ease things up for yourself, but will win your customers' undivided allegiance.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div id="article" class="section">
-                    <div class="content-columns">
-                        <div class="collapse left">
-                            <div class="column-image animate">
-                                <picture class="responsive-image">
-                                    <img src="/Images/Infrastructure/Tools-Infrastructure.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="inner-right-middle">
-                                <h3 class="animate">Cutting-edge software</h3>
-                                <h2 class="animate">Technologies and Tools</h2>
-                                <p class="animate">
-                                    Software Solutions DevOps experts employ a variety of innovative tools that ensure quality implementation, monitoring, delivery, logging, and infrastructure development:
-                                    <ul class="custom-list">
-                                        <li class="star">
-                                            Container: <b>Docker</b>
-                                        </li>
-                                        <li>
-                                            Clouds: <b>AWS, Azure & Google Cloud Platform</b>
-                                        </li>
-                                        <li>
-                                            Monitoring: <b>Custom Application Insights and Keymetrics</b>
-                                        </li>
-                                    </ul>
-                                </p>
-                            </div>
+            </div>
+
+            <div id="article" class="section">
+                <div class="content-columns">
+                    <div class="collapse right">
+                        <div class="column-image animate">
+                            <picture class="responsive-image">
+                                <img src="/Images/Infrastructure/Tools-Infrastructure.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="inner-left-middle">
+                            <h3 class="animate">Cutting-edge software</h3>
+                            <h2 class="animate">Technologies and Tools</h2>
+                            <p class="animate">
+                                Software Solutions DevOps experts employ a variety of innovative tools that ensure quality implementation, monitoring, delivery, logging, and infrastructure development:
+                                <ul class="custom-list">
+                                    <li class="star">
+                                        Container: <b>Docker</b>
+                                    </li>
+                                    <li>
+                                        Clouds: <b>AWS, Azure & Google Cloud Platform</b>
+                                    </li>
+                                    <li>
+                                        Monitoring: <b>Custom Application Insights and Keymetrics</b>
+                                    </li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="only--desktop" id="contact">
-                    <div class="section-content" id="contact">
-                        @if (ViewBag.Message == null)
-                        {
-                            <div class="content-columns">
-                                <div class="collapse right">
-                                    <div class="column animate" style="width:50%;">
-                                        <form id="form" method="post">
-                                            <div class="input-box active-grey">
-                                                <label><h3 class="animate">Your Name</h3></label>
-                                                <input asp-for="Name" type="text" class="input-1" />
-                                                <span asp-validation-for="Name" class="text-muted"></span>
-                                            </div>
-
-                                            <div class="input-box active-grey">
-                                                <label><h3 class="animate">Your Email</h3></label>
-                                                <input asp-for="Email" type="text" class="input-1" />
-                                                <span asp-validation-for="Email" class="text-muted"></span>
-                                            </div>
-                                            <div class="input-box active-grey">
-                                                <label><h3 class="animate">Choose Service</h3></label>
-                                                <select asp-for="Subject" class="input-1">
-                                                    <option value="-1"></option>
-                                                    <option value="General">General</option>
-                                                    <option value="Support">Support</option>
-                                                    <option value="Mobile">Mobile Development</option>
-                                                    <option value="Website">Website Development</option>
-                                                    <option value="Windows">Windows Development</option>
-                                                    <option value="Android">Android Development</option>
-                                                    <option value="Other">Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-box active-grey">
-                                                <label><h3 class="animate">Your Message</h3></label>
-                                                <textarea asp-for="Message" class="textinput"></textarea>
-                                                <span asp-validation-for="Message" class="text-muted"></span>
-                                            </div>
-                                            <br />
-                                            <button class="sendbtn" type="submit">Send</button>
-                                        </form>
-                                    </div>
-                                    <div class="inner-left-middle">
-                                        <h3 class="animate">Contact Us</h3>
-                                        <h2 class="animate">Get in Touch</h2>
-                                        <p class="animate">
-                                            Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
-                                            Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
-                                            <br>
-                                            <br>
-                                            Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
-                                            get in touch, and we’ll be delighted to help you get started!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
-                </div>
-                <div class="only--mobile" id="contact">
-                    <div class="section-content" id="contact">
-                        @if (ViewBag.Message == null)
-                        {
-                            <div class="content-columns">
-                                <div class="collapse left">
-                                    <div class="column animate">
-                                        <h3 class="animate">Contact Us</h3>
-                                        <h2 class="animate">Get in Touch</h2>
-                                        <p class="animate">
-                                            Do you have questions? We have answers! Fill in the form, and we’ll be happy to get back to you shortly.
-                                            Need more details? We’re always glad to help! Just leave us your email, and our specialists will provide you with all the information you need. Simple as that!
-                                            <br>
-                                            <br>
-                                            Feel free to share your thoughts, ideas, and concepts with us as well! If you feel like you got something – a unique proof of concept or an algorithm that’s bound to change the world as we know it,
-                                            get in touch, and we’ll be delighted to help you get started!
-                                        </p>
-                                        <form id="form" method="post">
-                                            <div class="input-box active-grey">
-                                                <label><h3 class="animate">Your Name</h3></label>
-                                                <input asp-for="Name" type="text" class="input-1" />
-                                                <span asp-validation-for="Name" class="text-muted"></span>
-                                            </div>
-
-                                            <div class="input-box active-grey">
-                                                <label><h3 class="animate">Your Email</h3></label>
-                                                <input asp-for="Email" type="text" class="input-1" />
-                                                <span asp-validation-for="Email" class="text-muted"></span>
-                                            </div>
-                                            <div class="input-box active-grey">
-                                                <label><h3 class="animate">Choose Service</h3></label>
-                                                <select asp-for="Subject" class="input-1">
-                                                    <option value="-1">Consultancy</option>
-                                                    <option value="General">Bespoke Software</option>
-                                                    <option value="Support">IT Infrastructure</option>
-                                                    <option value="Mobile">Branding & Design</option>
-                                                    <option value="Website">Agile Prototyping</option>
-                                                    <option value="Windows">Client Support</option>
-                                                    <option value="Other">Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-box active-grey">
-                                                <label><h3 class="animate">Your Message</h3></label>
-                                                <textarea asp-for="Message" class="textinput"></textarea>
-                                                <span asp-validation-for="Message" class="text-muted"></span>
-                                            </div>
-                                            <br />
-                                            <button class="sendbtn" type="submit">Send</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
-                </div>
-                @if (ViewBag.Message != null)
-                {
-                    <meta http-equiv="refresh" content="0; url='/Contact/ContactSuccess'" />
-                    <div id="article" class="section content-center">
-                        <h1 class="animate center-header">PLEASE WAIT....</h1>
-                    </div>
-
-                }
-                <div id="footer">
-                    <p>
-                        <span>Line-by-Line Software Solutions &copy; 2022</span>
-                        <a href="#" rel="noopener" target="_blank" class="social">TWITTER</a>
-                        <a href="#" rel="noopener" target="_blank" class="social">INSTAGRAM</a>
-                        <a href="" rel="noopener" target="_blank" class="social">LINKEDIN</a>
-                        <a href="/media/PrivacyPolicy.pdf" target="_blank" class="social">PRIVACY POLICY</a>
-                    </p>
                 </div>
             </div>
 
